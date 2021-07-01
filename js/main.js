@@ -1,10 +1,13 @@
 // Menu open on click
-$(".header__button").on("click", function () {
+/**
+ * function hendlerClick
+ * Add event 
+ */
+$(".header__button").on("click", function hendlerClick() {
     $(".header-dropmenu").addClass("open")
     $(".header-closemenu").addClass("open")
     $(".header-mask").addClass("open")
     $("body").addClass("open")
-
 })
 $(".header-closemenu").on("click", function () {
     $(".header-dropmenu").removeClass("open")
@@ -17,4 +20,12 @@ $(".header-mask").on("click", function () {
     $(".header-closemenu").removeClass("open")
     $(".header-mask").removeClass("open")
     $("body").removeClass("open")
+})
+
+
+$(".section-galery__img img").on("click", function hendlerClick() {
+    $(".header-dropmenu").addClass("open")
+    $(".header-closemenu").addClass("open")
+    $(".header-mask").addClass("open")
+    $("body").addClass("open")
 })

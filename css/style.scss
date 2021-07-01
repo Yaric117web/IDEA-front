@@ -59,7 +59,7 @@ body.open {
 $gold_color: #e8c8a4;
 $gold_color_hover: #f9dab8;
 $header_text_color: #464646;
-$header_lonk_color: #4f4f4f;
+$header_link_color: #4f4f4f;
 
 // Header
 
@@ -136,7 +136,7 @@ $header_lonk_color: #4f4f4f;
         overflow-y: scroll;
 
         &__list {
-            color: $header_lonk_color;
+            color: $header_link_color;
             & summary,
             & .menulinks {
                 font-weight: 450;
@@ -264,7 +264,7 @@ $header_lonk_color: #4f4f4f;
 .content {
     flex: 1;
 }
-
+// Main-page First Block-slider
 .slider {
     min-height: 100vh;
 
@@ -368,7 +368,193 @@ $header_lonk_color: #4f4f4f;
         }
     }
 }
+// Main-page Second Block-links
+.section {
+    // Block links
+    &-links {
+        & .link {
+            @media (min-width: 300px) {
+                width: 100%;
+                height: 470px;
+                color: $header_link_color;
+                & h3 {
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+                & li {
+                    font-size: 20px;
+                    margin: 5px 0px;
+                    & a {
+                        color: inherit;
+                    }
+                    & span {
+                        display: block;
+                        max-width: 250px;
+                    }
+                }
 
+                &:nth-child(1) {
+                    background: linear-gradient(180deg, #edeeeb 55%, transparent 60%), url(../img/main/mainLink1.png);
+                    background-position: bottom right;
+                    background-repeat: no-repeat;
+                    background-size: 100%, 100%;
+                }
+                &:nth-child(2) {
+                    background: linear-gradient(180deg, #d6e0ea 50%, transparent 60%), url(../img/main/mainLink2.png);
+                    background-position: bottom right;
+                    background-repeat: no-repeat;
+                    background-size: 230%;
+                }
+                &:nth-child(3) {
+                    background: linear-gradient(180deg, #f5f5f5 30%, transparent 60%), url(../img/main/mainLink3.png);
+                    background-position: 0 100%;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                }
+                &:nth-child(4) {
+                    background: linear-gradient(180deg, #f9faf8 -10%, transparent 60%), url(../img/main/mainLink4.png);
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            @media (min-width: 768px) {
+                width: 100%;
+                height: 256px;
+                color: $header_link_color;
+                & ul {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    height: 200px;
+                    width: 70%;
+                    margin-top: 15px;
+                }
+                & h3 {
+                    font-weight: bold;
+                    font-size: 24px;
+                    margin-top: 15px;
+                }
+                & li {
+                    font-size: 18px;
+                    margin: 12px 50px 12px 0;
+                }
+
+                &:nth-child(1) {
+                    background: linear-gradient(90deg, #edeeeb 50%, transparent 70%), url(../img/main/mainLink1.png);
+                    background-position: 100%, right;
+                    background-repeat: no-repeat;
+                    background-size: 100%, 50%;
+                }
+                &:nth-child(2) {
+                    background: linear-gradient(90deg, #f5f5f5 0%, transparent 100%), url(../img/main/mainLink2.png);
+                    background-position: 100%, right;
+                    background-repeat: no-repeat;
+                    background-size: 100%, contain;
+                }
+                &:nth-child(3) {
+                    background: linear-gradient(90deg, #f5f5f5 50%, transparent 70%), url(../img/main/mainLink3.png);
+                    background-position: right;
+                    background-repeat: no-repeat;
+                    background-size: 100%, 50%;
+                }
+                &:nth-child(4) {
+                    background: linear-gradient(90deg, #f5f5f5 60%, transparent 70%), url(../img/main/mainLink4.png);
+                    background-position: 100%, right 90%;
+                    background-repeat: no-repeat;
+                    background-size: 100%, 40%;
+                }
+            }
+            @media (min-width: 960px) {
+                width: 100%;
+                height: 580px;
+                color: $header_link_color;
+                & ul {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    height: auto;
+                    width: 100%;
+                }
+                & h3 {
+                    font-size: 20px;
+                    width: 100%;
+                    margin: 0;
+                }
+                & li {
+                    font-size: 18px;
+                    margin: 5px;
+                }
+                &:nth-child(1) {
+                    background: linear-gradient(180deg, #edeeeb 60%, transparent 70%), url(../img/main/mainLink1.png);
+                    background-position: 100%, bottom;
+                    background-repeat: no-repeat;
+                    background-size: 100%, 150%;
+                }
+                &:nth-child(2) {
+                    background: linear-gradient(180deg, #f5f5f5 60%, transparent 80%), url(../img/main/mainLink2.png);
+                    background-position: bottom right;
+                    background-repeat: no-repeat;
+                    background-size: 300%;
+                }
+                &:nth-child(3) {
+                    background: linear-gradient(180deg, #f5f5f5 40%, transparent 60%), url(../img/main/mainLink3.png);
+                    background-position: bottom right;
+                    background-repeat: no-repeat;
+                    background-size: 150%;
+                }
+                &:nth-child(4) {
+                    background: url(../img/main/mainLink4.png);
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            @media (min-width: 1440px) {
+                height: 680px;
+                color: $header_link_color;
+                & h3 {
+                    font-size: 34px;
+                }
+                & li {
+                    font-size: 20px;
+                    margin: 0px;
+                }
+                &:nth-child(1) {
+                    background: linear-gradient(180deg, #edeeeb 60%, transparent 70%), url(../img/main/mainLink1.png);
+                    background-position: 100%, bottom;
+                    background-repeat: no-repeat;
+                    background-size: 100%, 120%;
+                }
+                &:nth-child(2) {
+                    background: linear-gradient(180deg, #d6e0ea 60%, transparent 65%), url(../img/main/mainLink2.png);
+                    background-position: bottom right;
+                    background-repeat: no-repeat;
+                    background-size: 100%, 280%;
+                }
+                &:nth-child(3) {
+                    background: linear-gradient(180deg, #f5f5f5 40%, transparent 60%), url(../img/main/mainLink3.png);
+                    background-position: bottom right;
+                    background-repeat: no-repeat;
+                    background-size: 130%;
+                }
+                &:nth-child(4) {
+                    background: url(../img/main/mainLink4.png);
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    // Block Galery
+    &-galery {
+        & button img {
+            object-fit: cover;
+            object-position: cover;
+        }
+    }
+}
 // Content end
 
 //  Footer

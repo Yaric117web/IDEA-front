@@ -433,6 +433,221 @@ body.open {
   background: #f9dab8;
 }
 
+@media (min-width: 300px) {
+  .section-links .link {
+    width: 100%;
+    height: 470px;
+    color: #4f4f4f;
+  }
+  .section-links .link h3 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .section-links .link li {
+    font-size: 20px;
+    margin: 5px 0px;
+  }
+  .section-links .link li a {
+    color: inherit;
+  }
+  .section-links .link li span {
+    display: block;
+    max-width: 250px;
+  }
+  .section-links .link:nth-child(1) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #edeeeb), color-stop(60%, transparent)), url(../img/main/mainLink1.png);
+    background: linear-gradient(180deg, #edeeeb 55%, transparent 60%), url(../img/main/mainLink1.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+  }
+  .section-links .link:nth-child(2) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #d6e0ea), color-stop(60%, transparent)), url(../img/main/mainLink2.png);
+    background: linear-gradient(180deg, #d6e0ea 50%, transparent 60%), url(../img/main/mainLink2.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 230%;
+  }
+  .section-links .link:nth-child(3) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #f5f5f5), color-stop(60%, transparent)), url(../img/main/mainLink3.png);
+    background: linear-gradient(180deg, #f5f5f5 30%, transparent 60%), url(../img/main/mainLink3.png);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .section-links .link:nth-child(4) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-10%, #f9faf8), color-stop(60%, transparent)), url(../img/main/mainLink4.png);
+    background: linear-gradient(180deg, #f9faf8 -10%, transparent 60%), url(../img/main/mainLink4.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-links .link {
+    width: 100%;
+    height: 256px;
+    color: #4f4f4f;
+  }
+  .section-links .link ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 200px;
+    width: 70%;
+    margin-top: 15px;
+  }
+  .section-links .link h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .section-links .link li {
+    font-size: 18px;
+    margin: 12px 50px 12px 0;
+  }
+  .section-links .link:nth-child(1) {
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #edeeeb), color-stop(70%, transparent)), url(../img/main/mainLink1.png);
+    background: linear-gradient(90deg, #edeeeb 50%, transparent 70%), url(../img/main/mainLink1.png);
+    background-position: 100%, right;
+    background-repeat: no-repeat;
+    background-size: 100%, 50%;
+  }
+  .section-links .link:nth-child(2) {
+    background: -webkit-gradient(linear, left top, right top, from(#f5f5f5), to(transparent)), url(../img/main/mainLink2.png);
+    background: linear-gradient(90deg, #f5f5f5 0%, transparent 100%), url(../img/main/mainLink2.png);
+    background-position: 100%, right;
+    background-repeat: no-repeat;
+    background-size: 100%, contain;
+  }
+  .section-links .link:nth-child(3) {
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f5f5f5), color-stop(70%, transparent)), url(../img/main/mainLink3.png);
+    background: linear-gradient(90deg, #f5f5f5 50%, transparent 70%), url(../img/main/mainLink3.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100%, 50%;
+  }
+  .section-links .link:nth-child(4) {
+    background: -webkit-gradient(linear, left top, right top, color-stop(60%, #f5f5f5), color-stop(70%, transparent)), url(../img/main/mainLink4.png);
+    background: linear-gradient(90deg, #f5f5f5 60%, transparent 70%), url(../img/main/mainLink4.png);
+    background-position: 100%, right 90%;
+    background-repeat: no-repeat;
+    background-size: 100%, 40%;
+  }
+}
+
+@media (min-width: 960px) {
+  .section-links .link {
+    width: 100%;
+    height: 580px;
+    color: #4f4f4f;
+  }
+  .section-links .link ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+  }
+  .section-links .link h3 {
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+  }
+  .section-links .link li {
+    font-size: 18px;
+    margin: 5px;
+  }
+  .section-links .link:nth-child(1) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #edeeeb), color-stop(70%, transparent)), url(../img/main/mainLink1.png);
+    background: linear-gradient(180deg, #edeeeb 60%, transparent 70%), url(../img/main/mainLink1.png);
+    background-position: 100%, bottom;
+    background-repeat: no-repeat;
+    background-size: 100%, 150%;
+  }
+  .section-links .link:nth-child(2) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #f5f5f5), color-stop(80%, transparent)), url(../img/main/mainLink2.png);
+    background: linear-gradient(180deg, #f5f5f5 60%, transparent 80%), url(../img/main/mainLink2.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 300%;
+  }
+  .section-links .link:nth-child(3) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f5f5f5), color-stop(60%, transparent)), url(../img/main/mainLink3.png);
+    background: linear-gradient(180deg, #f5f5f5 40%, transparent 60%), url(../img/main/mainLink3.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 150%;
+  }
+  .section-links .link:nth-child(4) {
+    background: url(../img/main/mainLink4.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-links .link {
+    height: 680px;
+    color: #4f4f4f;
+  }
+  .section-links .link h3 {
+    font-size: 34px;
+  }
+  .section-links .link li {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .section-links .link:nth-child(1) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #edeeeb), color-stop(70%, transparent)), url(../img/main/mainLink1.png);
+    background: linear-gradient(180deg, #edeeeb 60%, transparent 70%), url(../img/main/mainLink1.png);
+    background-position: 100%, bottom;
+    background-repeat: no-repeat;
+    background-size: 100%, 120%;
+  }
+  .section-links .link:nth-child(2) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #d6e0ea), color-stop(65%, transparent)), url(../img/main/mainLink2.png);
+    background: linear-gradient(180deg, #d6e0ea 60%, transparent 65%), url(../img/main/mainLink2.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%, 280%;
+  }
+  .section-links .link:nth-child(3) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f5f5f5), color-stop(60%, transparent)), url(../img/main/mainLink3.png);
+    background: linear-gradient(180deg, #f5f5f5 40%, transparent 60%), url(../img/main/mainLink3.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 130%;
+  }
+  .section-links .link:nth-child(4) {
+    background: url(../img/main/mainLink4.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.section-galery button img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: cover;
+     object-position: cover;
+}
+
 .footer {
   height: 50px;
   background: #000;
