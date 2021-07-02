@@ -1,0 +1,96 @@
+.section-galery {
+    & > button {
+        background: $gold_color;
+        border-radius: 2px;
+        width: 377px;
+        width: 100%;
+        height: 56px;
+        font-weight: bold;
+        font-size: 18px;
+        @media (min-width: 760px) {
+            width: 247px;
+        }
+        @media (min-width: 1200px) {
+            width: 377px;
+        }
+    }
+    &__wrapper {
+        .grid-item {
+            max-width: 360px;
+            height: 320px;
+            margin: 5px;
+            overflow: hidden;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .grid-item--width2 {
+            max-width: 730px;
+        }
+
+        .grid-item--height2 {
+            height: 410px;
+        }
+        .grid-item--height3 {
+            height: 500px;
+        }
+
+        @media (max-width: 1200px) {
+            .grid-item,
+            .grid-item--width2,
+            .grid-item--height2,
+            .grid-item--height3 {
+                min-width: 47%;
+                width: min-content;
+                height: 320px;
+                margin: 10px;
+            }
+            .grid-item {
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+        @media (max-width: 760px) {
+            .grid-item,
+            .grid-item--width2,
+            .grid-item--height2,
+            .grid-item--height3 {
+                min-width: 100%;
+                margin: 0 0 10px 0;
+                width: min-content;
+                height: 320px;
+            }
+            .grid-item {
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+/* clear fix */
+.grid:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#gallerymodal {
+    display: none;
+    max-width: 1170px;
+    & img {
+        max-height: 700px;
+        object-fit: contain;
+    }
+    & .description button {
+        background: $gold_color;
+        border-radius: 2px;
+        width: 426px;
+        height: 56px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}

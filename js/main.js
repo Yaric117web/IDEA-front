@@ -1,9 +1,7 @@
-// Menu open on click
 /**
- * function hendlerClick
- * Add event 
+ * Menu open on click
  */
-$(".header__button").on("click", function hendlerClick() {
+$(".header__button").on("click", function () {
     $(".header-dropmenu").addClass("open")
     $(".header-closemenu").addClass("open")
     $(".header-mask").addClass("open")
@@ -22,10 +20,12 @@ $(".header-mask").on("click", function () {
     $("body").removeClass("open")
 })
 
-
-$(".section-galery__img img").on("click", function hendlerClick() {
-    $(".header-dropmenu").addClass("open")
-    $(".header-closemenu").addClass("open")
-    $(".header-mask").addClass("open")
-    $("body").addClass("open")
-})
+/**
+ * Masonry lib option
+ */
+$('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 5,
+    gutter: 0,
+    percentPosition: true
+});

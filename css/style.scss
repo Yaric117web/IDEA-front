@@ -546,14 +546,7 @@ $header_link_color: #4f4f4f;
                 }
             }
         }
-    }
-    // Block Galery
-    &-galery {
-        & button img {
-            object-fit: cover;
-            object-position: cover;
-        }
-    }
+    }    
 }
 // Content end
 
@@ -629,3 +622,4 @@ $header_link_color: #4f4f4f;
     }
 }
 // Modal Back call end
+@import "_gallery.scss";
