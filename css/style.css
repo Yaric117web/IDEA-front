@@ -4,17 +4,105 @@
 *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   list-style-type: none;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/futura-pt-bold.eot");
+  src: local("☺"), url("../fonts/futura-pt-bold.woff") format("woff"), url("../fonts/futura-pt-bold.ttf") format("truetype"), url("../fonts/futura-pt-bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/futura-pt-book.eot");
+  src: local("☺"), url("../fonts/futura-pt-book.woff") format("woff"), url("../fonts/futura-pt-book.ttf") format("truetype"), url("../fonts/futura-pt-book.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/futura-pt-demi.eot");
+  src: local("☺"), url("../fonts/futura-pt-demi.woff") format("woff"), url("../fonts/futura-pt-demi.ttf") format("truetype"), url("../fonts/futura-pt-demi.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("../fonts/SourceSerifPro-Regular.eot");
+  src: local("☺"), url("../fonts/SourceSerifPro-Regular.woff") format("woff"), url("../fonts/SourceSerifPro-Regular.ttf") format("truetype"), url("../fonts/SourceSerifPro-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #363636;
+  background: #e8c8a4;
+}
+
+button:hover {
+  background: #f9dab8;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+@media (min-width: 300px) {
+  h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+  }
+}
+
+@media (min-width: 560px) {
+  h2 {
+    font-weight: 450;
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1020px) {
+  h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+body.open {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Futura PT";
 }
 
 ::-webkit-scrollbar {
   /* chrome based */
-  width: 0px;
+  width: 10px;
   /* ширина scrollbar'a */
   background: transparent;
   /* опционально */
+  /* в Москве и Московской области */
 }
 
 html {
@@ -55,20 +143,8 @@ details[open] summary:after {
   margin-top: 12px;
 }
 
-body.open {
-  overflow: hidden;
-}
-
-.wrapper {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
 .header {
   background: none;
-  padding: 0;
-  position: fixed;
   height: 80px;
 }
 
@@ -138,14 +214,14 @@ body.open {
 }
 
 .header-dropmenu {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: none;
-  transition: none;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: none;
+  transition: none;
   width: 0;
   height: 100vh;
   background: #ffffff;
@@ -155,6 +231,7 @@ body.open {
 
 .header-dropmenu__list {
   color: #4f4f4f;
+  height: 90vh;
 }
 
 .header-dropmenu__list summary,
@@ -309,6 +386,13 @@ body.open {
   }
 }
 
+@media (min-width: 560px) {
+  .slider .pagination {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 .slider .pagination.active {
   background: #e8c8a4;
 }
@@ -372,6 +456,7 @@ body.open {
       -ms-flex-pack: center;
           justify-content: center;
   white-space: nowrap;
+  font-family: "Source Serif Pro";
 }
 
 .slider-page__info .title span {
@@ -434,63 +519,56 @@ body.open {
 }
 
 @media (min-width: 300px) {
-  .section-links .link {
+  .links .link {
     width: 100%;
     height: 470px;
     color: #4f4f4f;
   }
-  .section-links .link h3 {
+  .links .link h3 {
     font-weight: bold;
     font-size: 24px;
   }
-  .section-links .link li {
+  .links .link li {
     font-size: 20px;
-    margin: 5px 0px;
+    margin-top: 5px;
   }
-  .section-links .link li a {
-    color: inherit;
-  }
-  .section-links .link li span {
+  .links .link li a {
     display: block;
-    max-width: 250px;
+    max-width: 300px;
   }
-  .section-links .link:nth-child(1) {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #edeeeb), color-stop(60%, transparent)), url(../img/main/mainLink1.png);
-    background: linear-gradient(180deg, #edeeeb 55%, transparent 60%), url(../img/main/mainLink1.png);
+  .links .link:nth-child(1) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f5f5f5), color-stop(70%, transparent)), url(../img/main/mainLink1.png) no-repeat bottom;
+    background: linear-gradient(180deg, #f5f5f5 50%, transparent 70%), url(../img/main/mainLink1.png) no-repeat bottom;
+    background-size: contain;
+  }
+  .links .link:nth-child(2) {
+    background: -webkit-gradient(linear, left top, left bottom, from(#d6e0ea), color-stop(50%, transparent)), url(../img/main/mainLink2.png);
+    background: linear-gradient(180deg, #d6e0ea 0%, transparent 50%), url(../img/main/mainLink2.png);
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: 100%, 100%;
+    background-size: cover;
   }
-  .section-links .link:nth-child(2) {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #d6e0ea), color-stop(60%, transparent)), url(../img/main/mainLink2.png);
-    background: linear-gradient(180deg, #d6e0ea 50%, transparent 60%), url(../img/main/mainLink2.png);
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: 230%;
-  }
-  .section-links .link:nth-child(3) {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #f5f5f5), color-stop(60%, transparent)), url(../img/main/mainLink3.png);
-    background: linear-gradient(180deg, #f5f5f5 30%, transparent 60%), url(../img/main/mainLink3.png);
+  .links .link:nth-child(3) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f5f5f5), color-stop(60%, transparent)), url(../img/main/mainLink3.png);
+    background: linear-gradient(180deg, #f5f5f5 40%, transparent 60%), url(../img/main/mainLink3.png);
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  .section-links .link:nth-child(4) {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(-10%, #f9faf8), color-stop(60%, transparent)), url(../img/main/mainLink4.png);
-    background: linear-gradient(180deg, #f9faf8 -10%, transparent 60%), url(../img/main/mainLink4.png);
+  .links .link:nth-child(4) {
+    background: url(../img/main/mainLink4.png);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  .section-links .link {
+  .links .link {
     width: 100%;
     height: 256px;
-    color: #4f4f4f;
   }
-  .section-links .link ul {
+  .links .link ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -500,43 +578,37 @@ body.open {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 200px;
+    height: 140px;
     width: 70%;
-    margin-top: 15px;
   }
-  .section-links .link h3 {
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 15px;
-  }
-  .section-links .link li {
+  .links .link li {
     font-size: 18px;
-    margin: 12px 50px 12px 0;
+    margin-bottom: 5px;
   }
-  .section-links .link:nth-child(1) {
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #edeeeb), color-stop(70%, transparent)), url(../img/main/mainLink1.png);
-    background: linear-gradient(90deg, #edeeeb 50%, transparent 70%), url(../img/main/mainLink1.png);
+  .links .link:nth-child(1) {
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #edeeeb), color-stop(55%, transparent)), url(../img/main/mainLink1.png);
+    background: linear-gradient(90deg, #edeeeb 50%, transparent 55%), url(../img/main/mainLink1.png);
     background-position: 100%, right;
     background-repeat: no-repeat;
-    background-size: 100%, 50%;
+    background-size: contain;
   }
-  .section-links .link:nth-child(2) {
-    background: -webkit-gradient(linear, left top, right top, from(#f5f5f5), to(transparent)), url(../img/main/mainLink2.png);
-    background: linear-gradient(90deg, #f5f5f5 0%, transparent 100%), url(../img/main/mainLink2.png);
+  .links .link:nth-child(2) {
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #d6e0ea), color-stop(60%, transparent)), url(../img/main/mainLink2.png);
+    background: linear-gradient(90deg, #d6e0ea 50%, transparent 60%), url(../img/main/mainLink2.png);
     background-position: 100%, right;
     background-repeat: no-repeat;
     background-size: 100%, contain;
   }
-  .section-links .link:nth-child(3) {
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f5f5f5), color-stop(70%, transparent)), url(../img/main/mainLink3.png);
-    background: linear-gradient(90deg, #f5f5f5 50%, transparent 70%), url(../img/main/mainLink3.png);
+  .links .link:nth-child(3) {
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f1f3f4), color-stop(70%, transparent)), url(../img/main/mainLink3.png);
+    background: linear-gradient(90deg, #f1f3f4 50%, transparent 70%), url(../img/main/mainLink3.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 100%, 50%;
   }
-  .section-links .link:nth-child(4) {
-    background: -webkit-gradient(linear, left top, right top, color-stop(60%, #f5f5f5), color-stop(70%, transparent)), url(../img/main/mainLink4.png);
-    background: linear-gradient(90deg, #f5f5f5 60%, transparent 70%), url(../img/main/mainLink4.png);
+  .links .link:nth-child(4) {
+    background: -webkit-gradient(linear, left top, right top, color-stop(60%, #e8e9eb), color-stop(70%, transparent)), url(../img/main/mainLink4.png);
+    background: linear-gradient(90deg, #e8e9eb 60%, transparent 70%), url(../img/main/mainLink4.png);
     background-position: 100%, right 90%;
     background-repeat: no-repeat;
     background-size: 100%, 40%;
@@ -544,12 +616,11 @@ body.open {
 }
 
 @media (min-width: 960px) {
-  .section-links .link {
+  .links .link {
     width: 100%;
     height: 580px;
-    color: #4f4f4f;
   }
-  .section-links .link ul {
+  .links .link ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -557,42 +628,38 @@ body.open {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     height: auto;
     width: 100%;
   }
-  .section-links .link h3 {
+  .links .link h3 {
     font-size: 20px;
-    width: 100%;
-    margin: 0;
   }
-  .section-links .link li {
+  .links .link li {
     font-size: 18px;
     margin: 5px;
   }
-  .section-links .link:nth-child(1) {
+  .links .link:nth-child(1) {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #edeeeb), color-stop(70%, transparent)), url(../img/main/mainLink1.png);
     background: linear-gradient(180deg, #edeeeb 60%, transparent 70%), url(../img/main/mainLink1.png);
     background-position: 100%, bottom;
     background-repeat: no-repeat;
     background-size: 100%, 150%;
   }
-  .section-links .link:nth-child(2) {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #f5f5f5), color-stop(80%, transparent)), url(../img/main/mainLink2.png);
-    background: linear-gradient(180deg, #f5f5f5 60%, transparent 80%), url(../img/main/mainLink2.png);
+  .links .link:nth-child(2) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #d6e0ea), color-stop(80%, transparent)), url(../img/main/mainLink2.png);
+    background: linear-gradient(180deg, #d6e0ea 50%, transparent 80%), url(../img/main/mainLink2.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 300%;
   }
-  .section-links .link:nth-child(3) {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f5f5f5), color-stop(60%, transparent)), url(../img/main/mainLink3.png);
-    background: linear-gradient(180deg, #f5f5f5 40%, transparent 60%), url(../img/main/mainLink3.png);
-    background-position: bottom right;
+  .links .link:nth-child(3) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #f5f5f5), color-stop(70%, transparent)), url(../img/main/mainLink3.png);
+    background: linear-gradient(180deg, #f5f5f5 55%, transparent 70%), url(../img/main/mainLink3.png);
+    background-position: 70% 100%;
     background-repeat: no-repeat;
     background-size: 150%;
   }
-  .section-links .link:nth-child(4) {
+  .links .link:nth-child(4) {
     background: url(../img/main/mainLink4.png);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -601,44 +668,313 @@ body.open {
 }
 
 @media (min-width: 1440px) {
-  .section-links .link {
+  .links .link {
     height: 680px;
     color: #4f4f4f;
   }
-  .section-links .link h3 {
+  .links .link h3 {
     font-size: 34px;
   }
-  .section-links .link li {
+  .links .link li {
     font-size: 20px;
-    margin: 0px;
   }
-  .section-links .link:nth-child(1) {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #edeeeb), color-stop(70%, transparent)), url(../img/main/mainLink1.png);
-    background: linear-gradient(180deg, #edeeeb 60%, transparent 70%), url(../img/main/mainLink1.png);
+  .links .link:nth-child(1) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #edeeeb), color-stop(70%, transparent)), url(../img/main/mainLink1.png);
+    background: linear-gradient(180deg, #edeeeb 65%, transparent 70%), url(../img/main/mainLink1.png);
     background-position: 100%, bottom;
     background-repeat: no-repeat;
     background-size: 100%, 120%;
   }
-  .section-links .link:nth-child(2) {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #d6e0ea), color-stop(65%, transparent)), url(../img/main/mainLink2.png);
-    background: linear-gradient(180deg, #d6e0ea 60%, transparent 65%), url(../img/main/mainLink2.png);
+  .links .link:nth-child(2) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #d6e0ea), color-stop(50%, transparent)), url(../img/main/mainLink2.png);
+    background: linear-gradient(180deg, #d6e0ea 40%, transparent 50%), url(../img/main/mainLink2.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 100%, 280%;
   }
-  .section-links .link:nth-child(3) {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f5f5f5), color-stop(60%, transparent)), url(../img/main/mainLink3.png);
-    background: linear-gradient(180deg, #f5f5f5 40%, transparent 60%), url(../img/main/mainLink3.png);
+  .links .link:nth-child(3) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #f5f5f5), color-stop(70%, transparent)), url(../img/main/mainLink3.png);
+    background: linear-gradient(180deg, #f5f5f5 55%, transparent 70%), url(../img/main/mainLink3.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 130%;
   }
-  .section-links .link:nth-child(4) {
+  .links .link:nth-child(4) {
     background: url(../img/main/mainLink4.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+@media (min-width: 1800px) {
+  .links .link {
+    height: 680px;
+  }
+  .links .link:nth-child(1) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #edeeeb), color-stop(60%, transparent)), url(../img/main/mainLink1.png);
+    background: linear-gradient(180deg, #edeeeb 50%, transparent 60%), url(../img/main/mainLink1.png);
+    background-position: 100%, bottom;
+    background-repeat: no-repeat;
+    background-size: 100%, 120%;
+  }
+  .links .link:nth-child(2) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #d6e0ea), color-stop(50%, transparent)), url(../img/main/mainLink2.png);
+    background: linear-gradient(180deg, #d6e0ea 40%, transparent 50%), url(../img/main/mainLink2.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%, 280%;
+  }
+  .links .link:nth-child(3) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #f5f5f5), color-stop(70%, transparent)), url(../img/main/mainLink3.png);
+    background: linear-gradient(180deg, #f5f5f5 35%, transparent 70%), url(../img/main/mainLink3.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 130%;
+  }
+  .links .link:nth-child(4) {
+    background: url(../img/main/mainLink4.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.section-galery > button {
+  background: #e8c8a4;
+  border-radius: 2px;
+  width: 377px;
+  width: 100%;
+  height: 56px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (min-width: 760px) {
+  .section-galery > button {
+    width: 247px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-galery > button {
+    width: 377px;
+  }
+}
+
+.section-galery__wrapper {
+  grid-gap: 30px;
+}
+
+.section-galery__wrapper .grid-item {
+  max-width: 350px;
+  height: 320px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.section-galery__wrapper .grid-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-galery__wrapper .grid-item--width2 {
+  max-width: 720px;
+}
+
+.section-galery__wrapper .grid-item--height2 {
+  height: 410px;
+}
+
+.section-galery__wrapper .grid-item--height3 {
+  height: 500px;
+}
+
+@media (max-width: 1200px) {
+  .section-galery__wrapper .grid-item,
+  .section-galery__wrapper .grid-item--width2,
+  .section-galery__wrapper .grid-item--height2,
+  .section-galery__wrapper .grid-item--height3 {
+    min-width: 47%;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    height: 320px;
+    margin: 10px;
+  }
+  .section-galery__wrapper .grid-item:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .section-galery__wrapper .grid-item,
+  .section-galery__wrapper .grid-item--width2,
+  .section-galery__wrapper .grid-item--height2,
+  .section-galery__wrapper .grid-item--height3 {
+    min-width: 100%;
+    margin: 0 0 10px 0;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    height: 320px;
+  }
+  .section-galery__wrapper .grid-item:last-child {
+    display: none;
+  }
+}
+
+/* clear fix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.section_baner_form {
+  background: url(../img/main/mainBaner2.jpg) no-repeat center;
+}
+
+.section_baner_form .title {
+  width: 443px;
+}
+
+@media (min-width: 300px) {
+  .section_baner_form {
+    min-height: 738px;
+    background-size: contain;
+    background-position: bottom;
+  }
+}
+
+@media (min-width: 768px) {
+  .section_baner_form {
+    background-size: auto;
+    background-position: bottom;
+  }
+}
+
+@media (min-width: 300px) {
+  .block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1000px) {
+  .block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 300px) {
+  .preliminary_value {
+    -webkit-box-shadow: 0px 2px 50px rgba(145, 145, 145, 0.25);
+            box-shadow: 0px 2px 50px rgba(145, 145, 145, 0.25);
+    border-radius: 4px;
+    max-width: 990px;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .preliminary_value {
+    width: 430px;
+  }
+}
+
+@media (min-width: 1060px) {
+  .preliminary_value {
+    width: auto;
+  }
+}
+
+.preliminary_value ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+
+@media (min-width: 300px) {
+  .preliminary_value ul > li {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 56px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 430px) {
+  .preliminary_value ul > li {
+    min-width: 350px;
+    max-width: 45%;
+  }
+}
+
+.preliminary_value input,
+.preliminary_value button,
+.preliminary_value select,
+.preliminary_value .meter {
+  width: 100%;
+  height: 56px;
+  padding: 0 24px;
+}
+
+.preliminary_value input {
+  background: none;
+  border: 2px solid #dedede;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #a5a5a5;
+}
+
+.preliminary_value button {
+  color: #363636;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  background: #e8c8a4;
+}
+
+.preliminary_value button:hover {
+  background: #f9dab8;
+}
+
+.preliminary_value label input {
+  width: 24px;
+  height: 24px;
+}
+
+.preliminary_value .meter {
+  border: 2px solid #dedede;
+}
+
+.preliminary_value .meter input {
+  height: 100%;
+  width: 50%;
+  border: none;
+  border-left: 2px solid #dedede;
+}
+
+.preliminary_value select {
+  font-weight: bold;
+  border: 2px solid #dedede;
 }
 
 .footer {
@@ -706,112 +1042,46 @@ body.open {
   }
 }
 
-.section-galery > button {
-  background: #e8c8a4;
-  border-radius: 2px;
-  width: 377px;
-  width: 100%;
-  height: 56px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-@media (min-width: 760px) {
-  .section-galery > button {
-    width: 247px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-galery > button {
-    width: 377px;
-  }
-}
-
-.section-galery__wrapper .grid-item {
-  max-width: 360px;
-  height: 320px;
-  margin: 5px;
-  overflow: hidden;
-}
-
-.section-galery__wrapper .grid-item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.section-galery__wrapper .grid-item--width2 {
-  max-width: 730px;
-}
-
-.section-galery__wrapper .grid-item--height2 {
-  height: 410px;
-}
-
-.section-galery__wrapper .grid-item--height3 {
-  height: 500px;
-}
-
-@media (max-width: 1200px) {
-  .section-galery__wrapper .grid-item,
-  .section-galery__wrapper .grid-item--width2,
-  .section-galery__wrapper .grid-item--height2,
-  .section-galery__wrapper .grid-item--height3 {
-    min-width: 47%;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    height: 320px;
-    margin: 10px;
-  }
-  .section-galery__wrapper .grid-item:last-child {
-    display: none;
-  }
-}
-
-@media (max-width: 760px) {
-  .section-galery__wrapper .grid-item,
-  .section-galery__wrapper .grid-item--width2,
-  .section-galery__wrapper .grid-item--height2,
-  .section-galery__wrapper .grid-item--height3 {
-    min-width: 100%;
-    margin: 0 0 10px 0;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    height: 320px;
-  }
-  .section-galery__wrapper .grid-item:last-child {
-    display: none;
-  }
-}
-
-/* clear fix */
-.grid:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-#gallerymodal {
+.gallerymodal {
   display: none;
   max-width: 1170px;
+  width: 100%;
 }
 
-#gallerymodal img {
+.gallerymodal > img {
+  max-width: 100%;
   max-height: 700px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  margin: 0 auto;
 }
 
-#gallerymodal .description button {
-  background: #e8c8a4;
-  border-radius: 2px;
-  width: 426px;
-  height: 56px;
-  font-weight: bold;
-  font-size: 18px;
+@media (min-width: 300px) {
+  .gallerymodal .description {
+    font-size: 14px;
+  }
+  .gallerymodal .description button {
+    background: #e8c8a4;
+    border-radius: 2px;
+    font-weight: bold;
+    width: 100%;
+    height: 36px;
+    font-size: 16px;
+  }
+  .gallerymodal .description h2 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 770px) {
+  .gallerymodal .description {
+    font-size: 24px;
+  }
+  .gallerymodal .description button {
+    width: 426px;
+    height: 56px;
+    font-size: 18px;
+  }
+  .gallerymodal .description h2 {
+    font-size: 34px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

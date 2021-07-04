@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Menu open on click
  */

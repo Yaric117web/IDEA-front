@@ -1,0 +1,97 @@
+$gold_color: #e8c8a4;
+$input_color: #a5a5a5;
+$gold_color_hover: #f9dab8;
+$header_text_color: #464646;
+$header_link_color: #4f4f4f;
+$button_color: #363636;
+
+button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: $button_color;
+    background: $gold_color;
+    &:hover {
+        background: $gold_color_hover;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+h2 {
+    @media (min-width: 300px) {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -0.03em;
+    }
+    @media (min-width: 560px) {
+        font-weight: 450;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    @media (min-width: 1020px) {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+// *****************
+
+body.open {
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: "Futura PT";
+}
+
+::-webkit-scrollbar {
+    /* chrome based */
+    width: 10px; /* ширина scrollbar'a */
+    background: transparent; /* опционально */
+    /* в Москве и Московской области */
+}
+
+html {
+    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+button {
+    border: none;
+}
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+    display: none;
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+    display: flex;
+    height: auto;
+}
+
+/* Добавляем собственный маркер для закрытого состояния */
+details summary:after {
+    content: url("../img/header/arrowmenu.png");
+    margin-left: 8px;
+}
+
+/* Добавляем собственный маркер для открытого состояния */
+details[open] summary:after {
+    content: url("../img/header/arrowmenu.png");
+    transform: rotateX(180deg);
+    margin-top: 12px;
+}

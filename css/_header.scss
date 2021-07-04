@@ -1,0 +1,196 @@
+// Header
+
+.header {
+    background: none;
+    height: 80px;
+
+    // Menu Button
+    &__button {
+        background: $gold_color;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        @media (min-width: 300px) {
+            width: 64px;
+            height: 64px;
+        }
+        @media (min-width: 1200px) {
+            width: 80px;
+            height: 80px;
+        }
+
+        &:hover {
+            background: $gold_color_hover;
+        }
+    }
+
+    // Menu decoration
+    &-menu {
+        height: 100vh;
+        border-right: 1px solid $gold_color;
+        background: url(../img/header/menuBG.png);
+        position: relative;
+        z-index: -1;
+
+        @media (min-width: 960px) {
+            width: 64px;
+            display: block;
+        }
+        @media (min-width: 1200px) {
+            width: 80px;
+        }
+
+        &__mouse {
+            position: absolute;
+            bottom: 45px;
+            display: none;
+            @media (min-width: 960px) {
+                left: 10px;
+                display: block;
+            }
+            @media (min-width: 1200px) {
+                left: 20px;
+            }
+        }
+    }
+
+    // Drop menu block
+    &-dropmenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+        transition: none;
+        width: 0;
+        height: 100vh;
+        background: #ffffff;
+        padding: 16px 20px;
+        overflow-y: scroll;
+
+        &__list {
+            color: $header_link_color;
+            height: 90vh;
+
+            & summary,
+            & .menulinks {
+                font-weight: 450;
+                font-size: 24px;
+                line-height: 40px;
+                color: inherit;
+            }
+
+            & .details-list {
+                padding-left: 16px;
+                & a {
+                    color: inherit;
+                    font-size: 18px;
+                }
+            }
+        }
+        &.open {
+            min-width: 300px;
+            visibility: visible;
+            opacity: 1;
+            z-index: 2;
+        }
+    }
+
+    // Mask
+    &-mask {
+        display: none;
+        &.open {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: #000000;
+            opacity: 0.5;
+        }
+    }
+
+    // Close drop menu button
+    &-closemenu {
+        visibility: hidden;
+        opacity: 0;
+        transition: none;
+        position: absolute;
+        left: 320px;
+        top: 30px;
+        z-index: -1;
+        font-size: 50px;
+        background: none;
+        line-height: 0;
+        color: $gold_color;
+
+        &:hover {
+            color: $header_text_color;
+        }
+        &.open {
+            visibility: visible;
+            opacity: 1;
+            z-index: 2;
+        }
+    }
+
+    // Navigation
+    &-nav {
+        width: 1170px;
+        margin: 0 auto;
+        height: inherit;
+        color: $header_text_color;
+        @media (min-width: 300px) {
+            height: 64px;
+        }
+        @media (min-width: 1200px) {
+            height: 80px;
+        }
+
+        &__logo {
+            @media (min-width: 300px) {
+                & img {
+                    height: 44px;
+                }
+            }
+            @media (min-width: 1200px) {
+                & img {
+                    height: 52px;
+                }
+            }
+        }
+
+        &__address {
+            & > span {
+                &:first-child {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                &:last-child {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &__phone {
+            color: inherit;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        &__backcall {
+            border-radius: 2px;
+            font-weight: bold;
+            width: 220px;
+            height: 48px;
+            background: $gold_color;
+            &:hover {
+                background: $gold_color_hover;
+            }
+        }
+    }
+}

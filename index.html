@@ -8,18 +8,17 @@
     <title>idea</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/fancybox.css">
-    <link rel="stylesheet" type="text/css" href="css/carousel.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+
     <!-- Wrapper -->
     <div class="wrapper d-flex flex-column">
 
         <!-- Header -->
-        <div class="header fixed-top d-flex">
+        <div class="header container-fluid fixed-top d-flex p-0">
 
             <!-- Menu button -->
             <button class="header__button d-flex align-items-center justify-content-center">
@@ -29,9 +28,9 @@
                 <img class="header-menu__mouse" src="./img/header/mouse.svg" alt="Mouse">
             </div>
 
-            <!-- Menu block -->
+            <!-- Menu dropblock -->
             <div class="header-dropmenu">
-                <ul class="header-dropmenu__list p-0">
+                <ul class="header-dropmenu__list p-0 d-flex align-items-start flex-column">
                     <li>
                         <details class="details">
                             <summary>Ремонт</summary>
@@ -86,13 +85,27 @@
                     <li>
                         <a href="#" class="menulinks">Реализованные проекты</a>
                     </li>
-                    <li>
+                    <li class="mb-auto">
                         <a href="#" class="menulinks">Контакты</a>
                     </li>
                     <li>
-
+                        <a href="#" class="header-nav__phone d-flex">
+                            <span>+7(499) 755 96 64</span>
+                            <img class="ml-2" src="./img/header/whatsapp.png" alt="whatsapp">
+                        </a>
                     </li>
-                    <li></li>
+                    <li>
+                        <div class="header-nav__address d-flex flex-column mt-2">
+                            <span>skidea@yandex.ru</span>
+                            <span>Кировоградская, д.2</span>
+                        </div>
+                    </li>
+                    <li>
+                        <button data-toggle="modal" data-target="#backcallmodal"
+                            class="header-nav__backcall d-lg-none d-md-block mt-4">
+                            Обратный звонок
+                        </button>
+                    </li>
                 </ul>
             </div>
 
@@ -117,13 +130,9 @@
                     <img src="./img/header/whatsapp.png" alt="whatsapp">
                     <span class="ml-2">+7(499) 755 96 64</span>
                 </a>
-                <button data-toggle="modal" data-target="#backcallmodal"
-                    class="header-nav__backcall d-md-none d-none d-lg-block ">
-                    Обратный звонок
-                </button>
             </nav> -->
             <button data-toggle="modal" data-target="#backcallmodal"
-                class="header-nav__backcall d-md-none d-none d-lg-block ml-auto mt-3 mr-3">
+                class="header-nav__backcall d-none d-md-none d-lg-block ml-auto mt-3 mr-3">
                 Обратный звонок
             </button>
 
@@ -134,7 +143,7 @@
 
             <!-- Baner slider-->
             <section id="sliderBaner" class="carousel slide slider" data-ride="carousel">
-                <ol class="carousel-indicators ol">
+                <ol class="carousel-indicators ol d-xl-flex d-none">
                     <li class="pagination active" data-target="#sliderBaner" data-slide-to="0"></li>
                     <li class="pagination" data-target="#sliderBaner" data-slide-to="1"></li>
                     <li class="pagination" data-target="#sliderBaner" data-slide-to="2"></li>
@@ -185,10 +194,10 @@
             </section>
 
             <!-- Links baner -->
-            <section class="section-links d-lg-flex container-fluid p-0 m-0">
+            <section class="links d-lg-flex container-fluid p-0 m-0">
                 <div class="link d-flex flex-column mt-3 pl-3 pt-4 pt-sm-4 p-lg-4 p-xl-5 mr-lg-3 mt-lg-0">
-                    <h3>Ремонт</h3>
-                    <ul class="p-0">
+                    <h3 class="mb-4 mb-md-4 mt-md-4">Ремонт</h3>
+                    <ul>
                         <li>
                             <a href="#">Ремонт квартир</a>
                         </li>
@@ -203,17 +212,15 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span>
-                                    Ремонт автомоек, складов,
-                                    административных помещений,
-                                    рестораны и т.д.
-                                </span>
+                                Ремонт автомоек, складов,
+                                административных помещений,
+                                рестораны и т.д.
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="link d-flex flex-column mt-3 pl-3 pt-5 pt-sm-4 p-lg-4 p-xl-5 mr-lg-3 mt-lg-0">
-                    <h3>Строительство</h3>
+                    <h3 class="mb-4 mb-md-4 mt-md-4">Строительство</h3>
                     <ul class="p-0">
                         <li>
                             <a href="#">Cтроительство домов</a>
@@ -227,7 +234,7 @@
                     </ul>
                 </div>
                 <div class="link d-flex flex-column mt-3 pl-3 pt-5 pt-sm-4 p-lg-4 p-xl-5 mr-lg-3 mt-lg-0">
-                    <h3>Ремонт домов</h3>
+                    <h3 class="mb-4 mb-md-4 mt-md-4">Ремонт домов</h3>
                     <ul class="p-0">
                         <li>
                             <a href="#">Комплексный ремонт</a>
@@ -239,7 +246,7 @@
                     </ul>
                 </div>
                 <div class="link d-flex flex-column mt-3 pl-3 pt-5 pt-sm-4 p-lg-4 p-xl-5 mt-lg-0">
-                    <h3>Проектирование</h3>
+                    <h3 class="mb-4 mb-md-4 mt-md-4">Проектирование</h3>
                     <ul class="p-0">
                         <li>
                             <a href="#">Обмеры</a>
@@ -253,7 +260,6 @@
 
                     </ul>
                 </div>
-
             </section>
 
             <!-- Galery -->
@@ -261,29 +267,129 @@
                 <h2 class="section-galery__title mb-5">Наши работы</h2>
                 <div class="section-galery__wrapper grid">
                     <div class="grid-item grid-item--height2">
+                        <!-- Link to modal -->
                         <a data-fancybox="gallery" href="#gallerymodal">
                             <img src="./img/gallery/1.png" alt="Gallery Image">
                         </a>
+                        <!-- Modal -->
+                        <div class="gallerymodal" id="gallerymodal">
+                            <img src="./img/gallery/1.png" alt="Gallery Image">
+                            <div class="description pt-5">
+                                <h2>Ремонт двушки в сталинке под ключ </h2>
+                                <p>Вариантов исправления такой ситуации только два -
+                                    использовать гипсокартон для
+                                    обшивки стены, либо выравнивать стены заново с помощью
+                                    штукатурки. исправления
+                                    такой ситуации только два - использовать гипсокартон для
+                                    обшивки стены, либо
+                                    выравнивать стены заново с помощью штукатурки. </p>
+                                <address>
+                                    <img src="./img/svg/location.svg" alt="location">
+                                    Москва, ул. Московская, 12/4
+                                </address>
+                                <button class="aaa">Посмотреть подробнее</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="grid-item grid-item--width2 grid-item--height3">
+                        <!-- Link to modal -->
                         <a data-fancybox="gallery" href="#gallerymodal">
                             <img src="./img/gallery/2.png" alt="Gallery Image">
                         </a>
+                        <!-- Modal -->
+                        <div class="gallerymodal" id="gallerymodal">
+                            <img src="./img/gallery/2.png" alt="Gallery Image">
+                            <div class="description pt-5">
+                                <h2>Ремонт двушки в сталинке под ключ </h2>
+                                <p>Вариантов исправления такой ситуации только два -
+                                    использовать гипсокартон для
+                                    обшивки стены, либо выравнивать стены заново с помощью
+                                    штукатурки. исправления
+                                    такой ситуации только два - использовать гипсокартон для
+                                    обшивки стены, либо
+                                    выравнивать стены заново с помощью штукатурки. </p>
+                                <address>
+                                    <img src="./img/svg/location.svg" alt="location">
+                                    Москва, ул. Московская, 12/4
+                                </address>
+                                <button class="aaa">Посмотреть подробнее</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="grid-item grid-item--height2">
+                        <!-- Link to modal -->
                         <a data-fancybox="gallery" href="#gallerymodal">
                             <img src="./img/gallery/3.png" alt="Gallery Image">
                         </a>
+                        <!-- Modal -->
+                        <div class="gallerymodal" id="gallerymodal">
+                            <img src="./img/gallery/3.png" alt="Gallery Image">
+                            <div class="description pt-5">
+                                <h2>Ремонт двушки в сталинке под ключ </h2>
+                                <p>Вариантов исправления такой ситуации только два -
+                                    использовать гипсокартон для
+                                    обшивки стены, либо выравнивать стены заново с помощью
+                                    штукатурки. исправления
+                                    такой ситуации только два - использовать гипсокартон для
+                                    обшивки стены, либо
+                                    выравнивать стены заново с помощью штукатурки. </p>
+                                <address>
+                                    <img src="./img/svg/location.svg" alt="location">
+                                    Москва, ул. Московская, 12/4
+                                </address>
+                                <button class="aaa">Посмотреть подробнее</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="grid-item">
+                        <!-- Link to modal -->
                         <a data-fancybox="gallery" href="#gallerymodal">
                             <img src="./img/gallery/4.png" alt="Gallery Image">
                         </a>
+                        <!-- Modal -->
+                        <div class="gallerymodal" id="gallerymodal">
+                            <img src="./img/gallery/4.png" alt="Gallery Image">
+                            <div class="description pt-5">
+                                <h2>Ремонт двушки в сталинке под ключ </h2>
+                                <p>Вариантов исправления такой ситуации только два -
+                                    использовать гипсокартон для
+                                    обшивки стены, либо выравнивать стены заново с помощью
+                                    штукатурки. исправления
+                                    такой ситуации только два - использовать гипсокартон для
+                                    обшивки стены, либо
+                                    выравнивать стены заново с помощью штукатурки. </p>
+                                <address>
+                                    <img src="./img/svg/location.svg" alt="location">
+                                    Москва, ул. Московская, 12/4
+                                </address>
+                                <button class="aaa">Посмотреть подробнее</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="grid-item">
+                        <!-- Link to modal -->
                         <a data-fancybox="gallery" href="#gallerymodal">
                             <img src="./img/gallery/5.png" alt="Gallery Image">
                         </a>
+                        <!-- Modal -->
+                        <div class="gallerymodal" id="gallerymodal">
+                            <img src="./img/gallery/5.png" alt="Gallery Image">
+                            <div class="description pt-5">
+                                <h2>Ремонт двушки в сталинке под ключ </h2>
+                                <p>Вариантов исправления такой ситуации только два -
+                                    использовать гипсокартон для
+                                    обшивки стены, либо выравнивать стены заново с помощью
+                                    штукатурки. исправления
+                                    такой ситуации только два - использовать гипсокартон для
+                                    обшивки стены, либо
+                                    выравнивать стены заново с помощью штукатурки. </p>
+                                <address>
+                                    <img src="./img/svg/location.svg" alt="location">
+                                    Москва, ул. Московская, 12/4
+                                </address>
+                                <button class="aaa">Посмотреть подробнее</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <button class="mt-3 mb-3">Показать все</button>
@@ -291,102 +397,133 @@
             </section>
 
 
-        </main>
-
-
-
-        <footer class="footer container-fluid">
-            <span>Footer</span>
-        </footer>
-
-
-
-        <!-- Modal Gallery -->
-        <div class="gallerymodal" id="gallerymodal">
-            <img src="./img/gallery/2.png" alt="...">
-            <div class="description pt-5">
-                <h2>Ремонт двушки в сталинке под ключ </h2>
-                <p>Вариантов исправления такой ситуации только два -
-                    использовать гипсокартон для
-                    обшивки стены, либо выравнивать стены заново с помощью
-                    штукатурки. исправления
-                    такой ситуации только два - использовать гипсокартон для
-                    обшивки стены, либо
-                    выравнивать стены заново с помощью штукатурки. </p>
-                <address>
-                    <img src="./img/svg/location.svg" alt="location">
-                    Москва, ул. Московская, 12/4
-                </address>
-                <button class="aaa">Посмотреть подробнее</button>
-            </div>
-        </div>
-
-
-        <!-- Modal Back call -->
-        <div class="modal fade" id="backcallmodal" tabindex="-1" aria-labelledby="backcallmodalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <button type="button" class="close ml-auto mr-3 mt-3" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="modal-body d-flex flex-column align-items-center">
-                        <h3 class="modal-title" id="backcallmodalLabel">Обратный звонок</h3>
-                        <span>Отправь заявку, и мы перезвоним вам через 15 мин!</span>
-                        <form class="modal-form p-5 d-flex flex-column align-items-center" action="#">
-                            <input type="text" placeholder="Имя">
-                            <input class="mt-2 mb-2" type="number" placeholder="Телефон">
-                            <button>Заказать звонок</button>
-                        </form>
-                    </div>
+            <!-- Baner and form -->
+            <section class="section_baner_form container-fluid">
+                <div class="container block mt-5 d-flex flex-xl-column">
+                    <h2 class="title">Узнайте предварительную стоимость квартиры!</h2>
+                    <form action="#" class="preliminary_value p-sm-5">
+                        <ul class="d-flex flex-wrap">
+                            <li>
+                                <input type="text" class="mb-3" placeholder="Имя">
+                            </li>
+                            <li>
+                                <input type="number" class="mb-3" placeholder="Телефон">
+                            </li>
+                            <li>
+                                <input type="email" class="mb-3" placeholder="Почта">
+                            </li>
+                            <li>
+                                <select class="mb-3">
+                                    <option value="overhaul">Капитальный ремонт</option>
+                                    <option value="homeConstruction">Строительство дома</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="strainer" class="mr-3 d-flex align-items-center">
+                                    <span class="mr-3">Наличие стяжки</span>
+                                    <input type="checkbox" id="strainer">
+                                </label>
+                                <label for="wiring" class=" d-flex align-items-center">
+                                    <span class="mr-3">Проводка</span>
+                                    <input type="checkbox" id="wiring">
+                                </label>
+                            </li>
+                            <li>
+                                <label for="meter" class="meter d-flex align-items-center justify-content-between">
+                                    <span>Площадь квартиры</span>
+                                    <input id="meter" type="number">
+                                </label>
+                            </li>
+                            <li class="ml-auto mb-0">
+                                <button>Рассчитать</button>
+                            </li>
+                        </ul>
+                    </form>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
+    </div>
 
-        <!-- Modal price calculation -->
-        <div class="modal fade" id="pricemodal" tabindex="-1" aria-labelledby="pricemodalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <button type="button" class="close ml-auto mr-3 mt-3" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="modal-body d-flex">
-                        <form action="#" class="modal-form">
-                            <div class="row modal-form__row">
-                                <div class="col d-flex flex-column">
-                                    <input type="text" class="mb-3" placeholder="Имя">
-                                    <input type="email" class="mb-3" placeholder="Почта">
-                                    <div class="checkboxs d-flex w-100">
-                                        <label for="strainer" class="mr-3 d-flex align-items-center">
-                                            <span class="mr-3">Наличие стяжки</span>
-                                            <input type="checkbox" id="strainer">
-                                        </label>
-                                        <label for="wiring" class=" d-flex align-items-center">
-                                            <span class="mr-3">Проводка</span>
-                                            <input type="checkbox" id="wiring">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col d-flex flex-column">
-                                    <input type="number" class="mb-3" placeholder="Телефон">
-                                    <select class="mb-3">
-                                        <option value="overhaul">Капитальный ремонт</option>
-                                        <option value="homeConstruction">Строительство дома</option>
-                                    </select>
-                                    <label for="meter" class="meter d-flex align-items-center justify-content-between">
-                                        <span>Площадь квартиры</span>
-                                        <input id="meter" type="number">
-                                    </label>
-                                    <button>Рассчитать</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    </section>
+
+    </main>
+
+
+
+    <footer class="footer container-fluid">
+        <span>Footer</span>
+    </footer>
+
+
+
+
+    <!-- Modal Back call -->
+    <div class="modal fade" id="backcallmodal" tabindex="-1" aria-labelledby="backcallmodalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close ml-auto mr-3 mt-3" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body d-flex flex-column align-items-center">
+                    <h3 class="modal-title" id="backcallmodalLabel">Обратный звонок</h3>
+                    <span>Отправь заявку, и мы перезвоним вам через 15 мин!</span>
+                    <form class="modal-form p-5 d-flex flex-column align-items-center" action="#">
+                        <input type="text" placeholder="Имя">
+                        <input class="mt-2 mb-2" type="number" placeholder="Телефон">
+                        <button>Заказать звонок</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal price calculation -->
+    <div class="modal fade" id="pricemodal" tabindex="-1" aria-labelledby="pricemodalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close ml-auto mr-3 mt-3" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body d-flex">
+                    <form action="#" class="modal-form">
+                        <div class="row modal-form__row">
+                            <div class="col d-flex flex-column">
+                                <input type="text" class="mb-3" placeholder="Имя">
+                                <input type="email" class="mb-3" placeholder="Почта">
+                                <div class="checkboxs d-flex w-100">
+                                    <label for="strainer" class="mr-3 d-flex align-items-center">
+                                        <span class="mr-3">Наличие стяжки</span>
+                                        <input type="checkbox" id="strainer">
+                                    </label>
+                                    <label for="wiring" class=" d-flex align-items-center">
+                                        <span class="mr-3">Проводка</span>
+                                        <input type="checkbox" id="wiring">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <input type="number" class="mb-3" placeholder="Телефон">
+                                <select class="mb-3">
+                                    <option value="overhaul">Капитальный ремонт</option>
+                                    <option value="homeConstruction">Строительство дома</option>
+                                </select>
+                                <label for="meter" class="meter d-flex align-items-center justify-content-between">
+                                    <span>Площадь квартиры</span>
+                                    <input id="meter" type="number">
+                                </label>
+                                <button>Рассчитать</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <link rel="stylesheet" type="text/css" href="css/plugins_css/fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins_css/carousel.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -396,18 +533,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
-    <!-- <script src="js/carousel.umd.js"></script> -->
     <script src="js/fancybox.umd.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script>
         Fancybox.bind('[data-fancybox="gallery"]', {
-            //dragToClose: false,
             Thumbs: false,
-            Image: {
-                zoom: false,
-                click: false,
-                wheel: false,
-            },
         });
     </script>
     <script src="js/main.js"></script>
