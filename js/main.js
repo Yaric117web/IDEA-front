@@ -27,6 +27,6 @@ $(".header-mask").on("click", function () {
 $('.grid').masonry({
     itemSelector: '.grid-item',
     columnWidth: 5,
-    gutter: 0,
+    gutter: 20,
     percentPosition: true
 });

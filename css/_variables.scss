@@ -4,6 +4,8 @@ $gold_color_hover: #f9dab8;
 $header_text_color: #464646;
 $header_link_color: #4f4f4f;
 $button_color: #363636;
+$block_fone: #F6F7FA;
+
 
 button {
     font-weight: bold;
@@ -27,6 +29,7 @@ a {
 }
 
 h2 {
+    color: $header_link_color;
     @media (min-width: 300px) {
         font-weight: 600;
         font-size: 30px;
@@ -41,6 +44,22 @@ h2 {
     @media (min-width: 1020px) {
         font-size: 50px;
         line-height: 60px;
+    }
+}
+p {
+    
+    @media (min-width: 300px) {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+    }
+    @media (min-width: 425px) {
+        font-size: 18px;
+        letter-spacing: -0.03em;
+    }
+    @media (min-width: 770px) {
+        line-height: 36px;
+        font-size: 24px;
     }
 }
 

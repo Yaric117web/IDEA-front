@@ -12,7 +12,7 @@
 // Header
 @import "_header.scss";
 
-// Content*****
+//***** Content *****
 .content {
     flex: 1;
 }
@@ -29,7 +29,15 @@
 // Baner and form
 @import "_banerForm.scss";
 
-// Content end*****
+// Benefits
+@import "_benefits.scss";
+
+// Reviews
+@import "_reviews.scss";
+
+// Order a call
+@import "_backcallBlock.scss";
+//***** Content end *****
 
 //  Footer
 @import "_footer.scss";

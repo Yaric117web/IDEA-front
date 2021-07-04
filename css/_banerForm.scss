@@ -2,7 +2,15 @@
     background: url(../img/main/mainBaner2.jpg) no-repeat center;
 
     .title {
-        width: 443px;
+        @media (min-width: 300px) {
+            width: 310px;
+        }
+        @media (min-width: 427px) {
+            width: 350px;
+        }
+        @media (min-width: 770px) {
+            width: 445px;
+        }
     }
     @media (min-width: 300px) {
         min-height: 738px;
@@ -26,15 +34,21 @@
 
 .preliminary_value {
     @media (min-width: 300px) {
-        box-shadow: 0px 2px 50px rgba(145, 145, 145, 0.25);
         border-radius: 4px;
         max-width: 990px;
         width: 100%;
         height: auto;
         background: #ffffff;
+        padding: 10px;
     }
-    @media (min-width: 768px) {
-        width: 430px;
+    @media (min-width: 430px) {
+        box-shadow: 0px 2px 50px rgba(145, 145, 145, 0.25);
+        width: 350px;
+        padding: 30px 25px;
+    }
+    @media (min-width: 769px) {
+        width: 450px;
+        box-shadow: 0px 2px 50px rgba(145, 145, 145, 0.25);
     }
     @media (min-width: 1060px) {
         width: auto;
@@ -51,8 +65,10 @@
                 margin-bottom: 10px;
             }
             @media (min-width: 430px) {
-                min-width: 350px;
-                max-width: 45%;
+                width: 100%;
+            }
+            @media (min-width: 1030px) {
+                width: 430px;
             }
         }
     }
@@ -105,5 +121,6 @@
     & select {
         font-weight: bold;
         border: 2px solid #dedede;
+        color: $header_link_color;
     }
 }

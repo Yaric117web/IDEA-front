@@ -1,0 +1,29 @@
+.section_backcall {
+    background: $block_fone;
+    margin-bottom: 60px;
+}
+
+.call_form {
+    @media (min-width: 430px) {
+        & input,
+        & button {
+            width: 350px !important;
+        }
+    }
+    @media (min-width: 770px) {
+        & input {
+            width: 300px !important;
+        }
+        & button {
+            width: 270px !important;
+        }
+    }
+    @media (min-width: 1030px) {
+        & input {
+            width: 400px !important;
+        }
+        & button {
+            width: 270px !important;
+        }
+    }
+}
