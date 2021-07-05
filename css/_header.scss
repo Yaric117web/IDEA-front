@@ -25,116 +25,91 @@
         }
     }
 
-    // Menu decoration
-    &-menu {
-        height: 100vh;
-        border-right: 1px solid $gold_color;
-        background: url(../img/header/menuBG.png);
-        position: relative;
-        z-index: -1;
+    .offcanvas {
+        color: $header_link_color;
 
-        @media (min-width: 960px) {
-            width: 64px;
-            display: block;
-        }
-        @media (min-width: 1200px) {
-            width: 80px;
+        &-start {
+            @media (min-width: 300px) {
+                width: 280px;
+            }
         }
 
-        &__mouse {
+        &-header {
+            overflow-y: scroll;
+            height: 100%;
+        }
+
+        .btn-close-menu {
+            background: none;
+            width: fit-content;
             position: absolute;
-            bottom: 45px;
-            display: none;
-            @media (min-width: 960px) {
-                left: 10px;
-                display: block;
+            top: 30px;
+
+            @media (min-width: 300px) {
+                right: -45px;
             }
-            @media (min-width: 1200px) {
-                left: 20px;
-            }
-        }
-    }
-
-    // Drop menu block
-    &-dropmenu {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        visibility: hidden;
-        opacity: 0;
-        transition: none;
-        width: 0;
-        height: 100vh;
-        background: #ffffff;
-        padding: 16px 20px;
-        overflow-y: scroll;
-
-        &__list {
-            color: $header_link_color;
-            height: 90vh;
-
-            & summary,
-            & .menulinks {
-                font-weight: 450;
-                font-size: 24px;
-                line-height: 40px;
-                color: inherit;
+            @media (min-width: 321px) {
+                right: -50px;
             }
 
-            & .details-list {
-                padding-left: 16px;
-                & a {
-                    color: inherit;
-                    font-size: 18px;
+            &:hover {
+                background: none;
+                border-radius: 2px;
+                path {
+                    stroke: #111;
                 }
             }
         }
-        &.open {
-            min-width: 300px;
-            visibility: visible;
-            opacity: 1;
-            z-index: 2;
+
+        .link {
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+            &:hover {
+                color: $button_color;
+                background: $gold_color;
+            }
         }
-    }
 
-    // Mask
-    &-mask {
-        display: none;
-        &.open {
-            display: block;
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            background: #000000;
-            opacity: 0.5;
-        }
-    }
-
-    // Close drop menu button
-    &-closemenu {
-        visibility: hidden;
-        opacity: 0;
-        transition: none;
-        position: absolute;
-        left: 320px;
-        top: 30px;
-        z-index: -1;
-        font-size: 50px;
-        background: none;
-        line-height: 0;
-        color: $gold_color;
-
-        &:hover {
+        &_phone {
             color: $header_text_color;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 26px;
+            padding: 10px;
         }
-        &.open {
-            visibility: visible;
-            opacity: 1;
-            z-index: 2;
+
+        .accordion {
+            min-width: 100%;
+            &-button {
+                padding: 10px;
+                color: inherit;
+
+                &::after {
+                    background: url(../img/header/arrowmenu.png) no-repeat center;
+                }
+
+                &:not(.collapsed) {
+                    background: none;
+                    color: $gold_color;
+                    &::after {
+                        background: url(../img/header/arrowmenu.png) no-repeat center;
+                    }
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            &-item {
+                border: none;
+            }
+
+            &_body_list {
+                & li {
+                    padding: 5px;
+                }
+            }
         }
     }
 

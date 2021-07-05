@@ -15,11 +15,13 @@
         }
     }
     &__wrapper {
-        grid-gap: 30px;
+        .grid-sizer {
+            width: 350px;
+        }
         .grid-item {
-            max-width: 350px;
+            width: 410px;
             height: 320px;
-            margin: 10px;
+            margin-bottom: 3%;
             overflow: hidden;
 
             & img {
@@ -28,8 +30,24 @@
                 object-fit: cover;
             }
         }
+
+        .grid-sizer,
+        .grid-item {
+            width: 31%;
+            // width: auto;
+        }
+
+        .gutter-sizer {
+            width: 3%;
+        }
+
         .grid-item--width2 {
-            max-width: 720px;
+            width: 50%;
+            // width: auto;
+        }
+
+        .grid-item--width2 {
+            width: 840px;
         }
 
         .grid-item--height2 {
@@ -79,4 +97,3 @@
     display: block;
     clear: both;
 }
-
