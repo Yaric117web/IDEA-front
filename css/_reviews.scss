@@ -10,11 +10,11 @@
 }
 
 .carousel__slide {
-    width: fit-content !important;
-    margin-right: 20px;
+    margin: 10px;
 }
 
 .slide_bode {
+    margin: 0 auto;
     @media (min-width: 300px) {
         width: 280px;
 
@@ -52,7 +52,23 @@
             }
         }
     }
-    @media (min-width: 300px) {
-        width: 280px;
-    }
+}
+
+.slick-dots {
+    display: none !important;
+}
+
+.slick-prev.slick-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-100%);
+}
+.slick-next.slick-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-100%);
 }

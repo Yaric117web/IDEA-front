@@ -1,107 +1,94 @@
-.slider {
-    min-height: 100vh;
 
-    & .ol {
-        bottom: 3vh;
-    }
-
-    & .pagination {
-        width: 10px;
-        height: 10px;
-        border: none;
-        border-radius: 50%;
-        background: $gold_color_hover;
-        @media (min-width: 960px) {
-            width: 12px;
-            height: 12px;
-        }
-        @media (min-width: 560px) {
-            width: 12px;
-            height: 12px;
-        }
-        &.active {
-            background: $gold_color;
+.carousel {
+    &-indicators {
+        & > button {
+            width: 10px !important;
+            height: 10px !important;
+            background: $gold_color !important;
+            border: none !important;
+            border-radius: 50% !important;
         }
     }
 
-    &-page {
-        &__img {
+    &-item {
+        height: 100vh;
+        & img {
             width: 100%;
-            min-height: 100vh;
             object-fit: cover;
         }
+    }
 
-        &__info {
-            width: 100%;
-            height: 100vh;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+    &-caption {
+        width: 100%;
+        height: 100vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
+
+        & .logo {
+            @media (min-width: 300px) {
+                width: 131px;
+                max-height: 40px;
+            }
+            @media (min-width: 768px) {
+                width: 147px;
+                max-height: 46px;
+            }
+            @media (min-width: 960px) {
+                width: 197px;
+                max-height: 61px;
+            }
+        }
+
+        & .title {
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            & .logo {
-                @media (min-width: 300px) {
-                    width: 131px;
-                    max-height: 40px;
-                }
-                @media (min-width: 768px) {
-                    width: 147px;
-                    max-height: 46px;
-                }
-                @media (min-width: 960px) {
-                    width: 197px;
-                    max-height: 61px;
-                }
+            white-space: nowrap;
+            font-family: "Source Serif Pro";
+            & span {
+                margin: 5px 0;
             }
-
-            & .title {
-                color: #ffffff;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                white-space: nowrap;
-                font-family: "Source Serif Pro";
-                & span {
-                    margin: 5px 0;
-                }
-                @media (min-width: 300px) {
-                    font-size: 40px;
-                    font-weight: 500;
-                }
-                @media (min-width: 960px) {
-                    font-size: 70px;
-                }
+            @media (min-width: 300px) {
+                font-size: 40px;
+                font-weight: 500;
             }
-
-            & .subtitle {
-                white-space: nowrap;
-                @media (min-width: 300px) {
-                    font-size: 18px;
-                    font-weight: 300;
-                }
-                @media (min-width: 960px) {
-                    font-size: 28px;
-                }
+            @media (min-width: 960px) {
+                font-size: 70px;
             }
+        }
 
-            & .modal-btn {
-                background: $gold_color;
-                border-radius: 2px;
-                font-weight: bold;
+        & .subtitle {
+            white-space: nowrap;
+            @media (min-width: 300px) {
                 font-size: 18px;
+                font-weight: 300;
+            }
+            @media (min-width: 960px) {
+                font-size: 28px;
+            }
+        }
 
-                @media (min-width: 300px) {
-                    width: 315px;
-                    height: 56px;
-                }
-                @media (min-width: 960px) {
-                    width: 285px;
-                    height: 50px;
-                }
-                &:hover {
-                    background: $gold_color_hover;
-                }
+        & .modal-btn {
+            background: $gold_color;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 18px;
+
+            @media (min-width: 300px) {
+                width: 315px;
+                height: 56px;
+            }
+            @media (min-width: 960px) {
+                width: 285px;
+                height: 50px;
+            }
+            &:hover {
+                background: $gold_color_hover;
             }
         }
     }

@@ -1,4 +1,11 @@
 .footer {
-    height: 278px;
-    background: url(../img/main/footer.png);
+    min-height: 278px;
+    background: rgb(121, 119, 117);
+    &_bg {
+        background: url(../img/main/footer.png) center no-repeat;
+        background-size: cover;
+        height: inherit;
+        color: #fff;
+
+    }
 }

@@ -68,10 +68,6 @@ p {
 
 // *****************
 
-body.open {
-    overflow: hidden;
-}
-
 .wrapper {
     width: 100%;
     min-height: 100vh;
@@ -81,8 +77,9 @@ body.open {
 
 /* Scroll */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
     background: transparent;
+    position: relative;
 }
 ::-webkit-scrollbar-thumb {
     background-color: $gold_color;
