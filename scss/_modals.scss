@@ -9,7 +9,6 @@
 #pricemodal .modal-dialog {
     @media (min-width: 1024px) {
         max-width: 990px;
-        margin-top: 15%;
     }
 }
 
@@ -58,4 +57,11 @@
 
 .fancybox-content {
     padding: 0 !important;
+}
+
+#confirmation {
+    z-index: 99999999999;
+    .modal-dialog {
+        max-width: 700px;
+    }
 }

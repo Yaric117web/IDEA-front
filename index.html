@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>idea</title>
+    <title>iDea</title>
     <script src="js/plugins/lazyload.js"></script>
     <script src="js/plugins/load.js"></script>
     <link rel="stylesheet" href="css/plugins_css/bootstrap.min.css">
@@ -20,7 +20,7 @@
 
 
         <!-- Header -->
-        <header class="header container-fluid fixed-top  pr-5">
+        <header class="header container-fluid fixed-top pr-5">
 
             <!-- Offcanvas -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
@@ -109,8 +109,8 @@
                         </div>
                         <!-- Just link -->
                         <a class="link" href="#">О компании</a>
-                        <a class="link" href="#">Реализованные проекты</a>
-                        <a class="link" href="#">Контакты</a>
+                        <a class="link" href="./portfolioPage.html">Реализованные проекты</a>
+                        <a class="link" href="./contacts.html">Контакты</a>
                     </div>
                     <div class="offcanvas-header_dawn w-100 d-flex flex-column">
                         <div class="offcanvas_phone">
@@ -141,25 +141,6 @@
                     </button>
                 </div>
             </div>
-
-
-
-            <!-- Navigation -->
-            <!-- <nav class="header-nav container d-flex align-items-center">
-                <a class="header-nav__logo order-md-1 order-lg-0 mr-lg-5 ml-auto" href="#">
-                    <img class="lazyload slide-logo" src="./img/main/logo.png" alt="Logo">
-                </a>
-                <div class="header-nav__address mr-md-5 d-none d-lg-flex  flex-column">
-                    <span>skidea@yandex.ru</span>
-                    <span>Кировоградская, д.2</span>
-                </div>
-                <a href="#" class="header-nav__phone d-none d-sm-flex order-md-0 ml-lg-auto mr-lg-5 mr-md-auto ">
-                    <img src="./img/header/whatsapp.png" alt="whatsapp">
-                    <span class="">+7(499) 755 96 64</span>
-                </a>
-            </nav> -->
-
-
 
         </header>
 
@@ -964,7 +945,7 @@
                             звонок!
                         </h2>
                         <div class="col-12 col-md-6 col-lg-12">
-                            <form class="row g-3  needs-validation modal-form call_form" action="#" novalidate>
+                            <form class="row g-3 needs-validation modal-form call_form" action="#" novalidate>
                                 <div class="col-12 col-lg-4">
                                     <input required class="form-control" type="text" placeholder="Имя" required>
                                 </div>
@@ -972,7 +953,7 @@
                                     <input required class="form-control" type="number" placeholder="Телефон" required>
                                 </div>
                                 <div class="col-12 col-lg-4">
-                                    <button type="submit">Заказать
+                                    <button type="submit" data-bs-toggle="modal" data-bs-target="#confirmation">Заказать
                                         звонок</button>
                                 </div>
                             </form>
@@ -1050,7 +1031,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-lg-3">
-                        <a href="#" class="footer_link">
+                        <a href="./portfolioPage.html" class="footer_link">
                             Реализованные проекты
                         </a>
                     </div>
@@ -1071,7 +1052,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-4 col-lg-3">
-                        <button data-bs-toggle=" modal" data-bs-target="#backcallmodal"
+                        <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
                             class="header-nav__backcall mx-auto">
                             Заказать звонок
                         </button>
@@ -1093,8 +1074,26 @@
 
 
 
-        <!-- Modal Back call -->
+        <!-- Modal the confirmation -->
+        <div class="modal fade" id="confirmation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="btn-close modal-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="modal-body">
+                        <div class="modal-body d-flex flex-column align-items-center text-center">
+                            <h3 class="modal-title" id="confirmationLabel">Мы отправили предварительный результат
+                                вам на
+                                почту!</h3>
+                            <span>Наш менеджер свяжется с вами через 15 мин, чтобы обсудить все подробности</span>
+                            <button data-bs-dismiss="modal" aria-label="Close">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Modal Back call -->
         <div class="modal fade" id="backcallmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -1108,7 +1107,8 @@
                                 flex-column align-items-center" action="#" novalidate>
                                 <input required class="form-control" type="text" placeholder="Имя">
                                 <input required class="form-control mt-2 mb-2" type="number" placeholder="Телефон">
-                                <button type="submit">Заказать звонок</button>
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#confirmation">Заказать
+                                    звонок</button>
                             </form>
                         </div>
                     </div>
@@ -1123,7 +1123,7 @@
                     <button type="button" class="btn-close modal-close" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                     <div class="modal-body">
-                        <form action="#" class="row g-3 p-2 p-xl-5 needs-validation " novalidate>
+                        <form action="#" class="row g-3 p-2 p-xl-5 needs-validation justify-content-end" novalidate>
                             <div class="col-12 col-xl-6">
                                 <input required class="form-control" type="text" id="modal_name" placeholder="Имя">
                                 <div id="modal_name" class="invalid-feedback">
@@ -1173,7 +1173,8 @@
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6">
-                                <button type="submit">Рассчитать</button>
+                                <button type="submit" data-bs-toggle="modal"
+                                    data-bs-target="#confirmation">Рассчитать</button>
                             </div>
                         </form>
                     </div>

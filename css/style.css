@@ -39,6 +39,22 @@
   font-style: normal;
 }
 
+.spacer {
+  height: 150px;
+}
+
+@media (min-width: 300px) {
+  .spacer {
+    height: 90px;
+  }
+}
+
+@media (min-width: 500px) {
+  .spacer {
+    height: 120px;
+  }
+}
+
 form input,
 form select,
 form .meter {
@@ -924,7 +940,6 @@ details[open] summary:after {
 @media (min-width: 1024px) {
   #pricemodal .modal-dialog {
     max-width: 990px;
-    margin-top: 15%;
   }
 }
 
@@ -981,5 +996,13 @@ details[open] summary:after {
 
 .fancybox-content {
   padding: 0 !important;
+}
+
+#confirmation {
+  z-index: 99999999999;
+}
+
+#confirmation .modal-dialog {
+  max-width: 700px;
 }
 /*# sourceMappingURL=style.css.map */

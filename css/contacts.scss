@@ -1,0 +1,44 @@
+// Variables
+@import "../scss/_variables.scss";
+
+.section_contactes {
+    & .subtitle {
+        color: $benefit_text_content_color;
+        @media (min-width: 450px) {
+            max-width: 60%;
+        }
+        @media (min-width: 750px) {
+            max-width: 50%;
+        }
+    }
+
+    &_ditails {
+        & span {
+            @media (min-width: 300px) {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+                color: $span_label_contacts;
+            }
+        }
+        & p {
+            color: $benefit_text_color;
+        }
+    }
+
+    .contact_backcall {
+        background: #ffffff;
+        box-shadow: 0px -2px 50px rgba(99, 131, 153, 0.15);
+        border-radius: 2px;
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        transform: translateY(70px);
+        z-index: 2;
+        border-bottom: 3px solid $gold_color;
+    }
+
+    .map {
+        min-width: 100vw;
+    }
+}
