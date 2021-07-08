@@ -6,12 +6,12 @@
 }
 
 // Fonts
-@import "_fonts.scss";
+@import "../scss/_fonts.scss";
 // Variables
-@import "_variables.scss";
+@import "../scss/_variables.scss";
 
 // Header
-@import "_header.scss";
+@import "../scss/_header.scss";
 
 //***** Content *****
 .content {
@@ -19,29 +19,29 @@
 }
 
 // Main-page First Block-slider
-@import "_slider.scss";
+@import "../scss/_slider.scss";
 
 // Main-page Second Block-links
-@import "_links.scss";
+@import "../scss/_links.scss";
 
 // Gallery
-@import "_gallery.scss";
+@import "../scss/_gallery.scss";
 
 // Baner and form
-@import "_banerForm.scss";
+@import "../scss/_banerForm.scss";
 
 // Benefits
-@import "_benefits.scss";
+@import "../scss/_benefits.scss";
 
 // Reviews
-@import "_reviews.scss";
+@import "../scss/_reviews.scss";
 
 // Order a call
-@import "_backcallBlock.scss";
+@import "../scss/_backcallBlock.scss";
 //***** Content end *****
 
 //  Footer
-@import "_footer.scss";
+@import "../scss/_footer.scss";
 
 // Modals
-@import "_modals.scss";
+@import "../scss/_modals.scss";
