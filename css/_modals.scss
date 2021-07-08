@@ -4,85 +4,6 @@
         margin-top: 10px;
         margin-right: 10px;
     }
-
-    &-form {
-        & ul {
-            justify-content: space-between;
-            margin: 0;
-            & > li {
-                @media (min-width: 300px) {
-                    width: 100%;
-                    display: flex;
-                    height: 56px;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    margin-bottom: 10px;
-                }
-                @media (min-width: 430px) {
-                    width: 100%;
-                }
-                @media (min-width: 1030px) {
-                    width: 430px;
-                }
-            }
-        }
-
-        & input {
-            background: none;
-            border-radius: 4px;
-            font-size: 18px;
-            line-height: 23px;
-            color: $input_color;
-        }
-
-        & button {
-            color: #363636;
-            font-size: 18px;
-            font-weight: bold;
-            background: $gold_color;
-            border-radius: 4px;
-
-            &:hover {
-                background: $gold_color_hover;
-            }
-        }
-
-        & input,
-        & button,
-        & select,
-        & .meter {
-            width: 100%;
-            height: 56px;
-            padding: 0 24px;
-            border: 2px solid #dedede;
-            @media (min-width: 427px) {
-                width: 426px;
-            }
-        }
-
-        & label input {
-            width: 24px;
-            height: 24px;
-        }
-
-        & .meter {
-            border: 2px solid #dedede;
-            & > span {
-                width: 49%;
-                display: block;
-            }
-            & > input {
-                height: 100%;
-                width: 49%;
-                border: none;
-                border-left: 2px solid #dedede;
-            }
-        }
-
-        & select {
-            font-weight: bold;
-        }
-    }
 }
 
 #pricemodal .modal-dialog {
@@ -101,15 +22,10 @@
     .fancybox-close-small {
         width: 50px;
         height: 50px;
-        
     }
 
     & > img {
-        width: 100%;
-        max-height: 45vh;
-        object-fit: cover;
-        object-position: center;
-        margin: 0 auto;
+        height: 250px;
     }
     @media (min-width: 300px) {
         & button {

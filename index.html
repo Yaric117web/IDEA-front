@@ -23,8 +23,9 @@
     <!-- Wrapper -->
     <div class="wrapper d-flex flex-column">
 
+
         <!-- Header -->
-        <div class="header container-fluid fixed-top d-flex p-0">
+        <div class="header container-fluid fixed-top p-0">
 
             <!-- Offcanvas -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
@@ -35,8 +36,9 @@
                         <path d="M1.5 22L21.5 2" stroke="#F9DAB8" stroke-width="3" />
                     </svg>
                 </button>
+
                 <div class="offcanvas-header d-flex flex-column">
-                    <div class="top w-100 d-flex flex-column aline-content-between">
+                    <div class="w-100 d-flex flex-column aline-content-between">
                         <!-- Accordion -->
                         <div class="offcanvas-header_accordion" id="menu_accordion">
                             <div class="accordion-item">
@@ -128,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="row w-100 align-items-center justify-content-between">
+            <div class="row w-100 align-items-center">
                 <div class="col mb-3">
                     <!-- Buuton menu open -->
                     <button class="header__button" type="button" data-bs-toggle="offcanvas"
@@ -233,8 +235,75 @@
 
 
             <!-- Links baner -->
-            <section class="links d-lg-flex container-fluid p-0 m-0">
-                <div class="link d-flex flex-column mt-3 pl-3 pt-4 pt-sm-4 p-lg-4 p-xl-5 mr-lg-3 mt-lg-0">
+            <section class="links container-fluid m-0">
+                <div class="row">
+                    <div class="link col-12 col-lg-3 p-2 p-md-5" style="background-image: url(img/main/mainLink1.png)">
+                        <h3 class="">Ремонт</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Ремонт квартир</a>
+                            </li>
+                            <li>
+                                <a href="#">Ремонт офисов</a>
+                            </li>
+                            <li>
+                                <a href="#">Ремонт магазинов</a>
+                            </li>
+                            <li>
+                                <a href="#">Монтаж инженерных систем</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Ремонт автомоек, складов,
+                                    административных помещений,
+                                    рестораны и т.д.
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link col-12 col-lg-3 p-2 p-md-5" style="background-image: url(img/main/mainLink2.png)">
+                        <h3 class="">Строительство</h3>
+                        <ul class="">
+                            <li>
+                                <a href="#">Cтроительство домов</a>
+                            </li>
+                            <li>
+                                <a href="#">Достройка и реконструкция</a>
+                            </li>
+                            <li>
+                                <a href="#">Благоустройство территории</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link col-12 col-lg-3 p-2 p-md-5" style="background-image: url(img/main/mainLink3.png)">
+                        <h3 class="">Ремонт домов</h3>
+                        <ul class="">
+                            <li>
+                                <a href="#">Комплексный ремонт</a>
+                            </li>
+                            <li>
+                                <a href="#">Монтаж инженерных систем</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="link col-12 col-lg-3 p-2 p-md-5" style="background-image: url(img/main/mainLink4.png)">
+                        <h3 class="">Проектирование</h3>
+                        <ul class="">
+                            <li>
+                                <a href="#">Обмеры</a>
+                            </li>
+                            <li>
+                                <a href="#">Разработка дизайн-проекта</a>
+                            </li>
+                            <li>
+                                <a href="#">Рабочая документация</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="link d-flex flex-column mt-3 pl-3 pt-4 pt-sm-4 p-lg-4 p-xl-5 mr-lg-3 mt-lg-0">
                     <h3 class="mb-4 mb-md-4 mt-md-4">Ремонт</h3>
                     <ul>
                         <li>
@@ -298,7 +367,7 @@
                         </li>
 
                     </ul>
-                </div>
+                </div> -->
             </section>
 
             <!-- Galery -->
@@ -306,145 +375,297 @@
                 <div class="container">
                     <h2 class="section-galery__title mb-5">Наши работы</h2>
                 </div>
-                <div class="section-galery__wrapper grid container">
-                    <div class="grid-item grid-item--height2">
-                        <!-- Link to modal -->
-                        <a data-fancybox="gallery" href="#gallerymodal">
-                            <img class="lazyload" src=" ./img/gallery/1.png" alt="Gallery Image">
-                        </a>
-                        <!-- Modal -->
-                        <div class="gallerymodal" id="gallerymodal">
-                            <img class="lazyload" src="./img/gallery/1.png" alt="Gallery Image">
-                            <div class="p-4">
-                                <div class="description">
-                                    <h2>Ремонт двушки в сталинке под ключ </h2>
-                                    <p>Вариантов исправления такой ситуации только два -
-                                        использовать гипсокартон для
-                                        обшивки стены, либо выравнивать стены заново с помощью
-                                        штукатурки. исправления
-                                        такой ситуации только два - использовать гипсокартон для
-                                        обшивки стены, либо
-                                        выравнивать стены заново с помощью штукатурки. </p>
-                                    <address>
-                                        <img class="lazyload" src="./img/svg/location.svg" alt="location">
-                                        Москва, ул. Московская, 12/4
-                                    </address>
+                <div class="container">
+                    <div class="row row-cols-2 row-cols-md-3 g-4" data-masonry='{"percentPosition": true }'>
+                        <div class="col-md-4">
+                            <!-- Link to modal -->
+                            <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal1">
+                                <img class="lazyload w-100" src=" ./img/gallery/1.png" alt="Gallery Image">
+                            </a>
+                            <!-- Modal -->
+                            <div class="gallerymodal" id="gallerymodal1">
+                                <img class="lazyload" src="./img/gallery/1.png" alt="Gallery Image">
+                                <div class="p-4">
+                                    <div class="description">
+                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <p>Вариантов исправления такой ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо выравнивать стены заново с помощью
+                                            штукатурки. исправления
+                                            такой ситуации только два - использовать гипсокартон для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с помощью штукатурки. </p>
+                                        <address>
+                                            <img class="lazyload" src="./img/svg/location.svg" alt="location">
+                                            Москва, ул. Московская, 12/4
+                                        </address>
+                                    </div>
+                                    <button>Посмотреть подробнее</button>
                                 </div>
-                                <button>Посмотреть подробнее</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item grid-item--width2 grid-item--height3">
-                        <!-- Link to modal -->
-                        <a data-fancybox="gallery" href="#gallerymodal">
-                            <img class="lazyload" src="./img/gallery/2.png" alt="Gallery Image">
-                        </a>
-                        <!-- Modal -->
-                        <div class="gallerymodal" id="gallerymodal">
-                            <img class="lazyload" src="./img/gallery/2.png" alt="Gallery Image">
-                            <div class="p-4">
-                                <div class="description">
-                                    <h2>Ремонт двушки в сталинке под ключ </h2>
-                                    <p>Вариантов исправления такой ситуации только два -
-                                        использовать гипсокартон для
-                                        обшивки стены, либо выравнивать стены заново с помощью
-                                        штукатурки. исправления
-                                        такой ситуации только два - использовать гипсокартон для
-                                        обшивки стены, либо
-                                        выравнивать стены заново с помощью штукатурки. </p>
-                                    <address>
-                                        <img class="lazyload" src="./img/svg/location.svg" alt="location">
-                                        Москва, ул. Московская, 12/4
-                                    </address>
+                        <div class="col-md-8">
+                            <!-- Link to modal -->
+                            <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal2">
+                                <img class="lazyload w-100" src="./img/gallery/2.png" alt="Gallery Image">
+                            </a>
+                            <!-- Modal -->
+                            <div class="gallerymodal" id="gallerymodal2">
+                                <img class="lazyload" src="./img/gallery/2.png" alt="Gallery Image">
+                                <div class="p-4">
+                                    <div class="description">
+                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <p>Вариантов исправления такой ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо выравнивать стены заново с помощью
+                                            штукатурки. исправления
+                                            такой ситуации только два - использовать гипсокартон для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с помощью штукатурки. </p>
+                                        <address>
+                                            <img class="lazyload" src="./img/svg/location.svg" alt="location">
+                                            Москва, ул. Московская, 12/4
+                                        </address>
+                                    </div>
+                                    <button>Посмотреть подробнее</button>
                                 </div>
-                                <button>Посмотреть подробнее</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item grid-item--height2">
-                        <!-- Link to modal -->
-                        <a data-fancybox="gallery" href="#gallerymodal">
-                            <img class="lazyload" src="./img/gallery/3.png" alt="Gallery Image">
-                        </a>
-                        <!-- Modal -->
-                        <div class="gallerymodal" id="gallerymodal">
-                            <img class="lazyload" src="./img/gallery/3.png" alt="Gallery Image">
-                            <div class="p-4">
-                                <div class="description">
-                                    <h2>Ремонт двушки в сталинке под ключ </h2>
-                                    <p>Вариантов исправления такой ситуации только два -
-                                        использовать гипсокартон для
-                                        обшивки стены, либо выравнивать стены заново с помощью
-                                        штукатурки. исправления
-                                        такой ситуации только два - использовать гипсокартон для
-                                        обшивки стены, либо
-                                        выравнивать стены заново с помощью штукатурки. </p>
-                                    <address>
-                                        <img class="lazyload" src="./img/svg/location.svg" alt="location">
-                                        Москва, ул. Московская, 12/4
-                                    </address>
+                        <div class="col">
+                            <!-- Link to modal -->
+                            <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal3">
+                                <img class="lazyload w-100" src="./img/gallery/3.png" alt="Gallery Image">
+                            </a>
+                            <!-- Modal -->
+                            <div class="gallerymodal" id="gallerymodal3">
+                                <img class="lazyload" src="./img/gallery/3.png" alt="Gallery Image">
+                                <div class="p-4">
+                                    <div class="description">
+                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <p>Вариантов исправления такой ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо выравнивать стены заново с помощью
+                                            штукатурки. исправления
+                                            такой ситуации только два - использовать гипсокартон для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с помощью штукатурки. </p>
+                                        <address>
+                                            <img class="lazyload" src="./img/svg/location.svg" alt="location">
+                                            Москва, ул. Московская, 12/4
+                                        </address>
+                                    </div>
+                                    <button>Посмотреть подробнее</button>
                                 </div>
-                                <button>Посмотреть подробнее</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item">
-                        <!-- Link to modal -->
-                        <a data-fancybox="gallery" href="#gallerymodal">
-                            <img class="lazyload" src="./img/gallery/4.png" alt="Gallery Image">
-                        </a>
-                        <!-- Modal -->
-                        <div class="gallerymodal" id="gallerymodal">
-                            <img class="lazyload" src="./img/gallery/4.png" alt="Gallery Image">
-                            <div class="p-4">
-                                <div class="description">
-                                    <h2>Ремонт двушки в сталинке под ключ </h2>
-                                    <p>Вариантов исправления такой ситуации только два -
-                                        использовать гипсокартон для
-                                        обшивки стены, либо выравнивать стены заново с помощью
-                                        штукатурки. исправления
-                                        такой ситуации только два - использовать гипсокартон для
-                                        обшивки стены, либо
-                                        выравнивать стены заново с помощью штукатурки. </p>
-                                    <address>
-                                        <img class="lazyload" src="./img/svg/location.svg" alt="location">
-                                        Москва, ул. Московская, 12/4
-                                    </address>
+                        <div class="col">
+                            <!-- Link to modal -->
+                            <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal4">
+                                <img class="lazyload w-100" src="./img/gallery/4.png" alt="Gallery Image">
+                            </a>
+                            <!-- Modal -->
+                            <div class="gallerymodal" id="gallerymodal4">
+                                <img class="lazyload" src="./img/gallery/4.png" alt="Gallery Image">
+                                <div class="p-4">
+                                    <div class="description">
+                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <p>Вариантов исправления такой ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо выравнивать стены заново с помощью
+                                            штукатурки. исправления
+                                            такой ситуации только два - использовать гипсокартон для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с помощью штукатурки. </p>
+                                        <address>
+                                            <img class="lazyload" src="./img/svg/location.svg" alt="location">
+                                            Москва, ул. Московская, 12/4
+                                        </address>
+                                    </div>
+                                    <button>Посмотреть подробнее</button>
                                 </div>
-                                <button>Посмотреть подробнее</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item">
-                        <!-- Link to modal -->
-                        <a data-fancybox="gallery" href="#gallerymodal">
-                            <img class="lazyload" src="./img/gallery/5.png" alt="Gallery Image">
-                        </a>
-                        <!-- Modal -->
-                        <div class="gallerymodal" id="gallerymodal">
-                            <img class="lazyload" src="./img/gallery/5.png" alt="Gallery Image">
-                            <div class="p-4">
-                                <div class="description">
-                                    <h2>Ремонт двушки в сталинке под ключ </h2>
-                                    <p>Вариантов исправления такой ситуации только два -
-                                        использовать гипсокартон для
-                                        обшивки стены, либо выравнивать стены заново с помощью
-                                        штукатурки. исправления
-                                        такой ситуации только два - использовать гипсокартон для
-                                        обшивки стены, либо
-                                        выравнивать стены заново с помощью штукатурки. </p>
-                                    <address>
-                                        <img class="lazyload" src="./img/svg/location.svg" alt="location">
-                                        Москва, ул. Московская, 12/4
-                                    </address>
+                        <div class="col">
+                            <!-- Link to modal -->
+                            <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal5">
+                                <img class="lazyload w-100" src="./img/gallery/5.png" alt="Gallery Image">
+                            </a>
+                            <!-- Modal -->
+                            <div class="gallerymodal" id="gallerymodal5">
+                                <img class="lazyload" src="./img/gallery/5.png" alt="Gallery Image">
+                                <div class="p-4">
+                                    <div class="description">
+                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <p>Вариантов исправления такой ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо выравнивать стены заново с помощью
+                                            штукатурки. исправления
+                                            такой ситуации только два - использовать гипсокартон для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с помощью штукатурки. </p>
+                                        <address>
+                                            <img class="lazyload" src="./img/svg/location.svg" alt="location">
+                                            Москва, ул. Московская, 12/4
+                                        </address>
+                                    </div>
+                                    <button>Посмотреть подробнее</button>
                                 </div>
-                                <button>Посмотреть подробнее</button>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <!-- Link to modal -->
+                            <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal6">
+                                <img class="lazyload w-100" src="./img/gallery/6.png" alt="Gallery Image">
+                            </a>
+                            <!-- Modal -->
+                            <div class="gallerymodal" id="gallerymodal6">
+                                <img class="lazyload" src="./img/gallery/6.png" alt="Gallery Image">
+                                <div class="p-4">
+                                    <div class="description">
+                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <p>Вариантов исправления такой ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо выравнивать стены заново с
+                                            помощью
+                                            штукатурки. исправления
+                                            такой ситуации только два - использовать гипсокартон
+                                            для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с помощью штукатурки. </p>
+                                        <address>
+                                            <img class="lazyload" src="./img/svg/location.svg" alt="location">
+                                            Москва, ул. Московская, 12/4
+                                        </address>
+                                    </div>
+                                    <button>Посмотреть подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- Link to modal -->
+                            <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal7">
+                                <img class="lazyload w-100" src="./img/gallery/7.png" alt="Gallery Image">
+                            </a>
+                            <!-- Modal -->
+                            <div class="gallerymodal" id="gallerymodal7">
+                                <img class="lazyload" src="./img/gallery/7.png" alt="Gallery Image">
+                                <div class="p-4">
+                                    <div class="description">
+                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <p>Вариантов исправления такой ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо выравнивать стены заново с
+                                            помощью
+                                            штукатурки. исправления
+                                            такой ситуации только два - использовать гипсокартон
+                                            для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с помощью штукатурки. </p>
+                                        <address>
+                                            <img class="lazyload" src="./img/svg/location.svg" alt="location">
+                                            Москва, ул. Московская, 12/4
+                                        </address>
+                                    </div>
+                                    <button>Посмотреть подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- Link to modal -->
+                            <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal8">
+                                <img class="lazyload w-100" src="./img/gallery/10.png" alt="Gallery Image">
+                            </a>
+                            <!-- Modal -->
+                            <div class="gallerymodal" id="gallerymodal8">
+                                <img class="lazyload" src="./img/gallery/10.png" alt="Gallery Image">
+                                <div class="p-4">
+                                    <div class="description">
+                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <p>Вариантов исправления такой ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо выравнивать стены заново с
+                                            помощью
+                                            штукатурки. исправления
+                                            такой ситуации только два - использовать гипсокартон
+                                            для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с помощью штукатурки. </p>
+                                        <address>
+                                            <img class="lazyload" src="./img/svg/location.svg" alt="location">
+                                            Москва, ул. Московская, 12/4
+                                        </address>
+                                    </div>
+                                    <button>Посмотреть подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- Link to modal -->
+                            <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal9">
+                                <img class="lazyload w-100" src="./img/gallery/8.png" alt="Gallery Image">
+                            </a>
+                            <!-- Modal -->
+                            <div class="gallerymodal" id="gallerymodal9">
+                                <img class="lazyload" src="./img/gallery/8.png" alt="Gallery Image">
+                                <div class="p-4">
+                                    <div class="description">
+                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <p>Вариантов исправления такой ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо выравнивать стены заново с
+                                            помощью
+                                            штукатурки. исправления
+                                            такой ситуации только два - использовать гипсокартон
+                                            для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с помощью штукатурки. </p>
+                                        <address>
+                                            <img class="lazyload" src="./img/svg/location.svg" alt="location">
+                                            Москва, ул. Московская, 12/4
+                                        </address>
+                                    </div>
+                                    <button>Посмотреть подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- Link to modal -->
+                            <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal10">
+                                <img class="lazyload w-100" src="./img/gallery/9.png" alt="Gallery Image">
+                            </a>
+                            <!-- Modal -->
+                            <div class="gallerymodal" id="gallerymodal10">
+                                <img class="lazyload" src="./img/gallery/9.png" alt="Gallery Image">
+                                <div class="p-4">
+                                    <div class="description">
+                                        <h2>Ремонт двушки в сталинке под
+                                            ключ </h2>
+                                        <p>Вариантов исправления такой
+                                            ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с
+                                            помощью
+                                            штукатурки. исправления
+                                            такой ситуации только два -
+                                            использовать гипсокартон для
+                                            обшивки стены, либо
+                                            выравнивать стены заново с
+                                            помощью штукатурки. </p>
+                                        <address>
+                                            <img class="lazyload" src="./img/svg/location.svg" alt="location">
+                                            Москва, ул. Московская, 12/4
+                                        </address>
+                                    </div>
+                                    <button>Посмотреть
+                                        подробнее</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container btn">
-                    <button class="mt-3 mb-3">Показать все</button>
+                <div class="container">
+                    <button class="btn_show mt-3 mb-3">Показать все</button>
                 </div>
 
 
@@ -453,98 +674,110 @@
 
             <!-- Baner and form -->
             <section class="section_baner_form container-fluid">
-                <div class="container block mt-5 d-flex flex-xl-column flex-md-row p-0">
-                    <h2 class="title">Узнайте предварительную стоимость квартиры!</h2>
-                    <form action="#" class="preliminary_value ">
-                        <ul class="d-flex flex-wrap w-sm-100">
-                            <li>
-                                <input type="text" class="mb-3" placeholder="Имя">
-                            </li>
-                            <li>
-                                <input type="number" class="mb-3" placeholder="Телефон">
-                            </li>
-                            <li>
-                                <input type="email" class="mb-3" placeholder="Почта">
-                            </li>
-                            <li>
-                                <select class="mb-3">
-                                    <option value="overhaul">Капитальный ремонт</option>
-                                    <option value="homeConstruction">Строительство дома</option>
-                                </select>
-                            </li>
-                            <li>
-                                <label for="strainer" class="mr-3 d-flex align-items-center">
-                                    <span class="mr-">Наличие стяжки</span>
-                                </label>
-                                <input class="checkbox" type="checkbox" id="strainer">
-                                <label for="wiring" class=" d-flex align-items-center">
-                                    <span class="mr-2">Проводка</span>
-                                </label>
-                                <input class="checkbox" type="checkbox" id="wiring">
-                            </li>
-                            <li>
-                                <label for="meter" class="meter d-flex align-items-center justify-content-between">
-                                    <span>Площадь квартиры</span>
-                                    <input id="meter" type="number">
-                                </label>
-                            </li>
-                            <li class="ml-auto mb-0">
-                                <button>Рассчитать</button>
-                            </li>
-                        </ul>
-                    </form>
+                <div class="container">
+                    <div
+                        class="row g-1 g-lg-5 align-content-lg-center align-content-xl-between section_baner_form_main">
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <h2 class="title">Узнайте предварительную стоимость квартиры!</h2>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-9 align-self-xl-end align-self-start">
+                            <form action="#" class="row g-3 p-2 p-xl-5 justify-content-end needs-validation "
+                                novalidate>
+                                <div class="col-12 col-xl-6">
+                                    <input required class="form-control" type="text" placeholder="Имя">
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <input required class="form-control" type="number" placeholder="Телефон">
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <input required class="form-control" type="email" placeholder="Почта">
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <select required class="form-select">
+                                        <option value="overhaul">Капитальный ремонт</option>
+                                        <option value="homeConstruction">Строительство дома</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <div class="row">
+                                        <label for="strainer"
+                                            class="col d-flex align-items-center justify-content-center">
+                                            <span class="mr-">Наличие стяжки</span>
+                                            <input required class="ms-3 ms-md-2 checkbox" type="checkbox" id="strainer">
+                                        </label>
+                                        <label for="wiring"
+                                            class="col d-flex align-items-center justify-content-center">
+                                            <span class="mr-2">Проводка</span>
+                                            <input required class="ms-3 ms-md-2 checkbox" type="checkbox" id="wiring">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <input required class="form-control" id="modal_meter" type="text"
+                                        placeholder="Площадь квартиры в м²">
+                                    <div id="modal_meter" class="invalid-feedback">
+                                        Введите метраж
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <button type="submit">Рассчитать</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- Benefits -->
-            <section class="section_benefits container p-3 p-md-0">
+            <section class="section_benefits container p-3 p-md-0 mt-5 mb-5">
                 <h2 class="mb-5">Преимущества</h2>
-                <ul class="d-flex flex-wrap justify-content-between">
-                    <li class="d-flex align-items-center">
-                        <img class="lazyload" src="./img/main/svg/b1.svg" alt="">
+                <div class="row g-lg-5">
+                    <div class="benefit col-12 col-md-4 d-flex">
+                        <img class="lazyload me-4" src="./img/main/svg/b1.svg" alt="">
                         <p>
                             Возможность поэтапной
                             оплаты
                         </p>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <img class="lazyload" src="./img/main/svg/b2.svg" alt="">
+                    </div>
+                    <div class="benefit col-12 col-md-4 d-flex">
+                        <img class="lazyload me-4" src="./img/main/svg/b2.svg" alt="">
                         <p>
                             Собственный штат
                             квалифицированных рабочих
                         </p>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <img class="lazyload" src="./img/main/svg/b3.svg" alt="">
+                    </div>
+                    <div class="benefit col-12 col-md-4 d-flex">
+                        <img class="lazyload me-4" src="./img/main/svg/b3.svg" alt="">
                         <p>
                             Индивидуальный подход
                             к каждому клиенту
                         </p>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <img class="lazyload" src="./img/main/svg/b4.svg" alt="">
+                    </div>
+                    <div class="benefit col-12 col-md-4 d-flex">
+                        <img class="lazyload me-4" src="./img/main/svg/b4.svg" alt="">
                         <p>
                             Абонентское обслуживание,
                             эксплуатация
                         </p>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <img class="lazyload" src="./img/main/svg/b5.svg" alt="">
+                    </div>
+                    <div class="benefit col-12 col-md-4 d-flex">
+                        <img class="lazyload me-4" src="./img/main/svg/b5.svg" alt="">
                         <p>
                             Гарантия на все
                             выполняемые нами работы
                         </p>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <img class="lazyload" src="./img/main/svg/b6.svg" alt="">
+                    </div>
+                    <div class="benefit col-12 col-md-4 d-flex">
+                        <img class="lazyload me-4" src="./img/main/svg/b6.svg" alt="">
                         <p>
                             Поэтапная оплата
                         </p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+
                 <h2 class="mb-lg-5 mt-5">Почему стоит доверить нам?</h2>
-                <div class="text_content d-flex flex-column flex-md-row">
-                    <div class="text_content_text">
+                <div class="row text_content">
+                    <div class="col-12 col-sm-6 text_content_text">
                         <p>Мы работаем по официальному договору. После согласования всех деталей ремонта с заказчиком,
                             мы
                             заключаем официальный договор, в котором прописываются все важные моменты - сроки ремонта,
@@ -558,30 +791,30 @@
                             работ.
                         </p>
                     </div>
-                    <img src="./img/main/benefits.png" alt="Armchair">
+                    <img class="col-12 col-sm-6 lazyload h-100" src="./img/main/benefits.png" alt="Armchair">
                 </div>
-                <div class="download_file">
-                    <h2 class="mb-5">
+                <div class="row download_file">
+                    <h2 class="col-12 col-md-6 col-lg-12 mb-5 mt-5 mt-md-0">
                         Документы на ремонт
                     </h2>
-                    <div class="docs">
-                        <a download href="#" class="mb-2 docs_link">
-                            <img class="ml-3 mr-3" src="./img/main/svg/file.svg" alt="File">
-                            <span>
+                    <div class="col-12 col-md-6 col-lg-12 docs">
+                        <a download href="#" class="mb-2 d-flex align-items-center docs_link">
+                            <img class="ms-5" src="./img/main/svg/file.svg" alt="File">
+                            <span class="ms-3">
                                 Cтоимость
                                 ремонта
                             </span>
                         </a>
-                        <a download href="#" class="mb-2 docs_link">
-                            <img class="ml-3 mr-3" src="./img/main/svg/file.svg" alt="File">
-                            <span>
+                        <a download href="#" class="mb-2 d-flex align-items-center docs_link">
+                            <img class="ms-5" src="./img/main/svg/file.svg" alt="File">
+                            <span class="ms-3">
                                 Образец
                                 договора
                             </span>
                         </a>
-                        <a download href="#" class="mb-2 docs_link">
-                            <img class="ml-3 mr-3" src="./img/main/svg/file.svg" alt="File">
-                            <span>
+                        <a download href="#" class="mb-2 d-flex align-items-center docs_link">
+                            <img class="ms-5" src="./img/main/svg/file.svg" alt="File">
+                            <span class="ms-3">
                                 Пример сметы
                             </span>
                         </a>
@@ -748,19 +981,28 @@
             </section>
 
             <!-- Order a call -->
-            <section class="section_backcall container-fluid">
-                <div class="container d-flex flex-column flex-sm-row flex-lg-column">
-                    <h2>
-                        Закажите обратный
-                        звонок!
-                    </h2>
-                    <form
-                        class="modal-form call_form mt-lg-4  d-flex flex-column flex-lg-row justify-content-between align-items-center"
-                        action="#">
-                        <input type="text" placeholder="Имя">
-                        <input class="mt-2 mb-2" type="number" placeholder="Телефон">
-                        <button data-bs-toggle="modal" data-bs-target="#backcallmodal">Заказать звонок</button>
-                    </form>
+            <section class="section_backcall container-fluid pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="col-12 col-md-6 col-lg-12">
+                            Закажите обратный
+                            звонок!
+                        </h2>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <form class="row g-3  needs-validation modal-form call_form" action="#" novalidate>
+                                <div class="col-12 col-lg-4">
+                                    <input required class="form-control" type="text" placeholder="Имя" required>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <input required class="form-control" type="number" placeholder="Телефон" required>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <button type="submit">Заказать
+                                        звонок</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -769,71 +1011,111 @@
         </main>
 
 
-        <footer class="footer container-fluid">
+        <footer class="footer container-fluid overflow-hidden">
             <div class="footer_bg container">
-                <div class="row d-flex flex-wrap flex-column flex-md-row">
-                    <div class="col-2 m-auto w-auto">
-                        <div class="col-lg-3">
-                            <a href="#">
-                                <img src="./img/header/logoLite.png" alt="Logo">
-                            </a>
+                <div class="row p-3 g-3 g-md-1">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <a href="#">
+                            <img src="./img/header/logoLite.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row row-cols-md-3 g-3 g-md-1">
+                            <div class="col-12 col-md-4">
+                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#foterCreate"
+                                    role="button" aria-expanded="false" aria-controls="foterCreate">
+                                    Проектирование
+                                </a>
+                                <div class="collapse" id="foterCreate">
+                                    <ul class="p-2">
+                                        <li><a href="#">Обмеры</a></li>
+                                        <li><a href="#">Разработка дизайн-проекта</a></li>
+                                        <li><a href="#">Рабочая документация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#foterRepais"
+                                    role="button" aria-expanded="false" aria-controls="foterRepais">
+                                    Ремонт
+                                </a>
+                                <div class="collapse" id="foterRepais">
+                                    <ul class="p-2">
+                                        <li><a href="#">Обмеры</a></li>
+                                        <li><a href="#">Разработка дизайн-проекта</a></li>
+                                        <li><a href="#">Рабочая документация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#footerBild"
+                                    role="button" aria-expanded="false" aria-controls="footerBild">
+                                    Строительство
+                                </a>
+                                <div class="collapse" id="footerBild">
+                                    <ul class="p-2">
+                                        <li><a href="#">Обмеры</a></li>
+                                        <li><a href="#">Разработка дизайн-проекта</a></li>
+                                        <li><a href="#">Рабочая документация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a class="footer_link footer_acardion" data-bs-toggle="collapse"
+                                    href="#footerRepairsHouse" role="button" aria-expanded="false"
+                                    aria-controls="footerRepairsHouse">
+                                    Ремонт домов
+                                </a>
+                                <div class="collapse" id="footerRepairsHouse">
+                                    <ul class="p-2">
+                                        <li><a href="#">Обмеры</a></li>
+                                        <li><a href="#">Разработка дизайн-проекта</a></li>
+                                        <li><a href="#">Рабочая документация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="#" class="footer_link">
+                                    О компании
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="#" class="footer_link">
+                                    Реализованные проекты
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="#" class="footer_link">
+                                    Контакты
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="#" class="footer_link">
+                                    <span>+7(499) 755 96 64 <img src="img/header/whatsapp.png" alt="whatsapp"></span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="#" class="footer_link d-flex flex-column">
+                                    <span>skidea@yandex.ru</span>
+                                    <span>Кировоградская, д.2</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-2 m-auto w-auto">
-                        <div class="col">
-                            <a href="#">
-                                О компании
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#">
-                                компании
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#">
-                                компании
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-2 m-auto w-auto">
-                        <div class="col">
-                            <a href="#">
-                                компании
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#">
-                                компании
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#">
-                                компании
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-3 ">
-                        <div class="col">
-                            +7(499) 755 96 64
-                        </div>
-                        <div class="col">
-                            skidea@yandex.ru
-                        </div>
-                        <div class="col">
-                            Кировоградская, д.2
-                        </div>
-                    </div>
-                    <div class="col-3 m-auto w-100 me-md-auto">
+                    <div class="col-12 col-md-4 col-lg-3">
                         <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
                             class="header-nav__backcall mx-auto">
                             Заказать звонок
                         </button>
                     </div>
+
                 </div>
-
+                <div class="row pt-3 pb-4 copyright">
+                    <div class="col-12 ">
+                        <span>© 2011-2021. Все права защищены</span>
+                    </div>
+                </div>
             </div>
-
 
 
         </footer>
@@ -852,10 +1134,11 @@
                         <div class="modal-body d-flex flex-column align-items-center">
                             <h3 class="modal-title" id="backcallmodalLabel">Обратный звонок</h3>
                             <span>Отправь заявку, и мы перезвоним вам через 15 мин!</span>
-                            <form class="modal-form w-100 pt-2 p-md-5 d-flex flex-column align-items-center" action="#">
-                                <input type="text" placeholder="Имя">
-                                <input class="mt-2 mb-2" type="number" placeholder="Телефон">
-                                <button>Заказать звонок</button>
+                            <form class="modal-form  needs-validation w-100 pt-2 p-md-5 d-flex
+                                flex-column align-items-center" action="#" novalidate>
+                                <input required class="form-control" type="text" placeholder="Имя">
+                                <input required class="form-control mt-2 mb-2" type="number" placeholder="Телефон">
+                                <button type="submit">Заказать звонок</button>
                             </form>
                         </div>
                     </div>
@@ -870,42 +1153,57 @@
                     <button type="button" class="btn-close modal-close" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                     <div class="modal-body">
-                        <form
-                            class="row modal-form mx-auto flex-wrap w-100 flex-md-row flex-column justify-content-center">
-                            <div class="col mb-3">
-                                <input class="mx-auto" type="text" placeholder="Имя">
+                        <form action="#" class="row g-3 p-2 p-xl-5 needs-validation " novalidate>
+                            <div class="col-12 col-xl-6">
+                                <input required class="form-control" type="text" id="modal_name" placeholder="Имя">
+                                <div id="modal_name" class="invalid-feedback">
+                                    Введите ваше Имя
+                                </div>
                             </div>
-                            <div class="col mb-3 ">
-                                <input class="mx-auto" type="number" placeholder="Телефон">
+                            <div class="col-12 col-xl-6">
+                                <input required class="form-control" type="text" id="modal_phone" placeholder="Телефон">
+                                <div id="modal_phone" class="invalid-feedback">
+                                    Введите ваш номер телефона
+                                </div>
                             </div>
-                            <div class="col mb-3">
-                                <input class="mx-auto" type="email" placeholder="Почта">
+                            <div class="col-12 col-xl-6">
+                                <input required class="form-control" type="email" id="modal_email" placeholder="Почта">
+                                <div id="modal_email" class="invalid-feedback">
+                                    Введите вашe почту
+                                </div>
                             </div>
-                            <div class="col mb-3 ">
-                                <select class="mx-auto">
+                            <div class="col-12 col-xl-6">
+                                <select required class="form-select" id="modal_select">
                                     <option value="overhaul">Капитальный ремонт</option>
                                     <option value="homeConstruction">Строительство дома</option>
                                 </select>
+                                <div id="modal_select" class="invalid-feedback">
+                                    Ввыберите опцию
+                                </div>
                             </div>
-                            <div class="col mb-3  d-flex justify-content-evenly">
-                                <label for="strainer" class="d-flex align-items-center justify-content-center">
-                                    <span>Наличие стяжки</span>
-                                    <input class="m-1" type="checkbox" id="strainer">
-                                </label>
-                                <label for="wiring" class="d-flex align-items-center justify-content-center">
-                                    <span>Проводка</span>
-                                    <input class="m-1" type="checkbox" id="wiring">
-                                </label>
+                            <div class="col-12 col-xl-6">
+                                <div class="row">
+                                    <label for="strainer"
+                                        class="col form-label d-flex align-items-center justify-content-center">
+                                        <span class="mr-">Наличие стяжки</span>
+                                        <input required class="ms-3 ms-md-2 checkbox" type="checkbox" id="strainer">
+                                    </label>
+                                    <label for="wiring"
+                                        class="col form-label d-flex align-items-center justify-content-center">
+                                        <span class="mr-2">Проводка</span>
+                                        <input required class="ms-3 ms-md-2 checkbox" type="checkbox" id="wiring">
+                                    </label>
+                                </div>
                             </div>
-                            <div class="col mb-3">
-                                <label for="meter"
-                                    class="meter mx-auto mx-lg-0 d-flex align-items-center justify-content-between">
-                                    <span>Площадь квартиры</span>
-                                    <input id="meter" type="number">
-                                </label>
+                            <div class="col-12 col-xl-6">
+                                <input required class="form-control" id="modal_meter" type="text"
+                                    placeholder="Площадь квартиры в м²">
+                                <div id="modal_meter" class="invalid-feedback">
+                                    Введите метраж
+                                </div>
                             </div>
-                            <div class="col d-lg-block d-sm-flex justify-content-center">
-                                <button class="ms-lg-auto me-lg-4 d-block">Рассчитать</button>
+                            <div class="col-12 col-xl-6">
+                                <button type="submit">Рассчитать</button>
                             </div>
                         </form>
                     </div>
@@ -922,7 +1220,31 @@
 <script type="text/javascript" src="js/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/plugins/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/plugins/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="js/plugins/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mask.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async>
+</script>
+<script>
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
 <script src="js/main.js"></script>
 </body>
 

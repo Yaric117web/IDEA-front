@@ -1,11 +1,33 @@
 .footer {
-    min-height: 278px;
-    background: rgb(121, 119, 117);
+    background: $footer_bg_color;
     &_bg {
-        background: url(../img/main/footer.png) center no-repeat;
         background-size: cover;
-        height: inherit;
         color: #fff;
+        @media (min-width: 450px) {
+            background: url(../img/main/footer.png) center no-repeat;
+        }
+    }
 
+    &_link {
+        font-weight: 450;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: -0.03em;
+
+        @media (min-width: 540px) {
+            font-size: 15px;
+        }
+    }
+
+    &_acardion {
+        &::after {
+            content: url("../img/header/arrowmenuWite.png");
+            margin-left: 8px;
+            transform: scale(2);
+        }
+    }
+
+    & .copyright {
+        border-top: 1px solid #fff;
     }
 }

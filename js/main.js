@@ -37,9 +37,10 @@ $(".regular").slick({
     ]
 });
 
-$('.grid').masonry({
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-item',
-    percentPosition: true,
-    gutter: 15,
-});
+
+
+// Mask
+
+$('#meter').mask("000", { placeholder: "36 м²" });
+$('#modal_meter').mask("000", { placeholder: "36 м²" });
+$('#modal_phone').mask("0(000)000 00 00");

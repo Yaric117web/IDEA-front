@@ -5,6 +5,62 @@ $header_text_color: #464646;
 $header_link_color: #4f4f4f;
 $button_color: #363636;
 $block_fone: #f6f7fa;
+$benefit_text_color: #3b3b38;
+$benefit_text_content_color: #808080;
+$footer_bg_color: #5C5A56;
+
+form {
+    & input,
+    & select,
+    & .meter {
+        width: 100%;
+        height: 56px;
+        padding: 0 24px;
+        border: 2px solid #dedede;
+        border-radius: 4px;
+    }
+
+    & input {
+        font-size: 18px;
+        line-height: 23px;
+        color: $input_color;
+    }
+
+    & button {
+        color: $button_color;
+        width: 100%;
+        height: 56px;
+        background: $gold_color;
+        border-radius: 4px;
+
+        &:hover {
+            background: $gold_color_hover;
+        }
+    }
+
+    & .checkbox {
+        width: 24px;
+        height: 24px;
+    }
+
+    & .meter {
+        border: 2px solid #dedede;
+        & > span {
+            width: 49%;
+            display: block;
+        }
+        & > input {
+            height: 100%;
+            width: 49%;
+            border: none;
+            border-left: 2px solid #dedede;
+        }
+    }
+
+    & select {
+        font-weight: bold;
+    }
+}
 
 button {
     font-weight: bold;
@@ -13,6 +69,7 @@ button {
     text-align: center;
     color: $button_color;
     background: $gold_color;
+    border: none;
     &:hover {
         background: $gold_color_hover;
     }
@@ -32,6 +89,24 @@ a {
     }
 }
 
+h3 {
+    color: $header_link_color;
+    @media (min-width: 300px) {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: -0.03em;
+        color: $header_link_color;
+    }
+    @media (min-width: 560px) {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    @media (min-width: 1020px) {
+        font-size: 34px;
+    }
+}
 h2 {
     color: $header_link_color;
     @media (min-width: 300px) {
@@ -50,6 +125,7 @@ h2 {
         line-height: 60px;
     }
 }
+
 p {
     @media (min-width: 300px) {
         font-size: 18px;
@@ -73,16 +149,17 @@ p {
     min-height: 100vh;
     overflow: hidden;
     font-family: "Futura PT";
+    position: relative;
 }
 
 /* Scroll */
 ::-webkit-scrollbar {
     width: 10px;
     background: transparent;
-    position: relative;
 }
 ::-webkit-scrollbar-thumb {
     background-color: $gold_color;
+    width: 10px;
     border-radius: 2px;
 }
 
@@ -91,9 +168,6 @@ html {
     scrollbar-width: none;
 }
 /* Scroll */
-button {
-    border: none;
-}
 
 /* Убираем стандартный маркер Chrome */
 details summary::-webkit-details-marker {

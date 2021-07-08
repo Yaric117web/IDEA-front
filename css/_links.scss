@@ -1,188 +1,30 @@
 .links {
     & .link {
         @media (min-width: 300px) {
-            width: 100%;
-            height: 470px;
             color: $header_link_color;
-            & h3 {
-                font-weight: bold;
-                font-size: 24px;
-            }
-            & li {
-                font-size: 20px;
-                margin-top: 5px;
-                & a {
-                    display: block;
-                    max-width: 300px;
-                }
-            }
-
-            &:nth-child(1) {
-                background: linear-gradient(180deg, #f5f5f5 50%, transparent 70%),
-                    url(../img/main/mainLink1.png) no-repeat bottom;
-                background-size: contain;
-            }
-            &:nth-child(2) {
-                background: linear-gradient(180deg, #d6e0ea 0%, transparent 50%), url(../img/main/mainLink2.png);
-                background-position: bottom right;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            &:nth-child(3) {
-                background: linear-gradient(180deg, #f5f5f5 40%, transparent 60%), url(../img/main/mainLink3.png);
-                background-position: 0 100%;
-                background-repeat: no-repeat;
-                background-size: 100%;
-            }
-            &:nth-child(4) {
-                background: url(../img/main/mainLink4.png);
-                background-position: bottom;
-                background-repeat: no-repeat;
-                background-size: 100%;
-            }
+            min-height: 470px;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-clip: border-box;
         }
-        @media (min-width: 768px) {
-            width: 100%;
-            height: 256px;
-            & ul {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                height: 140px;
-                width: 70%;
-            }
-
-            & li {
-                font-size: 18px;
-                margin-bottom: 5px;
-            }
-
-            &:nth-child(1) {
-                background: linear-gradient(90deg, #edeeeb 50%, transparent 55%), url(../img/main/mainLink1.png);
-                background-position: 100%, right;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-            &:nth-child(2) {
-                background: linear-gradient(90deg, #d6e0ea 50%, transparent 60%), url(../img/main/mainLink2.png);
-                background-position: 100%, right;
-                background-repeat: no-repeat;
-                background-size: 100%, contain;
-            }
-            &:nth-child(3) {
-                background: linear-gradient(90deg, #f1f3f4 50%, transparent 70%), url(../img/main/mainLink3.png);
-                background-position: right;
-                background-repeat: no-repeat;
-                background-size: 100%, 50%;
-            }
-            &:nth-child(4) {
-                background: linear-gradient(90deg, #e8e9eb 60%, transparent 70%), url(../img/main/mainLink4.png);
-                background-position: 100%, right 90%;
-                background-repeat: no-repeat;
-                background-size: 100%, 40%;
-            }
+        @media (min-width: 680px) {
+            min-height: 256px;
+            background-position: right;
         }
         @media (min-width: 960px) {
-            width: 100%;
-            height: 580px;
-            & ul {
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                width: 100%;
-            }
-            & h3 {
-                font-size: 20px;
-            }
-            & li {
-                font-size: 18px;
-                margin: 5px;
-            }
-            &:nth-child(1) {
-                background: linear-gradient(180deg, #edeeeb 60%, transparent 70%), url(../img/main/mainLink1.png);
-                background-position: 100%, bottom;
-                background-repeat: no-repeat;
-                background-size: 100%, 150%;
-            }
-            &:nth-child(2) {
-                background: linear-gradient(180deg, #d6e0ea 50%, transparent 80%), url(../img/main/mainLink2.png);
-                background-position: bottom right;
-                background-repeat: no-repeat;
-                background-size: 300%;
-            }
-            &:nth-child(3) {
-                background: linear-gradient(180deg, #f5f5f5 55%, transparent 70%), url(../img/main/mainLink3.png);
-                background-position: 70% 100%;
-                background-repeat: no-repeat;
-                background-size: 150%;
-            }
-            &:nth-child(4) {
-                background: url(../img/main/mainLink4.png);
-                background-position: bottom;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+            min-height: 380px;
+            background-position: bottom;
         }
-        @media (min-width: 1440px) {
-            height: 680px;
+        @media (min-width: 1160px) {
+            min-height: 680px;
+            background-position: bottom;
+        }
+        & a {
+            font-size: 20px;
+            line-height: 40px;
+            letter-spacing: -0.03em;
             color: $header_link_color;
-            & h3 {
-                font-size: 34px;
-            }
-            & li {
-                font-size: 20px;
-            }
-            &:nth-child(1) {
-                background: linear-gradient(180deg, #edeeeb 65%, transparent 70%), url(../img/main/mainLink1.png);
-                background-position: 100%, bottom;
-                background-repeat: no-repeat;
-                background-size: 100%, 120%;
-            }
-            &:nth-child(2) {
-                background: linear-gradient(180deg, #d6e0ea 40%, transparent 50%), url(../img/main/mainLink2.png);
-                background-position: bottom right;
-                background-repeat: no-repeat;
-                background-size: 100%, 280%;
-            }
-            &:nth-child(3) {
-                background: linear-gradient(180deg, #f5f5f5 55%, transparent 70%), url(../img/main/mainLink3.png);
-                background-position: bottom right;
-                background-repeat: no-repeat;
-                background-size: 130%;
-            }
-            &:nth-child(4) {
-                background: url(../img/main/mainLink4.png);
-                background-position: bottom;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        }
-        @media (min-width: 1800px) {
-            height: 680px;
-            &:nth-child(1) {
-                background: linear-gradient(180deg, #edeeeb 50%, transparent 60%), url(../img/main/mainLink1.png);
-                background-position: 100%, bottom;
-                background-repeat: no-repeat;
-                background-size: 100%, 120%;
-            }
-            &:nth-child(2) {
-                background: linear-gradient(180deg, #d6e0ea 40%, transparent 50%), url(../img/main/mainLink2.png);
-                background-position: bottom right;
-                background-repeat: no-repeat;
-                background-size: 100%, 280%;
-            }
-            &:nth-child(3) {
-                background: linear-gradient(180deg, #f5f5f5 35%, transparent 70%), url(../img/main/mainLink3.png);
-                background-position: bottom right;
-                background-repeat: no-repeat;
-                background-size: 130%;
-            }
-            &:nth-child(4) {
-                background: url(../img/main/mainLink4.png);
-                background-position: bottom;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
         }
     }
 }

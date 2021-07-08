@@ -1,5 +1,5 @@
 .section-galery {
-    & > button {
+    .btn_show {
         background: $gold_color;
         border-radius: 2px;
         width: 377px;
@@ -14,66 +14,4 @@
             width: 377px;
         }
     }
-    &__wrapper {
-        .grid-item {
-            width: 30%;
-            height: 320px;
-            margin-bottom: 1%;
-
-            & img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-        .grid-item--width2 {
-            width: 61%;
-        }
-
-        .grid-item--height2 {
-            height: 410px;
-        }
-        .grid-item--height3 {
-            height: 500px;
-        }
-
-        @media (max-width: 1200px) {
-            .grid-item,
-            .grid-item--width2,
-            .grid-item--height2,
-            .grid-item--height3 {
-                min-width: 47%;
-                width: min-content;
-                height: 320px;
-                margin: 10px;
-            }
-            .grid-item {
-                &:last-child {
-                    display: none;
-                }
-            }
-        }
-        @media (max-width: 760px) {
-            .grid-item,
-            .grid-item--width2,
-            .grid-item--height2,
-            .grid-item--height3 {
-                min-width: 100%;
-                margin: 0 0 10px 0;
-                width: min-content;
-                height: 320px;
-            }
-            .grid-item {
-                &:last-child {
-                    display: none;
-                }
-            }
-        }
-    }
-}
-/* clear fix */
-.grid:after {
-    content: "";
-    display: block;
-    clear: both;
 }
