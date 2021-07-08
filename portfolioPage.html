@@ -658,91 +658,100 @@
         <!-- Footer -->
         <footer class="footer container-fluid p-0" style="background: url(img/main/footer.png);">
             <div class="container p-0">
-                <div class="row p-4 g-3 g-md-2 justify-content-end">
-                    <div class="col-12 col-md-4 col-lg-3">
+                <div class="row p-3 g-3 g-md-2 justify-content-end">
+                    <div class="col-12 col-sm-4 col-lg-3">
                         <a href="#">
                             <img src="./img/header/logoLite.png" alt="Logo">
                         </a>
+                        <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
+                            class="header-nav__backcall mt-3 d-none d-sm-block d-lg-none w-100">
+                            Заказать звонок
+                        </button>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#foterCreate"
-                            role="button" aria-expanded="false" aria-controls="foterCreate">
-                            Проектирование
-                        </a>
-                        <div class="collapse" id="foterCreate">
-                            <ul class="p-2">
-                                <li><a href="#">Обмеры</a></li>
-                                <li><a href="#">Разработка дизайн-проекта</a></li>
-                                <li><a href="#">Рабочая документация</a></li>
-                            </ul>
+                    <div class="col-12 col-sm-8 col-lg-7">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+                            <div class="col">
+                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#foterCreate"
+                                    role="button" aria-expanded="false" aria-controls="foterCreate">
+                                    Проектирование
+                                </a>
+                                <div class="collapse" id="foterCreate">
+                                    <ul class="p-2">
+                                        <li><a href="#">Обмеры</a></li>
+                                        <li><a href="#">Разработка дизайн-проекта</a></li>
+                                        <li><a href="#">Рабочая документация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#foterRepais"
+                                    role="button" aria-expanded="false" aria-controls="foterRepais">
+                                    Ремонт
+                                </a>
+                                <div class="collapse" id="foterRepais">
+                                    <ul class="p-2">
+                                        <li><a href="#">Обмеры</a></li>
+                                        <li><a href="#">Разработка дизайн-проекта</a></li>
+                                        <li><a href="#">Рабочая документация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#footerBild"
+                                    role="button" aria-expanded="false" aria-controls="footerBild">
+                                    Строительство
+                                </a>
+                                <div class="collapse" id="footerBild">
+                                    <ul class="p-2">
+                                        <li><a href="#">Обмеры</a></li>
+                                        <li><a href="#">Разработка дизайн-проекта</a></li>
+                                        <li><a href="#">Рабочая документация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <a class="footer_link footer_acardion" data-bs-toggle="collapse"
+                                    href="#footerRepairsHouse" role="button" aria-expanded="false"
+                                    aria-controls="footerRepairsHouse">
+                                    Ремонт домов
+                                </a>
+                                <div class="collapse" id="footerRepairsHouse">
+                                    <ul class="p-2">
+                                        <li><a href="#">Обмеры</a></li>
+                                        <li><a href="#">Разработка дизайн-проекта</a></li>
+                                        <li><a href="#">Рабочая документация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="footer_link">
+                                    О компании
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="footer_link">
+                                    Контакты
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./portfolioPage.html" class="footer_link">
+                                    Реализованные проекты
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="footer_link fw-bold">
+                                    <span>+7(499) 755 96 64</span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="footer_link email_address lh-base d-flex flex-column">
+                                    <span class="fw-bolder email">skidea@yandex.ru</span>
+                                    <span class="fw-light address">Кировоградская, д.2</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#foterRepais"
-                            role="button" aria-expanded="false" aria-controls="foterRepais">
-                            Ремонт
-                        </a>
-                        <div class="collapse" id="foterRepais">
-                            <ul class="p-2">
-                                <li><a href="#">Обмеры</a></li>
-                                <li><a href="#">Разработка дизайн-проекта</a></li>
-                                <li><a href="#">Рабочая документация</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <a href="#" class="footer_link">
-                            О компании
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#footerRepairsHouse"
-                            role="button" aria-expanded="false" aria-controls="footerRepairsHouse">
-                            Ремонт домов
-                        </a>
-                        <div class="collapse" id="footerRepairsHouse">
-                            <ul class="p-2">
-                                <li><a href="#">Обмеры</a></li>
-                                <li><a href="#">Разработка дизайн-проекта</a></li>
-                                <li><a href="#">Рабочая документация</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#footerBild"
-                            role="button" aria-expanded="false" aria-controls="footerBild">
-                            Строительство
-                        </a>
-                        <div class="collapse" id="footerBild">
-                            <ul class="p-2">
-                                <li><a href="#">Обмеры</a></li>
-                                <li><a href="#">Разработка дизайн-проекта</a></li>
-                                <li><a href="#">Рабочая документация</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <a href="#" class="footer_link">
-                            Реализованные проекты
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <a href="./contacts.html" class="footer_link">
-                            Контакты
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <a href="#" class="footer_link fw-bold">
-                            <span>+7(499) 755 96 64</span>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <a href="#" class="footer_link email_address lh-base d-flex flex-column">
-                            <span class="fw-bolder email">skidea@yandex.ru</span>
-                            <span class="fw-light address">Кировоградская, д.2</span>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3">
+                    <div class="col-12 col-lg-2 d-sm-none d-lg-flex">
                         <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
                             class="header-nav__backcall mx-auto">
                             Заказать звонок

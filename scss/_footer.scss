@@ -9,6 +9,16 @@
         font-size: 24px;
         line-height: 40px;
         letter-spacing: -0.03em;
+
+        @media (min-width: 427px) {
+            font-size: 18px;
+        }
+        @media (min-width: 1019px) {
+            font-size: 20px;
+        }
+        @media (min-width: 1190px) {
+            font-size: 24px;
+        }
     }
 
     &_acardion {

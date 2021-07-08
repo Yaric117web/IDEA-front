@@ -912,6 +912,24 @@ details[open] summary:after {
   letter-spacing: -0.03em;
 }
 
+@media (min-width: 427px) {
+  .footer_link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1019px) {
+  .footer_link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1190px) {
+  .footer_link {
+    font-size: 24px;
+  }
+}
+
 .footer_acardion::after {
   content: url("../img/header/arrowmenuWite.png");
   margin-left: 8px;
