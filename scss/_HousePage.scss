@@ -1,0 +1,39 @@
+.includs_list {
+    @media (min-width: 990px) {
+        height: 500px;
+    }
+    @media (min-width: 1100px) {
+        max-width: 1072px;
+        box-shadow: 4px 4px 40px rgba(99, 131, 153, 0.15);
+        border-radius: 2px;
+    }
+
+    & li {
+        max-width: 460px;
+
+        margin: 10px;
+        display: flex;
+
+        & span {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 66px;
+            letter-spacing: -0.03em;
+            color: $gold_color;
+            opacity: 0.8;
+        }
+        & p {
+            margin: 0;
+            padding-right: 10px;
+        }
+
+        @media (min-width: 300px) {
+            width: 100%;
+            flex-direction: column;
+        }
+        @media (min-width: 410px) {
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+}

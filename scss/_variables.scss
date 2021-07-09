@@ -252,7 +252,7 @@ details[open] summary:after {
     height: 25px;
     width: 25px;
     background: #fefeff;
-    border: 2px solid #e8c8a4;
+    border: 2px solid $gold_color;
     border-radius: 2px;
 
     @media (min-width: 300px) {
@@ -293,7 +293,7 @@ details[open] summary:after {
     top: 0px;
     width: 5px;
     height: 11px;
-    border: solid #e8c8a4;
+    border: solid $gold_color;
     border-width: 0 4px 4px 0;
     transform: rotate(45deg);
 }
@@ -310,7 +310,7 @@ details[open] summary:after {
     height: 4.5rem;
     margin-left: -1.3rem;
     margin-top: -1.3rem;
-    background: #e8c8a4;
+    background: $gold_color;
     border-radius: 3rem;
     opacity: 0.6;
     z-index: 99999;
