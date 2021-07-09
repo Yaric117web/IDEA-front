@@ -40,8 +40,15 @@ $(".regular").slick({
 
 $('#meter').mask("000", { placeholder: "Площядь в м²" });
 $('#modal_meter').mask("000", { placeholder: "Площядь в м²" });
-$('#modal_phone').mask("9(999))999 99 99");
-$('#phone').mask("9(999))999 99 99");
+$('#modal_meter2').mask("000", { placeholder: "Площядь в м²" });
+$('#modal_phone').mask("9(999)999 99 99");
+$('#phone').mask("9(999)999 99 99");
+$('#phone_input').mask("9(999)999 99 99");
+$('#phone_backcall').mask("9(999)999 99 99");
+$('#contsct_phone1').mask("9(999)999 99 99");
+$('#contsct_phone2').mask("9(999)999 99 99");
+$('#contsct_phone1').mask("9(999)999 99 99");
+$('#contsct_phone2').mask("9(999)999 99 99");
 
 
 // More link
@@ -104,10 +111,19 @@ $(document).ready(function () {
 })()
 
 
-$(function () {
-    $(".fancyLinck").fancybox({
-        'onStart': function () { $("#galery_item").css("display", "flex"); },
-        'onClosed': function () { $("#galery_item").css("display", "none"); }
-    });
-});
+// Output of numbers
+function numberWithSpaces(x) {
+    let parts = x.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    return parts.join(".");
+}
 
+let price = document.querySelectorAll('.price');
+price.forEach(el => {
+    el.insertAdjacentText('afterbegin', `${numberWithSpaces(2300800)}`)
+})
+
+
+$(document).ready(function () {
+    $('select').niceSelect();
+})

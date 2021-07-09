@@ -9,6 +9,7 @@
     <script src="js/plugins/lazyload.js"></script>
     <script src="js/plugins/load.js"></script>
     <link rel="stylesheet" href="css/plugins_css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins_css/nice-select.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,7 +21,7 @@
 
 
         <!-- Header -->
-        <header class="header container-fluid fixed-top pr-5">
+        <header class="header h0 container-fluid pr-5">
 
             <!-- Offcanvas -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
@@ -108,14 +109,25 @@
                             </div>
                         </div>
                         <!-- Just link -->
-                        <a class="link" href="#">О компании</a>
+                        <a class="link" href="./aboutPage.html">О компании</a>
                         <a class="link" href="./portfolioPage.html">Реализованные проекты</a>
                         <a class="link" href="./contacts.html">Контакты</a>
                     </div>
-                    <div class="offcanvas-header_dawn w-100 d-flex flex-column">
-                        <div class="offcanvas_phone">
-                            <span>+7(499) 755 96 64</span>
-                            <img src="./img/header/whatsapp.png" alt="whatsapp">
+                    <div class="w-100 d-flex flex-column">
+                        <div class="offcanvas_phone p-0">
+                            <a href="#">
+                                <span>+7(499) 755 96 64</span>
+                                <img src="./img/header/whatsapp.png" alt="whatsapp">
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a href="skidea@yandex.ru" target="_blank">
+                                <strong><span>skidea@yandex.ru</span></strong>
+                            </a>
+                            <a href="https://yandex.com/maps/org/sk_idea_l/1749203615/?ll=36.707247%2C56.348836&z=18"
+                                target="_blank">
+                                <span>Кировоградская, д.2</span>
+                            </a>
                         </div>
                         <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
                             class="header-nav__backcall d-block d-lg-none">
@@ -125,22 +137,22 @@
                 </div>
             </div>
 
-            <div class="row w-100 align-items-center">
-                <div class="col mb-3">
-                    <!-- Buuton menu open -->
-                    <button class="header__button" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
-                        <img src="./img/header/menu-button.svg" alt="Button menu">
-                    </button>
-                </div>
-                <!-- Back call -->
-                <div class="col">
-                    <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
-                        class="header-nav__backcall ms-md-auto d-none d-md-none d-lg-block">
-                        Обратный звонок
-                    </button>
-                </div>
-            </div>
+
+
+            <!-- Buuton menu open -->
+            <button class="fixed-top m-0  header__button" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                <img src="./img/header/menu-button.svg" alt="Button menu">
+            </button>
+
+            <!-- Back call -->
+
+            <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
+                class="header-nav__backcall fixed-top mt-3 ms-auto me-3 d-none d-md-none d-lg-block">
+                Обратный звонок
+            </button>
+
+
 
         </header>
 
@@ -208,7 +220,6 @@
                     </div>
                 </div>
             </section>
-
 
             <!-- Links baner -->
             <section class="section_links container-fluid m-0">
@@ -631,22 +642,27 @@
                                     <input required class="form-control" type="email" placeholder="Почта">
                                 </div>
                                 <div class="col-12 col-xl-6">
-                                    <select required class="form-select">
+                                    <select required id="about" class=" wide">
                                         <option value="overhaul">Капитальный ремонт</option>
+                                        <option value="homeConstruction">Строительство дома</option>
+                                        <option value="homeConstruction">Строительство дома</option>
+                                        <option value="homeConstruction">Строительство дома</option>
                                         <option value="homeConstruction">Строительство дома</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-xl-6">
                                     <div class="row">
-                                        <label for="strainer"
-                                            class="col d-flex align-items-center justify-content-center">
-                                            <span>Наличие стяжки</span>
+                                        <label for="strainer" class="control control-checkbox col d-flex align-items-center
+                                            justify-content-start ps-3">
+                                            <span class="">Наличие стяжки</span>
                                             <input required class="ms-2 ms-md-2 checkbox" type="checkbox" id="strainer">
+                                            <div class="control_indicator me-xxl-5" style="right: 10px;"></div>
                                         </label>
-                                        <label for="wiring"
-                                            class="col d-flex align-items-center justify-content-center">
-                                            <span>Проводка</span>
+                                        <label for="wiring" class="control control-checkbox col d-flex align-items-center
+                                            justify-content-start ps-3">
+                                            <span class="">Проводка</span>
                                             <input required class="ms-2 ms-md-2 checkbox" type="checkbox" id="wiring">
+                                            <div class="control_indicator me-xxl-5" style="right: 10px;"></div>
                                         </label>
                                     </div>
                                 </div>
@@ -671,48 +687,42 @@
                 <h2 class="mb-5">Преимущества</h2>
                 <div class="row g-2 g-lg-5">
                     <div class="benefit col-12 col-md-4 d-flex">
-
-                        <img class="lazyload me-2" src="./img/main/svg/b1.svg" alt="">
+                        <img class="lazyload me-3" src="./img/main/svg/b1.svg" alt="">
                         <p>
                             Возможность поэтапной
                             оплаты
                         </p>
                     </div>
                     <div class="benefit col-12 col-md-4 d-flex">
-
-                        <img class="lazyload me-2" src="./img/main/svg/b2.svg" alt="">
+                        <img class="lazyload me-3" src="./img/main/svg/b2.svg" alt="">
                         <p>
                             Собственный штат
                             квалифицированных рабочих
                         </p>
                     </div>
                     <div class="benefit col-12 col-md-4 d-flex">
-
-                        <img class="lazyload me-2" src="./img/main/svg/b3.svg" alt="">
+                        <img class="lazyload me-3" src="./img/main/svg/b3.svg" alt="">
                         <p>
                             Индивидуальный подход
                             к каждому клиенту
                         </p>
                     </div>
                     <div class="benefit col-12 col-md-4 d-flex">
-
-                        <img class="lazyload me-2" src="./img/main/svg/b4.svg" alt="">
+                        <img class="lazyload me-3" src="./img/main/svg/b4.svg" alt="">
                         <p>
                             Абонентское обслуживание,
                             эксплуатация
                         </p>
                     </div>
                     <div class="benefit col-12 col-md-4 d-flex">
-
-                        <img class="lazyload me-2" src="./img/main/svg/b5.svg" alt="">
+                        <img class="lazyload me-3" src="./img/main/svg/b5.svg" alt="">
                         <p>
                             Гарантия на все
                             выполняемые нами работы
                         </p>
                     </div>
                     <div class="benefit col-12 col-md-4 d-flex">
-
-                        <img class="lazyload me-2" src="./img/main/svg/b6.svg" alt="">
+                        <img class="lazyload me-3" src="./img/main/svg/b6.svg" alt="">
                         <p>
                             Поэтапная оплата
                         </p>
@@ -742,11 +752,11 @@
                         Документы на ремонт
                     </h2>
                     <div class="col-12 col-md-6 col-lg-12 docs">
-                        <div class="row">
+                        <div class="row row-cols-1 row-cols-lg-3">
                             <div class="col">
                                 <a download href="#" class="mb-2 d-flex align-items-center docs_link">
-                                    <img class="ms-5" src="./img/main/svg/file.svg" alt="File">
-                                    <span class="ms-3">
+                                    <img class="mx-3" src="./img/main/svg/file.svg" alt="File">
+                                    <span>
                                         Cтоимость
                                         ремонта
                                     </span>
@@ -754,8 +764,8 @@
                             </div>
                             <div class="col">
                                 <a download href="#" class="mb-2 d-flex align-items-center docs_link">
-                                    <img class="ms-5" src="./img/main/svg/file.svg" alt="File">
-                                    <span class="ms-3">
+                                    <img class="mx-3" src="./img/main/svg/file.svg" alt="File">
+                                    <span>
                                         Образец
                                         договора
                                     </span>
@@ -763,8 +773,8 @@
                             </div>
                             <div class="col">
                                 <a download href="#" class="mb-2 d-flex align-items-center docs_link">
-                                    <img class="ms-5" src="./img/main/svg/file.svg" alt="File">
-                                    <span class="ms-3">
+                                    <img class="mx-3" src="./img/main/svg/file.svg" alt="File">
+                                    <span>
                                         Пример сметы
                                     </span>
                                 </a>
@@ -970,7 +980,8 @@
                                     <input required class="form-control" type="text" placeholder="Имя" required>
                                 </div>
                                 <div class="col-12 col-lg-4">
-                                    <input required class="form-control" type="number" placeholder="Телефон" required>
+                                    <input required class="form-control" type="text" id="phone_input"
+                                        placeholder="Телефон" required>
                                 </div>
                                 <div class="col-12 col-lg-4">
                                     <button type="submit" data-bs-toggle="modal" data-bs-target="#confirmation">Заказать
@@ -985,11 +996,11 @@
         </main>
 
         <!-- Footer -->
-        <footer class="footer container-fluid p-0" style="background: url(img/main/footer.png);">
+        <footer class="footer container-fluid " style="background: url(img/main/footer.png);">
             <div class="container p-0">
-                <div class="row p-3 g-3 g-md-2 justify-content-end">
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <a href="#">
+                <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 py-3">
+                    <div class="col">
+                        <a href="./index.html">
                             <img src="./img/header/logoLite.png" alt="Logo">
                         </a>
                         <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
@@ -997,92 +1008,62 @@
                             Заказать звонок
                         </button>
                     </div>
-                    <div class="col-12 col-sm-8 col-lg-7">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+                    <div class="col">
+                        <div class="row row-cols-1 row-cols-md-2">
                             <div class="col">
-                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#foterCreate"
-                                    role="button" aria-expanded="false" aria-controls="foterCreate">
-                                    Проектирование
-                                </a>
-                                <div class="collapse" id="foterCreate">
-                                    <ul class="p-2">
-                                        <li><a href="#">Обмеры</a></li>
-                                        <li><a href="#">Разработка дизайн-проекта</a></li>
-                                        <li><a href="#">Рабочая документация</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#foterRepais"
-                                    role="button" aria-expanded="false" aria-controls="foterRepais">
-                                    Ремонт
-                                </a>
-                                <div class="collapse" id="foterRepais">
-                                    <ul class="p-2">
-                                        <li><a href="#">Обмеры</a></li>
-                                        <li><a href="#">Разработка дизайн-проекта</a></li>
-                                        <li><a href="#">Рабочая документация</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#footerBild"
-                                    role="button" aria-expanded="false" aria-controls="footerBild">
-                                    Строительство
-                                </a>
-                                <div class="collapse" id="footerBild">
-                                    <ul class="p-2">
-                                        <li><a href="#">Обмеры</a></li>
-                                        <li><a href="#">Разработка дизайн-проекта</a></li>
-                                        <li><a href="#">Рабочая документация</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <a class="footer_link footer_acardion" data-bs-toggle="collapse"
-                                    href="#footerRepairsHouse" role="button" aria-expanded="false"
-                                    aria-controls="footerRepairsHouse">
-                                    Ремонт домов
-                                </a>
-                                <div class="collapse" id="footerRepairsHouse">
-                                    <ul class="p-2">
-                                        <li><a href="#">Обмеры</a></li>
-                                        <li><a href="#">Разработка дизайн-проекта</a></li>
-                                        <li><a href="#">Рабочая документация</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <a href="#" class="footer_link">
+                                <a href="./aboutPage.html" class="footer_link">
                                     О компании
                                 </a>
                             </div>
                             <div class="col">
                                 <a href="#" class="footer_link">
-                                    Контакты
+                                    Еще услуги
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="footer_link">
+                                    Ремонт
                                 </a>
                             </div>
                             <div class="col">
                                 <a href="./portfolioPage.html" class="footer_link">
-                                    Реализованные проекты
+                                    Проекты
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="#" class="footer_link fw-bold">
-                                    <span>+7(499) 755 96 64</span>
+                                <a href="#" class="footer_link">
+                                    Строительство
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="#" class="footer_link email_address lh-base d-flex flex-column">
-                                    <span class="fw-bolder email">skidea@yandex.ru</span>
-                                    <span class="fw-light address">Кировоградская, д.2</span>
+                                <a href="./contacts.html" class="footer_link">
+                                    Контакты
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-2 d-sm-none d-lg-flex">
-                        <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
-                            class="header-nav__backcall mx-auto">
+                    <div class="col">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <a href="#" class="footer_link">
+                                    +7(499) 755 96 64
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" target="_blank" class="footer_link">
+                                    skidea@yandex.ru
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://yandex.com/maps/org/sk_idea_l/1749203615/?ll=36.707247%2C56.348836&z=18"
+                                    target="_blank" class="footer_link">
+                                    Кировоградская, д.2
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex d-sm-none d-lg-flex">
+                        <button data-bs-toggle="modal" data-bs-target="#backcallmodal" class="header-nav__backcall">
                             Заказать звонок
                         </button>
                     </div>
@@ -1135,7 +1116,8 @@
                             <form class="modal-form  needs-validation w-100 pt-2 p-md-5 d-flex
                                 flex-column align-items-center" action="#" novalidate>
                                 <input required class="form-control" type="text" placeholder="Имя">
-                                <input required class="form-control mt-2 mb-2" type="number" placeholder="Телефон">
+                                <input required class="form-control mt-2 mb-2" id="phone_backcall" type="text"
+                                    placeholder="Телефон">
                                 <button type="submit" data-bs-toggle="modal" data-bs-target="#confirmation">Заказать
                                     звонок</button>
                             </form>
@@ -1153,55 +1135,61 @@
                         aria-label="Close"></button>
                     <div class="modal-body">
                         <form action="#" class="row g-3 p-2 p-xl-5 needs-validation justify-content-end" novalidate>
-                            <div class="col-12 col-xl-6">
+                            <div class="col-12 col-lg-6">
                                 <input required class="form-control" type="text" id="modal_name" placeholder="Имя">
                                 <div id="modal_name" class="invalid-feedback">
                                     Введите ваше Имя
                                 </div>
                             </div>
-                            <div class="col-12 col-xl-6">
+                            <div class="col-12 col-lg-6">
                                 <input required class="form-control" type="text" id="modal_phone" placeholder="Телефон">
                                 <div id="modal_phone" class="invalid-feedback">
                                     Введите ваш номер телефона
                                 </div>
                             </div>
-                            <div class="col-12 col-xl-6">
+                            <div class="col-12 col-lg-6">
                                 <input required class="form-control" type="email" id="modal_email" placeholder="Почта">
                                 <div id="modal_email" class="invalid-feedback">
                                     Введите вашe почту
                                 </div>
                             </div>
-                            <div class="col-12 col-xl-6">
-                                <select required class="form-select" id="modal_select">
-                                    <option value="overhaul">Капитальный ремонт</option>
-                                    <option value="homeConstruction">Строительство дома</option>
+                            <div class="col-12 col-lg-6">
+                                <select required class="" id="modal_select">
+                                    <option value="Строительство дома">Строительство дома</option>
+                                    <option value="Капитальный ремонт">Капитальный ремонт</option>
+                                    <option value="Капитальный ремонт">Капитальный ремонт</option>
+                                    <option value="Капитальный ремонт">Капитальный ремонт</option>
+                                    <option value="Капитальный ремонт">Капитальный ремонт</option>
+                                    <option value="Капитальный ремонт">Капитальный ремонт</option>
                                 </select>
                                 <div id="modal_select" class="invalid-feedback">
                                     Ввыберите опцию
                                 </div>
                             </div>
-                            <div class="col-12 col-xl-6">
-                                <div class="row">
-                                    <label for="strainer"
-                                        class="col form-label d-flex align-items-center justify-content-center">
+                            <div class="col-12 col-lg-6">
+                                <div class="row justify-content-center">
+                                    <label for="strainer1" class="control control-checkbox col form-label 
+                                        justify-content-center ps-3">
                                         <span class="mr-">Наличие стяжки</span>
-                                        <input required class="ms-3 ms-md-2 checkbox" type="checkbox" id="strainer">
+                                        <input required class="ms-3 ms-md-2 checkbox" type="checkbox" id="strainer1">
+                                        <div class="control_indicator"></div>
                                     </label>
-                                    <label for="wiring"
-                                        class="col form-label d-flex align-items-center justify-content-center">
+                                    <label for="wiring1" class="control control-checkbox col form-label 
+                                        justify-content-center ps-3">
                                         <span class="mr-2">Проводка</span>
-                                        <input required class="ms-3 ms-md-2 checkbox" type="checkbox" id="wiring">
+                                        <input required class="ms-3 ms-md-2 checkbox" type="checkbox" id="wiring1">
+                                        <div class="control_indicator"></div>
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-12 col-xl-6">
-                                <input required class="form-control" id="modal_meter" type="text"
+                            <div class="col-12 col-lg-6">
+                                <input required class="form-control" id="modal_meter2" type="text"
                                     placeholder="Площадь квартиры в м²">
-                                <div id="modal_meter" class="invalid-feedback">
+                                <div id="modal_meter2" class="invalid-feedback">
                                     Введите метраж
                                 </div>
                             </div>
-                            <div class="col-12 col-xl-6">
+                            <div class="col-12 col-lg-6">
                                 <button type="submit" data-bs-toggle="modal"
                                     data-bs-target="#confirmation">Рассчитать</button>
                             </div>
@@ -1227,6 +1215,7 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async>
     </script>
+    <script src="js/plugins/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
     </body>
 

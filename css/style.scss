@@ -3,6 +3,7 @@
 *::before {
     box-sizing: border-box;
     list-style-type: none;
+    font-family: "Futura PT";
 }
 
 // Fonts
@@ -45,3 +46,16 @@
 
 // Modals
 @import "../scss/_modals.scss";
+
+// ********* Pages**********
+
+// AboutPage
+@import "../scss/_AboutPage.scss";
+
+// ContactPage
+@import "../scss/_ContactPage.scss";
+
+// PortfolioPage
+@import "../scss/_PortfolioPage.scss";
+
+// ********* Pages**********

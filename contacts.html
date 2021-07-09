@@ -9,7 +9,7 @@
     <script src="js/plugins/lazyload.js"></script>
     <script src="js/plugins/load.js"></script>
     <link rel="stylesheet" href="css/plugins_css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -105,18 +105,25 @@
                             </div>
                         </div>
                         <!-- Just link -->
-                        <a class="link" href="#">О компании</a>
+                        <a class="link" href="./aboutPage.html">О компании</a>
                         <a class="link" href="./portfolioPage.html">Реализованные проекты</a>
                         <a class="link" href="./contacts.html">Контакты</a>
                     </div>
-                    <div class="offcanvas-header_dawn w-100 d-flex flex-column">
-                        <div class="offcanvas_phone">
-                            <span>+7(499) 755 96 64</span>
-                            <img src="./img/header/whatsapp.png" alt="whatsapp">
+                    <div class="w-100 d-flex flex-column">
+                        <div class="offcanvas_phone p-0">
+                            <a href="#">
+                                <span>+7(499) 755 96 64</span>
+                                <img src="./img/header/whatsapp.png" alt="whatsapp">
+                            </a>
                         </div>
-                        <div class="header-nav__address d-flex flex-column">
-                            <span>skidea@yandex.ru</span>
-                            <span>Кировоградская, д.2</span>
+                        <div class="d-flex flex-column">
+                            <a href="skidea@yandex.ru" target="_blank">
+                                <strong><span>skidea@yandex.ru</span></strong>
+                            </a>
+                            <a href="https://yandex.com/maps/org/sk_idea_l/1749203615/?ll=36.707247%2C56.348836&z=18"
+                                target="_blank">
+                                <span>Кировоградская, д.2</span>
+                            </a>
                         </div>
                         <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
                             class="header-nav__backcall d-block d-lg-none">
@@ -147,8 +154,12 @@
                 <!-- Email -->
                 <div class="col col-lg-3 d-none d-lg-flex">
                     <div class="header-nav__address d-none d-lg-flex flex-column">
-                        <span>skidea@yandex.ru</span>
-                        <span>Кировоградская, д.2</span>
+                        <a href="#">
+                            <span>skidea@yandex.ru</span>
+                        </a>
+                        <a href="https://yandex.com/maps/org/sk_idea_l/1749203615/?ll=36.707247%2C56.348836&z=18">
+                            <span>Кировоградская, д.2</span>
+                        </a>
                     </div>
                 </div>
 
@@ -169,10 +180,8 @@
             </div>
         </header>
 
-
         <!-- spacer -->
         <div class="spacer"></div>
-
 
         <!-- Main -->
         <main class="content container-fluid p-0 m-0">
@@ -188,20 +197,27 @@
                     <div class="col">
                         <span>Телефон</span>
                         <p>
-                            <strong>+7(499) 755 96 64</strong>
-                            <img class="ms-2 mb-1" src="./img/header/whatsapp.png" alt="whatsapp">
+                            <a href="#">
+                                <strong>+7(499) 755 96 64</strong>
+                                <img class="ms-2 mb-1" src="./img/header/whatsapp.png" alt="whatsapp">
+                            </a>
                         </p>
                     </div>
                     <div class="col">
                         <span>Почта</span>
                         <p>
-                            <strong>skidea@yandex.ru</strong>
+                            <a href="skidea@yandex.ru" target="_blank">
+                                <strong>skidea@yandex.ru</strong>
+                            </a>
                         </p>
                     </div>
                     <div class="col">
                         <span>Адрес</span>
                         <p>
-                            <strong>Кировоградская, д.2</strong>
+                            <a href="https://yandex.com/maps/org/sk_idea_l/1749203615/?ll=36.707247%2C56.348836&z=18"
+                                target="_blank">
+                                <strong>Кировоградская, д.2</strong>
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -216,13 +232,15 @@
                             <form class="row g-3 needs-validation modal-form call_form" action="#" novalidate>
                                 <div class="col-12 col-sm-6">
                                     <input required class="form-control" type="text" placeholder="Имя" required>
+                                    <input class="mt-3" required class="form-control" type="text" id="contsct_phone2"
+                                        placeholder="Телефон" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <textarea class="form-control" placeholder="Сообщение" id="floatingTextarea2"
-                                        style="height: 100px"></textarea>
+                                        style="height: 100%"></textarea>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input required class="form-control" type="number" placeholder="Телефон" required>
+
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <button type="submit" data-bs-toggle="modal" data-bs-target="#confirmation">Заказать
@@ -243,11 +261,11 @@
         </main>
 
         <!-- Footer -->
-        <footer class="footer container-fluid p-0" style="background: url(img/main/footer.png);">
+        <footer class="footer container-fluid " style="background: url(img/main/footer.png);">
             <div class="container p-0">
-                <div class="row p-3 g-3 g-md-2 justify-content-end">
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <a href="#">
+                <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 py-3">
+                    <div class="col">
+                        <a href="./index.html">
                             <img src="./img/header/logoLite.png" alt="Logo">
                         </a>
                         <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
@@ -255,92 +273,62 @@
                             Заказать звонок
                         </button>
                     </div>
-                    <div class="col-12 col-sm-8 col-lg-7">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+                    <div class="col">
+                        <div class="row row-cols-1 row-cols-md-2">
                             <div class="col">
-                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#foterCreate"
-                                    role="button" aria-expanded="false" aria-controls="foterCreate">
-                                    Проектирование
-                                </a>
-                                <div class="collapse" id="foterCreate">
-                                    <ul class="p-2">
-                                        <li><a href="#">Обмеры</a></li>
-                                        <li><a href="#">Разработка дизайн-проекта</a></li>
-                                        <li><a href="#">Рабочая документация</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#foterRepais"
-                                    role="button" aria-expanded="false" aria-controls="foterRepais">
-                                    Ремонт
-                                </a>
-                                <div class="collapse" id="foterRepais">
-                                    <ul class="p-2">
-                                        <li><a href="#">Обмеры</a></li>
-                                        <li><a href="#">Разработка дизайн-проекта</a></li>
-                                        <li><a href="#">Рабочая документация</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <a class="footer_link footer_acardion" data-bs-toggle="collapse" href="#footerBild"
-                                    role="button" aria-expanded="false" aria-controls="footerBild">
-                                    Строительство
-                                </a>
-                                <div class="collapse" id="footerBild">
-                                    <ul class="p-2">
-                                        <li><a href="#">Обмеры</a></li>
-                                        <li><a href="#">Разработка дизайн-проекта</a></li>
-                                        <li><a href="#">Рабочая документация</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <a class="footer_link footer_acardion" data-bs-toggle="collapse"
-                                    href="#footerRepairsHouse" role="button" aria-expanded="false"
-                                    aria-controls="footerRepairsHouse">
-                                    Ремонт домов
-                                </a>
-                                <div class="collapse" id="footerRepairsHouse">
-                                    <ul class="p-2">
-                                        <li><a href="#">Обмеры</a></li>
-                                        <li><a href="#">Разработка дизайн-проекта</a></li>
-                                        <li><a href="#">Рабочая документация</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <a href="#" class="footer_link">
+                                <a href="./aboutPage.html" class="footer_link">
                                     О компании
                                 </a>
                             </div>
                             <div class="col">
                                 <a href="#" class="footer_link">
-                                    Контакты
+                                    Еще услуги
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="footer_link">
+                                    Ремонт
                                 </a>
                             </div>
                             <div class="col">
                                 <a href="./portfolioPage.html" class="footer_link">
-                                    Реализованные проекты
+                                    Проекты
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="#" class="footer_link fw-bold">
-                                    <span>+7(499) 755 96 64</span>
+                                <a href="#" class="footer_link">
+                                    Строительство
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="#" class="footer_link email_address lh-base d-flex flex-column">
-                                    <span class="fw-bolder email">skidea@yandex.ru</span>
-                                    <span class="fw-light address">Кировоградская, д.2</span>
+                                <a href="./contacts.html" class="footer_link">
+                                    Контакты
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-2 d-sm-none d-lg-flex">
-                        <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
-                            class="header-nav__backcall mx-auto">
+                    <div class="col">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <a href="#" class="footer_link">
+                                    +7(499) 755 96 64
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" target="_blank" class="footer_link">
+                                    skidea@yandex.ru
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://yandex.com/maps/org/sk_idea_l/1749203615/?ll=36.707247%2C56.348836&z=18"
+                                    target="_blank" class="footer_link">
+                                    Кировоградская, д.2
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex d-sm-none d-lg-flex">
+                        <button data-bs-toggle="modal" data-bs-target="#backcallmodal" class="header-nav__backcall">
                             Заказать звонок
                         </button>
                     </div>
@@ -372,7 +360,8 @@
                             <form class="modal-form  needs-validation w-100 pt-2 p-md-5 d-flex
                                 flex-column align-items-center" action="#" novalidate>
                                 <input required class="form-control" type="text" placeholder="Имя">
-                                <input required class="form-control mt-2 mb-2" type="number" placeholder="Телефон">
+                                <input required class="form-control mt-2 mb-2" type="text" id="contsct_phone1"
+                                    placeholder="Телефон">
                                 <button type="submit">Заказать звонок</button>
                             </form>
                         </div>

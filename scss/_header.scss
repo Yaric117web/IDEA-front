@@ -4,6 +4,10 @@
     background: none;
     height: 80px;
 
+    &.h0 {
+        height: 0;
+    }
+
     // Menu Button
     &__button {
         background: $gold_color;
@@ -51,7 +55,7 @@
             }
 
             &:hover {
-                background: none;
+                background: $gold_color_hover;
                 border-radius: 2px;
                 path {
                     stroke: #111;
@@ -59,7 +63,7 @@
             }
         }
 
-        .link {
+        & .link {
             width: 100%;
             padding: 10px;
             font-weight: bold;
@@ -106,6 +110,10 @@
             &_body_list {
                 & li {
                     padding: 5px;
+                    & a {
+                        display: block;
+                        width: 100%;
+                    }
                 }
             }
         }
