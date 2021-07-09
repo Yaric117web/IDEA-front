@@ -14,10 +14,10 @@
 
 <body>
 
-    <div class="wrapper container-fluid p-0 d-flex flex-column">
+    <div class="wrapper position-relative container-fluid p-0 d-flex flex-column">
 
         <!-- Header -->
-        <header class="header header_page container-fluid pt-3  ps-0 pr-5">
+        <header class="header position-absolute container-fluid pt-3  ps-0 pr-5">
 
             <!-- Offcanvas -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
@@ -158,7 +158,8 @@
                         <a href="#">
                             <span>skidea@yandex.ru</span>
                         </a>
-                        <a href="https://yandex.com/maps/org/sk_idea_l/1749203615/?ll=36.707247%2C56.348836&z=18">
+                        <a href="https://yandex.com/maps/org/sk_idea_l/1749203615/?ll=36.707247%2C56.348836&z=18"
+                            target="_blank">
                             <span>Кировоградская, д.2</span>
                         </a>
                     </div>
@@ -174,7 +175,7 @@
 
                 <!-- fake -->
                 <div class="col col-lg-3 col-xl-2 d-none"></div>
-                
+
                 <!-- Back call -->
                 <div class="col col-lg-3 col-xl-2 d-none d-lg-flex fixed-top ms-auto mt-3 ">
                     <button data-bs-toggle="modal" data-bs-target="#backcallmodal" class="header-nav__backcall ms-auto">
@@ -185,15 +186,218 @@
         </header>
 
 
-        <!-- spacer -->
-        <div class="spacer"></div>
+
 
 
         <!-- Main -->
         <main class="content container-fluid p-0 m-0">
 
+            <!-- Top Block -->
+            <section class="section_top_block mb-5 container-fluid"
+                style='background-image: url("./img/aboutPage/header.jpg");'>
+                <div class="container pt-md-3 mb-sm-5">
+                    <div class="row pt-5 mb-sm-5 mb-md-5">
+                        <div class="col-12 col-sm-6 col-md-5 col-lg-6 mt-5 mt-lg-0 mb-md-5 mt-md-3">
+                            <h1 class="mt-md-5 main_title">О компании</h1>
+                            <p>Мы предоставляем высококачественные услуги по ремонту квартир. Наши специалисты
+                                имеют большой
+                                опыт в проведении разноплановых ремонтных работ.</p>
+                            <button>Онлайн-заявка</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
+            <!-- Optical text block  -->
+            <section class="section_optical_text my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-xl-4">
+                            <h2>
+                                Почему выбирают нас?
+                            </h2>
+                        </div>
+                        <div class="col-12 col-lg-7 col-xl-8">
+                            <p>
+                                Ремонт квартир и офисов, строительство домов - главная специализация нашей компании.
+                                Наши
+                                мастера высокой квалификации делают все, чтобы ремонтные и строительные работы были
+                                максимально комфортными для наших клиентов. Мы предлагаем решения на любой бюджет. Наша
+                                работа проходит в полном содействии с пожеланиями, требованиями и финансовыми
+                                возможностями
+                                заказчика
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Links baner -->
+            <section class="section_links container-fluid mb-5 pb-5 m-0">
+                <div class="row gy-1">
+                    <div class="link col-12 col-lg-3 p-0" style="background-image: url(img/main/mainLink1.png)">
+                        <div class="links_container p-2 p-sm-5 p-lg-4 m-0">
+                            <h3 class="">Ремонт</h3>
+                            <div class="row g-3 mt-3">
+                                <div class="col-12 col-sm-6 col-lg-12">
+                                    <a href="#">Ремонт квартир</a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-12">
+                                    <a href="#">Ремонт офисов</a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-12">
+                                    <a href="#">Ремонт магазинов</a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-12">
+                                    <a href="#">Монтаж инженерных систем</a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-12">
+                                    <a href="#">
+                                        Ремонт автомоек, складов,
+                                        административных помещений,
+                                        рестораны и т.д.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link col-12 col-lg-3 p-0" style="background-image: url(img/main/mainLink2.png)">
+                        <div class="links_container p-2 p-md-5 p-lg-4 m-0">
+                            <h3>Строительство</h3>
+                            <div class="row g-3 mt-3">
+                                <div class="col-12">
+                                    <a href="#">Cтроительство домов</a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#">Достройка и реконструкция</a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#">Благоустройство территории</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link col-12 col-lg-3 p-0" style="background-image: url(img/main/mainLink3.png)">
+                        <div class="links_container p-2 p-md-5 p-lg-4 m-0">
+                            <h3>Ремонт домов</h3>
+                            <div class="row g-3 mt-3">
+                                <div class="col-12">
+                                    <a href="#">Комплексный ремонт</a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#">Монтаж инженерных систем</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link col-12 col-lg-3 p-0" style="background-image: url(img/main/mainLink4.png)">
+                        <div class="links_container p-2 p-md-5 p-lg-4 m-0">
+                            <h3>Проектирование</h3>
+                            <div class="row g-3 mt-3">
+                                <div class="col-12">
+                                    <a href="#">Обмеры</a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#">Разработка дизайн-проекта</a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#">Рабочая документация</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Benefits -->
+            <section class="section_benefits container p-3 pt-5 p-md-0  mb-5">
+                <div class="row flex-row-reverse text_content ">
+                    <div class="col-12 col-sm-6 text_content_text">
+                        <p>Мы работаем по официальному договору. После согласования всех деталей ремонта с
+                            заказчиком,
+                            мы
+                            заключаем официальный договор, в котором прописываются все важные моменты -
+                            сроки ремонта,
+                            порядок
+                            получения оплаты. Стоимость отделочных и черновых работ в ходе ремонта остаётся
+                            неизменной.
+                        </p>
+                        <p>
+                            Мы подходим с полной ответственностью к каждому заказу и в полной мере соблюдаем
+                            сроки
+                            ремонта,
+                            прописанные в официальном договоре. Заказчик получает от нас фотоотчеты о ходе
+                            ремонтных
+                            работ.
+                        </p>
+                    </div>
+                    <img class="col-12 col-sm-6 lazyload h-100" src="./img/aboutPage/sofa.png" alt="Armchair">
+                </div>
+                <div class="row mt-5 download_file">
+                    <h2 class="col-12 col-md-6 col-lg-12 mb-5 mt-5 mt-md-3">
+                        Документы на ремонт
+                    </h2>
+                    <div class="col-12 col-md-6 col-lg-12 docs">
+                        <div class="row row-cols-1 row-cols-lg-3">
+                            <div class="col">
+                                <a download href="#" class="mb-2 d-flex align-items-center docs_link">
+                                    <img class="mx-3" src="./img/main/svg/file.svg" alt="File">
+                                    <span>
+                                        Cтоимость
+                                        ремонта
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a download href="#" class="mb-2 d-flex align-items-center docs_link">
+                                    <img class="mx-3" src="./img/main/svg/file.svg" alt="File">
+                                    <span>
+                                        Образец
+                                        договора
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a download href="#" class="mb-2 d-flex align-items-center docs_link">
+                                    <img class="mx-3" src="./img/main/svg/file.svg" alt="File">
+                                    <span>
+                                        Пример сметы
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Order a call -->
+            <section class="section_backcall container-fluid py-5">
+                <div class="container my-5">
+                    <div class="row">
+                        <h2 class="col-12 col-md-6 col-lg-12">
+                            Закажите обратный
+                            звонок!
+                        </h2>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <form class="row g-3 needs-validation modal-form call_form" action="#" novalidate>
+                                <div class="col-12 col-lg-4">
+                                    <input required class="form-control" type="text" placeholder="Имя" required>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <input required class="form-control" type="text" id="phone_input"
+                                        placeholder="Телефон" required>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <button type="submit" data-bs-toggle="modal" data-bs-target="#confirmation">Заказать
+                                        звонок</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->

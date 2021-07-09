@@ -687,15 +687,6 @@ details[open] summary:after {
   background: #f9dab8;
 }
 
-.header_page {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6));
-}
-
-.header_page .header__button {
-  margin-left: -15px;
-}
-
 .content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1301,6 +1292,59 @@ details[open] summary:after {
 
 #confirmation .modal-dialog {
   max-width: 700px;
+}
+
+@media (min-width: 300px) {
+  .section_top_block {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 430px;
+  }
+}
+
+@media (min-width: 590px) {
+  .section_top_block {
+    background-size: cover;
+    background-position: 70% 100%;
+    min-height: 440px;
+  }
+}
+
+@media (min-width: 990px) {
+  .section_top_block {
+    background-size: cover;
+    background-position: 75% 10%;
+  }
+}
+
+.section_top_block .main_title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+  color: #4f4f4f;
+}
+
+.section_top_block p {
+  color: #808080;
+}
+
+.section_top_block button {
+  width: 100%;
+  height: 48px;
+}
+
+@media (min-width: 580px) {
+  .section_top_block button {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1010px) {
+  .section_top_block button {
+    width: 430px;
+  }
 }
 
 .section_contactes .subtitle {
