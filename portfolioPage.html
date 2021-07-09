@@ -9,7 +9,6 @@
     <script src="js/plugins/lazyload.js"></script>
     <script src="js/plugins/load.js"></script>
     <link rel="stylesheet" href="css/plugins_css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
 </head>
 
@@ -18,7 +17,7 @@
     <div class="wrapper container-fluid p-0 d-flex flex-column">
 
         <!-- Header -->
-        <header class="header header_page container-fluid fixed-top ps-0 pr-5">
+        <header class="header header_page container-fluid pt-3  ps-0 pr-5">
 
             <!-- Offcanvas -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
@@ -130,13 +129,14 @@
             <div class="row w-100 align-items-center p-0 m-0">
 
                 <!-- Buuton menu open -->
-                <div class="col-6 col-sm-1 col-lg-1">
+                <div class="col-6 col-sm-1 col-lg-1 fixed-top">
                     <button class="header__button" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
                         <img src="./img/header/menu-button.svg" alt="Button menu">
                     </button>
                 </div>
-
+                <!-- fake -->
+                <div class="col-6 col-sm-1 col-lg-1"></div>
                 <!-- Logo -->
                 <div class="col-6 col-sm-3 col-lg-2 order-sm-1 order-lg-0 ms-sm-auto me-lg-0 ms-lg-0 p-0">
                     <a class="header-nav__logo" href="index.html">
@@ -159,9 +159,9 @@
                         <span class="ms-2">+7(499) 755 96 64</span>
                     </a>
                 </div>
-
+                <div class="col col-lg-3 col-xl-2 d-none"></div>
                 <!-- Back call -->
-                <div class="col col-lg-3 col-xl-2 d-none d-lg-flex">
+                <div class="col col-lg-3 col-xl-2 d-none d-lg-flex fixed-top ms-auto mt-3 ">
                     <button data-bs-toggle="modal" data-bs-target="#backcallmodal" class="header-nav__backcall ms-auto">
                         Обратный звонок
                     </button>
@@ -729,7 +729,7 @@
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="#" class="footer_link">
+                                <a href="contacts.html" class="footer_link">
                                     Контакты
                                 </a>
                             </div>

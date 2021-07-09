@@ -1,12 +1,19 @@
+// Fonts
+@import "../scss/_fonts.scss";
+
 // Variables
 @import "../scss/_variables.scss";
 
-.header_page {
-    background: linear-gradient(to bottom, rgba($color: #fff, $alpha: 0.6));
-    & .header__button {
-        margin-left: -15px;
-    }
-}
+// Header
+@import "../scss/_header.scss";
+
+//  Footer
+@import "../scss/_footer.scss";
+
+// Modals
+@import "../scss/_modals.scss";
+
+
 
 
 .serch_resalt {
@@ -60,7 +67,6 @@
         color: $price_color;
     }
 }
-
 
 .more_items {
     @media (min-width: 300px) {

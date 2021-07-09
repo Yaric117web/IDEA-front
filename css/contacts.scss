@@ -1,5 +1,17 @@
+// Fonts
+@import "../scss/_fonts.scss";
+
 // Variables
 @import "../scss/_variables.scss";
+
+// Header
+@import "../scss/_header.scss";
+
+//  Footer
+@import "../scss/_footer.scss";
+
+// Modals
+@import "../scss/_modals.scss";
 
 .section_contactes {
     & .subtitle {

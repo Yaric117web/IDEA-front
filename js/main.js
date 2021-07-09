@@ -31,9 +31,6 @@ $(".regular").slick({
                 slidesToScroll: 1
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
 
@@ -105,3 +102,12 @@ $(document).ready(function () {
             }, false)
         })
 })()
+
+
+$(function () {
+    $(".fancyLinck").fancybox({
+        'onStart': function () { $("#galery_item").css("display", "flex"); },
+        'onClosed': function () { $("#galery_item").css("display", "none"); }
+    });
+});
+
