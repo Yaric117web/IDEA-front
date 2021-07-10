@@ -49,6 +49,7 @@ $('#contsct_phone1').mask("9(999)999 99 99");
 $('#contsct_phone2').mask("9(999)999 99 99");
 $('#contsct_phone1').mask("9(999)999 99 99");
 $('#contsct_phone2').mask("9(999)999 99 99");
+$('#desing_phone1').mask("9(999)999 99 99");
 
 
 // More link
@@ -120,10 +121,85 @@ function numberWithSpaces(x) {
 
 let price = document.querySelectorAll('.price');
 price.forEach(el => {
-    el.insertAdjacentText('afterbegin', `${numberWithSpaces(2300800)}`)
+    el.insertAdjacentText('afterbegin', `${numberWithSpaces(2300)}`)
 })
 
 
 $(document).ready(function () {
     $('select').niceSelect();
+})
+
+
+//Conclusion Price List
+
+const priceList = [
+    {
+        title: "Дома из кирпича",
+        price: 16000,
+    },
+    {
+        title: "Дома из монолитного железобетона",
+        price: 24000,
+    },
+    {
+        title: "Дома из пеноблоков и газобетона",
+        price: 11000,
+    },
+    {
+        title: "Каркасные дома",
+        price: 9000,
+    },
+    {
+        title: "Керамзитобетонные дома",
+        price: 16000,
+    },
+    {
+        title: "Дома из бревна",
+        price: 13000,
+    },
+    {
+        title: "Дома из клееного бруса",
+        price: 18000,
+    },
+    {
+        title: "Дома из окорённого бруса",
+        price: 14000,
+    },
+    {
+        title: "Дома из нестроганного бруса",
+        price: 17000,
+    },
+    {
+        title: "Дома из профилированного бруса",
+        price: 11000,
+    },
+    {
+        title: "Дома из СИП - панелей",
+        price: 9000,
+    },
+
+]
+
+const priceListTitle = document.getElementById('price_title_list');
+const priceListPrice = document.getElementById('price_List_price');
+const price_list_ul = document.getElementById('price_list_ul');
+
+priceList.forEach(item => {
+
+    priceListTitle.insertAdjacentHTML('afterbegin', `
+            <li class="mb-3 ms-2 ms-md-3 list_item_li">
+                <span>
+                    ${item.title}
+                </span>
+            </li>
+        `);
+    priceListPrice.insertAdjacentHTML('afterbegin', `
+            <li class="mb-3 list_item_li">
+                <span>
+                    <span>от</span>
+                    <span class="span_price">${numberWithSpaces(item.price)}</span>
+                    <span>₽/м<sup>2</sup></span>
+                </span>
+            </li>
+        `);
 })
