@@ -1256,6 +1256,34 @@ html {
   }
 }
 
+@media (min-width: 300px) {
+  .section_advertisement span {
+    font-size: 24px;
+    line-height: 30px;
+    color: #3b3b38;
+  }
+}
+
+@media (min-width: 990px) {
+  .section_advertisement span {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 300px) {
+  .section_advertisement img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 990px) {
+  .section_advertisement img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .footer {
   background-position: center;
   background-repeat: no-repeat;
