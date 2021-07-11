@@ -256,6 +256,10 @@ h2 {
   }
 }
 
+p {
+  color: #4f4f4f;
+}
+
 @media (min-width: 300px) {
   p {
     font-size: 18px;
@@ -1727,9 +1731,11 @@ html {
 }
 
 .item {
-  -webkit-box-shadow: 1px 4px 30px rgba(99, 131, 153, 0.301);
-          box-shadow: 1px 4px 30px rgba(99, 131, 153, 0.301);
+  -webkit-box-shadow: 1px 4px 15px rgba(99, 131, 153, 0.301);
+          box-shadow: 1px 4px 15px rgba(99, 131, 153, 0.301);
   display: block !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .item .img {
@@ -1828,6 +1834,7 @@ html {
 .includs_list li p {
   margin: 0;
   padding-right: 10px;
+  color: #4f4f4f;
 }
 
 @media (min-width: 300px) {

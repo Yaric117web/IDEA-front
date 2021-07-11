@@ -5,6 +5,7 @@ $(".regular").slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
+    centerMode: true,
     arrows: true,
     lazyLoad: true,
     mobileFirst: true,
@@ -41,15 +42,34 @@ $(".regular").slick({
 $('#meter').mask("000", { placeholder: "Площядь в м²" });
 $('#modal_meter').mask("000", { placeholder: "Площядь в м²" });
 $('#modal_meter2').mask("000", { placeholder: "Площядь в м²" });
-$('#modal_phone').mask("9(999)999 99 99");
-$('#phone').mask("9(999)999 99 99");
-$('#phone_input').mask("9(999)999 99 99");
-$('#phone_backcall').mask("9(999)999 99 99");
-$('#contsct_phone1').mask("9(999)999 99 99");
-$('#contsct_phone2').mask("9(999)999 99 99");
+$('#modal_meter3').mask("000", { placeholder: "Площядь в м²" });
+$('#modal_meter4').mask("000", { placeholder: "Площядь в м²" });
+
+$('#phone_about').mask("9(999)999 99 99");
+$('#phone_about2').mask("9(999)999 99 99");
+$('#phone_aoartment').mask("9(999)999 99 99");
+$('#phone_aoartment2').mask("9(999)999 99 99");
+$('#phone_aoartment3').mask("9(999)999 99 99");
 $('#contsct_phone1').mask("9(999)999 99 99");
 $('#contsct_phone2').mask("9(999)999 99 99");
 $('#desing_phone1').mask("9(999)999 99 99");
+$('#desing_phone2').mask("9(999)999 99 99");
+$('#house_phone1').mask("9(999)999 99 99");
+$('#house_phone2').mask("9(999)999 99 99");
+$('#house_phone3').mask("9(999)999 99 99");
+$('#index_phone1').mask("9(999)999 99 99");
+$('#index_phone2').mask("9(999)999 99 99");
+$('#index_phone3').mask("9(999)999 99 99");
+$('#index_phone4').mask("9(999)999 99 99");
+$('#singl_page_project_phone').mask("9(999)999 99 99");
+$('#singl_page_project_phone2').mask("9(999)999 99 99");
+$('#projects_phone1').mask("9(999)999 99 99");
+$('#projects_phone2').mask("9(999)999 99 99");
+$('#portfolio_phone1').mask("9(999)999 99 99");
+$('#portfolio_phone2').mask("9(999)999 99 99");
+$('#repairs_apartment_page_phone1').mask("9(999)999 99 99");
+$('#repairs_apartment_page_phone2').mask("9(999)999 99 99");
+
 
 
 // More link
@@ -127,10 +147,12 @@ if (price) {
     })
 }
 
-
 $(document).ready(function () {
-    $('select').niceSelect();
+    if ($('select')) {
+        $('select').niceSelect();
+    }
 })
+
 
 
 //Conclusion Price List
@@ -221,12 +243,4 @@ if (oneProjectPrice1 && oneProjectPrice2) {
     oneProjectPrice2.insertAdjacentText('afterbegin', numberWithSpaces(82300))
 }
 
-// // Btn jump zero
 
-// let btnHeaderMenu = document.querySelector('.header__button');
-// let btns = document.querySelectorAll('button');
-
-
-// btnHeaderMenu.addEventListener('click', () => {
-    
-// })

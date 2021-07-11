@@ -185,6 +185,7 @@ h2 {
 }
 
 p {
+    color: $header_link_color;
     @media (min-width: 300px) {
         font-size: 18px;
         line-height: 24px;
