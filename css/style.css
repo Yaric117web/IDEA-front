@@ -40,6 +40,10 @@
   font-style: normal;
 }
 
+.color_gray {
+  color: #808080;
+}
+
 .spacer {
   height: 150px;
 }
@@ -1281,6 +1285,132 @@ html {
   .section_advertisement img {
     width: 40px;
     height: 40px;
+  }
+}
+
+.section_product_block .img {
+  overflow: hidden;
+  height: 100%;
+}
+
+.section_product_block .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section_product_block .details {
+  max-width: 340px;
+}
+
+@media (min-width: 300px) {
+  .section_product_block .details .time_ptoject,
+  .section_product_block .details .price_project1,
+  .section_product_block .details .price_project2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #4f4f4f;
+  }
+}
+
+@media (min-width: 450px) {
+  .section_product_block .details .time_ptoject,
+  .section_product_block .details .price_project1,
+  .section_product_block .details .price_project2 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 300px) {
+  .section_product_block .details_text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 450px) {
+  .section_product_block .details_text {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 300px) {
+  .section_product_block .addres {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 450px) {
+  .section_product_block .addres {
+    font-size: 24px;
+  }
+}
+
+.fancyLinck {
+  overflow: hidden;
+}
+
+.fancyLinck img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.plan_img {
+  max-width: 350px;
+  display: block;
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 34px;
+  color: #4f4f4f;
+}
+
+@media (min-width: 780px) {
+  .plan_img {
+    max-width: 376px;
+  }
+}
+
+@media (min-width: 300px) {
+  .in_project {
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 24px;
+    color: #4f4f4f;
+  }
+}
+
+@media (min-width: 430px) {
+  .in_project {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 300px) {
+  .gray {
+    font-size: 18px;
+    line-height: 24px;
+    color: #808080;
+  }
+}
+
+@media (min-width: 430px) {
+  .gray {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 300px) {
+  .list_width {
+    min-width: 150px;
+  }
+}
+
+@media (min-width: 430px) {
+  .list_width {
+    max-width: 300px;
+    width: 100%;
   }
 }
 

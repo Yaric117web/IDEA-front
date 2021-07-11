@@ -120,9 +120,12 @@ function numberWithSpaces(x) {
 }
 
 let price = document.querySelectorAll('.price');
-price.forEach(el => {
-    el.insertAdjacentText('afterbegin', `${numberWithSpaces(2300)}`)
-})
+
+if (price) {
+    price.forEach(el => {
+        el.insertAdjacentText('afterbegin', `${numberWithSpaces(2300)}`)
+    })
+}
 
 
 $(document).ready(function () {
@@ -182,24 +185,48 @@ const priceList = [
 
 const priceListTitle = document.getElementById('price_title_list');
 const priceListPrice = document.getElementById('price_List_price');
-const price_list_ul = document.getElementById('price_list_ul');
 
-priceList.forEach(item => {
+if (priceListPrice && priceListTitle) {
 
-    priceListTitle.insertAdjacentHTML('afterbegin', `
-            <li class="mb-3 ms-2 ms-md-3 list_item_li">
-                <span>
-                    ${item.title}
-                </span>
-            </li>
-        `);
-    priceListPrice.insertAdjacentHTML('afterbegin', `
-            <li class="mb-3 list_item_li">
-                <span>
-                    <span>от</span>
-                    <span class="span_price">${numberWithSpaces(item.price)}</span>
-                    <span>₽/м<sup>2</sup></span>
-                </span>
-            </li>
-        `);
-})
+    priceList.forEach(item => {
+
+        priceListTitle.insertAdjacentHTML('afterbegin', `
+                <li class="mb-3 ms-2 ms-md-3 list_item_li">
+                    <span>
+                        ${item.title}
+                    </span>
+                </li>
+            `);
+        priceListPrice.insertAdjacentHTML('afterbegin', `
+                <li class="mb-3 list_item_li">
+                    <span>
+                        <span>от</span>
+                        <span class="span_price">${numberWithSpaces(item.price)}</span>
+                        <span>₽/м<sup>2</sup></span>
+                    </span>
+                </li>
+            `);
+    })
+}
+
+
+
+// One Project Price inner
+
+const oneProjectPrice1 = document.querySelector('.price_project1');
+const oneProjectPrice2 = document.querySelector('.price_project2');
+
+if (oneProjectPrice1 && oneProjectPrice2) {
+    oneProjectPrice1.insertAdjacentText('afterbegin', numberWithSpaces(82300))
+    oneProjectPrice2.insertAdjacentText('afterbegin', numberWithSpaces(82300))
+}
+
+// // Btn jump zero
+
+// let btnHeaderMenu = document.querySelector('.header__button');
+// let btns = document.querySelectorAll('button');
+
+
+// btnHeaderMenu.addEventListener('click', () => {
+    
+// })
