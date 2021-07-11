@@ -1820,12 +1820,15 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .includs_list li span {
+  margin-bottom: auto;
   font-weight: bold;
   font-size: 32px;
-  line-height: 66px;
   letter-spacing: -0.03em;
   color: #e8c8a4;
   opacity: 0.8;
@@ -1849,9 +1852,6 @@ html {
 
 @media (min-width: 410px) {
   .includs_list li {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
