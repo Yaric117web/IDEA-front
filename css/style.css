@@ -501,6 +501,11 @@ html {
           animation-name: s-ripple-dup;
 }
 
+.waatsapp {
+  width: 26px;
+  height: 30px;
+}
+
 .header {
   background: none;
   height: 80px;
