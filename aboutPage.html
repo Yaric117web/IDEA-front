@@ -14,10 +14,10 @@
 
 <body>
 
-    <div class="wrapper container-fluid p-0 d-flex flex-column">
+    <div class="wrapper position-relative container-fluid p-0 d-flex flex-column">
 
         <!-- Header -->
-        <header class="header container-fluid pt-3  ps-0 pr-5">
+        <header class="header position-absolute container-fluid pt-3  ps-0 pr-5">
 
             <!-- Offcanvas -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
@@ -206,8 +206,9 @@
                 <div class="container pt-md-3 mb-sm-5">
                     <div class="row pt-5 mb-sm-5 mb-md-5">
                         <div class="col-12 col-sm-6 col-md-5 col-lg-6 mt-5 mt-lg-0 mb-md-5 mt-md-3">
-                            <h1 class="mt-md-5 main_title">О компании</h1>
-                            <p>Мы предоставляем высококачественные услуги по ремонту квартир. Наши специалисты
+                            <h1 class="mt-md-5">О компании</h1>
+                            <p class="my-lg-4">Мы предоставляем высококачественные услуги по ремонту квартир. Наши
+                                специалисты
                                 имеют большой
                                 опыт в проведении разноплановых ремонтных работ.</p>
                             <button>Онлайн-заявка</button>
@@ -217,8 +218,8 @@
             </section>
 
             <!-- Optical text block  -->
-            <section class="section_optical_text my-5">
-                <div class="container">
+            <section class="section_optical_text my-5 py-lg-5">
+                <div class="container py-lg-5">
                     <div class="row">
                         <div class="col-12 col-lg-5 col-xl-4">
                             <h2>
@@ -319,8 +320,8 @@
             </section>
 
             <!-- Benefits -->
-            <section class="section_benefits container p-3 pt-5 p-md-0 mb-5">
-                <div class="row flex-row-reverse mt-5 text_content ">
+            <section class="section_benefits container p-3 pt-5 p-md-0 mb-5 pt-lg-5">
+                <div class="row flex-row-reverse mt-5 text_content pt-lg-5">
                     <div class="col-12 col-sm-6 text_content_text">
                         <p>Мы работаем по официальному договору. После согласования всех деталей ремонта с
                             заказчиком,
@@ -342,7 +343,7 @@
                     </div>
                     <img class="col-12 col-sm-6 lazyload h-100" src="./img/aboutPage/sofa.png" alt="Armchair">
                 </div>
-                <div class="row mt-5 download_file">
+                <div class="row mt-5 download_file py-lg-5">
                     <h2 class="col-12 col-md-6 col-lg-12 mb-5 mt-5 mt-md-3">
                         Документы на ремонт
                     </h2>
@@ -381,9 +382,9 @@
 
             <!-- Order a call -->
             <section class="section_backcall container-fluid py-5">
-                <div class="container my-5">
-                    <div class="row">
-                        <h2 class="col-12 col-md-6 col-lg-12">
+                <div class="container py-5">
+                    <div class="row py-lg-5">
+                        <h2 class="col-12 col-md-6 col-lg-12 mb-lg-5">
                             Закажите обратный
                             звонок!
                         </h2>
@@ -410,7 +411,7 @@
         <!-- Footer -->
         <footer class="footer container-fluid " style="background: url(img/main/footer.png);">
             <div class="container p-0">
-                <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 py-3">
+                <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 py-5">
                     <div class="col">
                         <a href="./index.html">
                             <img src="./img/header/logoLite.png" alt="Logo">
@@ -507,7 +508,8 @@
                             <form class="modal-form  needs-validation w-100 pt-2 p-md-5 d-flex
                                 flex-column align-items-center" action="#" novalidate>
                                 <input required class="form-control" type="text" placeholder="Имя">
-                                <input required id="phone_about" class="form-control mt-2 mb-2" type="text" placeholder="Телефон">
+                                <input required id="phone_about" class="form-control mt-2 mb-2" type="text"
+                                    placeholder="Телефон">
                                 <button type="submit">Заказать звонок</button>
                             </form>
                         </div>

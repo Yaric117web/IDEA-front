@@ -13,6 +13,8 @@ $price_color: #d19c61;
 $span_label_contacts: #c7c7c7;
 $footer_bg_color: #5c5a56;
 $FFF7EF: #fff7ef;
+$h1_color: #313131;
+$h2_color: #4f4f4f;
 
 .color_gray {
     color: $benefit_text_content_color;
@@ -165,8 +167,8 @@ h3 {
         font-size: 34px;
     }
 }
-h2 {
-    color: $header_link_color;
+h2,
+h1 {
     @media (min-width: 300px) {
         font-weight: 600;
         font-size: 30px;
@@ -182,6 +184,12 @@ h2 {
         font-size: 50px;
         line-height: 60px;
     }
+}
+h1 {
+    color: $h1_color;
+}
+h2 {
+    color: $h2_color;
 }
 
 p {

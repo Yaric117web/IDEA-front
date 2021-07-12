@@ -47,9 +47,9 @@ $('#modal_meter4').mask("000", { placeholder: "Площядь в м²" });
 
 $('#phone_about').mask("9(999)999 99 99");
 $('#phone_about2').mask("9(999)999 99 99");
-$('#phone_aoartment').mask("9(999)999 99 99");
-$('#phone_aoartment2').mask("9(999)999 99 99");
-$('#phone_aoartment3').mask("9(999)999 99 99");
+$('#phone_apartment').mask("9(999)999 99 99");
+$('#phone_apartment2').mask("9(999)999 99 99");
+$('#phone_apartment3').mask("9(999)999 99 99");
 $('#contsct_phone1').mask("9(999)999 99 99");
 $('#contsct_phone2').mask("9(999)999 99 99");
 $('#desing_phone1').mask("9(999)999 99 99");

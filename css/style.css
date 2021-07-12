@@ -228,12 +228,9 @@ h3 {
   }
 }
 
-h2 {
-  color: #4f4f4f;
-}
-
 @media (min-width: 300px) {
-  h2 {
+  h2,
+  h1 {
     font-weight: 600;
     font-size: 30px;
     line-height: 40px;
@@ -242,7 +239,8 @@ h2 {
 }
 
 @media (min-width: 560px) {
-  h2 {
+  h2,
+  h1 {
     font-weight: 450;
     font-size: 40px;
     line-height: 50px;
@@ -250,10 +248,19 @@ h2 {
 }
 
 @media (min-width: 1020px) {
-  h2 {
+  h2,
+  h1 {
     font-size: 50px;
     line-height: 60px;
   }
+}
+
+h1 {
+  color: #313131;
+}
+
+h2 {
+  color: #4f4f4f;
 }
 
 p {
@@ -749,7 +756,6 @@ html {
 }
 
 .carousel-caption .title {
-  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,6 +771,7 @@ html {
           justify-content: center;
   white-space: nowrap;
   font-family: "Source Serif Pro";
+  line-height: 76px;
 }
 
 .carousel-caption .title span {
@@ -784,19 +791,21 @@ html {
   }
 }
 
-.carousel-caption .subtitle {
+.carousel-caption > .subtitle {
+  color: inherit;
   white-space: nowrap;
+  margin: 20px 0 39px 0;
 }
 
 @media (min-width: 300px) {
-  .carousel-caption .subtitle {
+  .carousel-caption > .subtitle {
     font-size: 18px;
     font-weight: 300;
   }
 }
 
 @media (min-width: 960px) {
-  .carousel-caption .subtitle {
+  .carousel-caption > .subtitle {
     font-size: 28px;
   }
 }
