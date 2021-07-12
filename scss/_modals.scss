@@ -19,6 +19,7 @@
     display: none;
     padding: 0;
     background: none !important;
+    max-height: 90vh;
     @media (min-width: 300px) {
         overflow-x: hidden !important;
         width: 100%;
@@ -45,7 +46,7 @@
         @media (min-width: 426px) {
             & img {
                 width: auto;
-                height: 45vh;
+                max-height: 45vh;
                 object-fit: contain;
                 object-position: center;
             }

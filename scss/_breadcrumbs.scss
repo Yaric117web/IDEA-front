@@ -1,0 +1,21 @@
+.breadcrumbs {
+    & > a {
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+    & path {
+        transition: all 0.3s;
+    }
+    &:hover path {
+        fill: $gold_color;
+    }
+
+    @media (min-width: 300px) {
+        font-size: 18px;
+        color: $input_color;
+    }
+    @media (min-width: 450px) {
+        font-size: 24px;
+    }
+}

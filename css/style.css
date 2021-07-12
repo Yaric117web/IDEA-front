@@ -1076,23 +1076,13 @@ html {
   margin: 10px;
 }
 
-.slide_bode {
-  margin: 0 auto;
-}
-
 @media (min-width: 300px) {
-  .slide_bode {
-    width: 280px;
-  }
   .slide_bode .user_name {
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: -0.03em;
     color: #4f4f4f;
-  }
-  .slide_bode .stars {
-    font-size: 13px;
   }
   .slide_bode .stars img {
     width: 19px;
@@ -1113,10 +1103,6 @@ html {
     content: url(../img/main/svg/arrow.svg);
     margin-left: 10px;
   }
-}
-
-.slick-dots {
-  display: none !important;
 }
 
 .slick-prev.slick-arrow {
@@ -1495,6 +1481,7 @@ html {
   display: none;
   padding: 0;
   background: none !important;
+  max-height: 90vh;
 }
 
 @media (min-width: 300px) {
@@ -1532,7 +1519,7 @@ html {
 @media (min-width: 426px) {
   .gallerymodal .img img {
     width: auto;
-    height: 45vh;
+    max-height: 45vh;
     -o-object-fit: contain;
        object-fit: contain;
     -o-object-position: center;
@@ -1590,6 +1577,38 @@ html {
 
 #confirmation .modal-dialog {
   max-width: 700px;
+}
+
+.breadcrumbs > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+}
+
+.breadcrumbs path {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.breadcrumbs:hover path {
+  fill: #e8c8a4;
+}
+
+@media (min-width: 300px) {
+  .breadcrumbs {
+    font-size: 18px;
+    color: #a5a5a5;
+  }
+}
+
+@media (min-width: 450px) {
+  .breadcrumbs {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 300px) {
@@ -1740,8 +1759,8 @@ html {
 }
 
 .item {
-  -webkit-box-shadow: 1px 4px 15px rgba(99, 131, 153, 0.301);
-          box-shadow: 1px 4px 15px rgba(99, 131, 153, 0.301);
+  -webkit-box-shadow: 1px 4px 10px rgba(99, 131, 153, 0.2);
+          box-shadow: 1px 4px 10px rgba(99, 131, 153, 0.2);
   display: block !important;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
