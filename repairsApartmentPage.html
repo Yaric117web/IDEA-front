@@ -118,15 +118,14 @@
                         <a class="link" href="./portfolioPage.html">Реализованные проекты</a>
                         <a class="link" href="./contacts.html">Контакты</a>
                     </div>
-                    <div class="w-100 d-flex flex-column">
-                        <div class="offcanvas_phone p-0">
-                            <a href="#">
-                                <span>+7(499) 755 96 64</span>
-                                <img src="./img/header/whatsapp.png" alt="whatsapp">
-                            </a>
+                    <div class="w-100 row row-cols-1 g-3">
+                        <div class="offcanvas_phone position-relative p-0 col d-flex align-items-center">
+                            <a href="#" class="stretched-link"></a>
+                            <span>+7(499) 755 96 64</span>
+                            <img class="ms-2" src="./img/header/whatsapp.png" alt="whatsapp">
                         </div>
-                        <div class="d-flex flex-column">
-                            <a href="skidea@yandex.ru" target="_blank">
+                        <div class="d-flex flex-column col p-0">
+                            <a href="skidea@yandex.ru" class="mb-3" target="_blank">
                                 <strong><span>skidea@yandex.ru</span></strong>
                             </a>
                             <a href="https://yandex.com/maps/org/sk_idea_l/1749203615/?ll=36.707247%2C56.348836&z=18"
@@ -135,7 +134,7 @@
                             </a>
                         </div>
                         <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
-                            class="header-nav__backcall d-block d-lg-none">
+                            class="header-nav__backcall d-block d-lg-none col">
                             Обратный звонок
                         </button>
                     </div>
@@ -200,9 +199,23 @@
         <!-- Main -->
         <main class="content container-fluid p-0 m-0">
 
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs container mb-4 d-flex align-items-center">
+                <a href="./projectPage.html">
+                    <svg width="22" height="12" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.469669 5.46967C0.176777 5.76256 0.176777 6.23743 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46446 6.59619 0.989591 6.3033 0.696698C6.01041 0.403804 5.53553 0.403804 5.24264 0.696698L0.469669 5.46967ZM22 5.25L1 5.25L1 6.75L22 6.75L22 5.25Z"
+                            fill="#A5A5A5" />
+                    </svg>
+                    <span class="ms-2">
+                        Назад к проектам
+                    </span>
+                </a>
+            </div>
+
             <!-- Block Product -->
             <section class="section_product_block container">
-                <div class="row row-cols-1  row-cols-sm-2">
+                <div class="row row-cols-1 row-cols-sm-2 g-lg-5 g-3">
                     <div class="col">
                         <div class="img">
                             <img class="lazyload" src="./img/apartment/main.png" alt="House">
@@ -283,7 +296,7 @@
                     <h2 class="section-galery__title mb-5">Интерьер</h2>
                 </div>
                 <div class="container">
-                    <div class="row row-cols-2 row-cols-md-3 g-4" data-masonry='{"percentPosition": true }'>
+                    <div class="row row-cols-2 row-cols-md-3 g-2 g-lg-4" data-masonry='{"percentPosition": true }'>
                         <div class="col">
                             <!-- Link to modal -->
                             <a class="fancyLinck" data-fancybox="gallery" href="#gallerymodal1">
@@ -296,7 +309,7 @@
                                 </div>
                                 <div class="p-4 bg-white">
                                     <div class="description">
-                                        <h3>Ремонт двушки в сталинке под ключ </h3>
+                                        <h4>Ремонт двушки в сталинке под ключ </h4>
                                         <p>Вариантов исправления такой ситуации только два -
                                             использовать гипсокартон для
                                             обшивки стены, либо выравнивать стены заново с помощью
@@ -325,7 +338,7 @@
                                 </div>
                                 <div class="p-4 bg-white">
                                     <div class="description">
-                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <h4>Ремонт двушки в сталинке под ключ </h4>
                                         <p>Вариантов исправления такой ситуации только два -
                                             использовать гипсокартон для
                                             обшивки стены, либо выравнивать стены заново с помощью
@@ -354,7 +367,7 @@
                                 </div>
                                 <div class="p-4 bg-white">
                                     <div class="description">
-                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <h4>Ремонт двушки в сталинке под ключ </h4>
                                         <p>Вариантов исправления такой ситуации только два -
                                             использовать гипсокартон для
                                             обшивки стены, либо выравнивать стены заново с помощью
@@ -383,7 +396,7 @@
                                 </div>
                                 <div class="p-4 bg-white">
                                     <div class="description">
-                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <h4>Ремонт двушки в сталинке под ключ </h4>
                                         <p>Вариантов исправления такой ситуации только два -
                                             использовать гипсокартон для
                                             обшивки стены, либо выравнивать стены заново с помощью
@@ -412,7 +425,7 @@
                                 </div>
                                 <div class="p-4 bg-white">
                                     <div class="description">
-                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <h4>Ремонт двушки в сталинке под ключ </h4>
                                         <p>Вариантов исправления такой ситуации только два -
                                             использовать гипсокартон для
                                             обшивки стены, либо выравнивать стены заново с помощью
@@ -441,7 +454,7 @@
                                 </div>
                                 <div class="p-4 bg-white">
                                     <div class="description">
-                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <h4>Ремонт двушки в сталинке под ключ </h4>
                                         <p>Вариантов исправления такой ситуации только два -
                                             использовать гипсокартон для
                                             обшивки стены, либо выравнивать стены заново с
@@ -472,7 +485,7 @@
                                 </div>
                                 <div class="p-4 bg-white">
                                     <div class="description">
-                                        <h2>Ремонт двушки в сталинке под ключ </h2>
+                                        <h4>Ремонт двушки в сталинке под ключ </h4>
                                         <p>Вариантов исправления такой ситуации только два -
                                             использовать гипсокартон для
                                             обшивки стены, либо выравнивать стены заново с
@@ -505,7 +518,7 @@
             <section class="section_backcall container-fluid py-5">
                 <div class="container py-5">
                     <div class="row">
-                        <h2 class="col-12 col-md-6 col-lg-12">
+                        <h2 class="col-12 col-md-6 col-lg-12 mb-4">
                             Хотите такой же проект?
                         </h2>
                         <p class="my-lg-4">
@@ -531,14 +544,14 @@
             </section>
 
             <!-- Reviews -->
-            <section class="section_reviews container-fluid py-5">
+            <section class="section_reviews container-fluid py-lg-5">
                 <div
                     class="section_reviews_header container d-flex justify-content-between align-items-center pt-5 pb-3">
                     <h2>
                         Похожие проекты
                     </h2>
                 </div>
-                <div class="regular container pb-5 mt-lg-5">
+                <div class="regular container pb-lg-5 pb-4 mt-lg-5">
                     <!-- Slide -->
                     <div class="item m-3 position-relative">
                         <a href="#" class="stretched-link"></a>
@@ -837,7 +850,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex d-sm-none d-lg-flex">
+                    <div class="col mt-2 d-flex d-sm-none d-lg-flex">
                         <button data-bs-toggle="modal" data-bs-target="#backcallmodal" class="header-nav__backcall">
                             Заказать звонок
                         </button>

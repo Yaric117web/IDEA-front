@@ -2,7 +2,6 @@
     background-size: cover;
     background-position: center bottom;
 
-
     .col_text {
         & h2 {
             max-width: 500px;
@@ -29,6 +28,12 @@
             @media (min-width: 990px) {
                 font-size: 30px;
             }
+        }
+    }
+
+    .form_block {
+        @media (min-width: 768px) {
+            background: #ffffff;
         }
     }
 }

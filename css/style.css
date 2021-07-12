@@ -350,7 +350,7 @@ html {
 
 @media (min-width: 430px) {
   .control_indicator {
-    right: 30px;
+    right: 10px;
   }
 }
 
@@ -1259,6 +1259,12 @@ html {
   }
 }
 
+@media (min-width: 768px) {
+  .section_design_baner .form_block {
+    background: #ffffff;
+  }
+}
+
 @media (min-width: 300px) {
   .section_advertisement span {
     font-size: 24px;
@@ -1480,20 +1486,20 @@ html {
 .gallerymodal {
   display: none;
   padding: 0;
-  background: none !important;
+  background: none;
   max-height: 90vh;
 }
 
 @media (min-width: 300px) {
   .gallerymodal {
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     width: 100%;
   }
 }
 
 @media (min-width: 426px) {
   .gallerymodal {
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
@@ -1519,7 +1525,7 @@ html {
 @media (min-width: 426px) {
   .gallerymodal .img img {
     width: auto;
-    max-height: 45vh;
+    max-height: 70vh;
     -o-object-fit: contain;
        object-fit: contain;
     -o-object-position: center;
