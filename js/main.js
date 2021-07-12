@@ -39,36 +39,100 @@ $(".regular").slick({
 
 // Mask
 
+/* установка курсора в правильную позицию в маске телефона */
+$.fn.setCursorPosition = function (pos) {
+    if ($(this).get(0).setSelectionRange) {
+        $(this).get(0).setSelectionRange(pos, pos);
+    } else if ($(this).get(0).createTextRange) {
+        var range = $(this).get(0).createTextRange();
+        range.collapse(true);
+        range.moveEnd('character', pos);
+        range.moveStart('character', pos);
+        range.select();
+    }
+};
+
+
+
 $('#meter').mask("000", { placeholder: "Площядь в м²" });
 $('#modal_meter').mask("000", { placeholder: "Площядь в м²" });
 $('#modal_meter2').mask("000", { placeholder: "Площядь в м²" });
 $('#modal_meter3').mask("000", { placeholder: "Площядь в м²" });
 $('#modal_meter4').mask("000", { placeholder: "Площядь в м²" });
 
-$('#phone_about').mask("+7-999-999-99-99");
-$('#phone_about2').mask("+7-999-999-99-99");
-$('#phone_apartment').mask("+7-999-999-99-99");
-$('#phone_apartment2').mask("+7-999-999-99-99");
-$('#phone_apartment3').mask("+7-999-999-99-99");
-$('#contsct_phone1').mask("+7-999-999-99-99");
-$('#contsct_phone2').mask("+7-999-999-99-99");
-$('#desing_phone1').mask("+7-999-999-99-99");
-$('#desing_phone2').mask("+7-999-999-99-99");
-$('#house_phone1').mask("+7-999-999-99-99");
-$('#house_phone2').mask("+7-999-999-99-99");
-$('#house_phone3').mask("+7-999-999-99-99");
-$('#index_phone1').mask("+7-999-999-99-99");
-$('#index_phone2').mask("+7-999-999-99-99");
-$('#index_phone3').mask("+7-999-999-99-99");
-$('#index_phone4').mask("+7-999-999-99-99");
-$('#singl_page_project_phone').mask("+7-999-999-99-99");
-$('#singl_page_project_phone2').mask("+7-999-999-99-99");
-$('#projects_phone1').mask("+7-999-999-99-99");
-$('#projects_phone2').mask("+7-999-999-99-99");
-$('#portfolio_phone1').mask("+7-999-999-99-99");
-$('#portfolio_phone2').mask("+7-999-999-99-99");
-$('#repairs_apartment_page_phone1').mask("+7-999-999-99-99");
-$('#repairs_apartment_page_phone2').mask("+7-999-999-99-99");
+$("#phone_about").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#phone_about2").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#phone_apartment").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#phone_apartment2").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#phone_apartment3").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#contsct_phone1").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#contsct_phone2").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#desing_phone1").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#desing_phone2").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#house_phone1").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#house_phone2").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#house_phone3").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#index_phone1").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#index_phone2").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#index_phone3").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#index_phone4").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#singl_page_project_phone").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#singl_page_project_phone2").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#projects_phone1").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#projects_phone2").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#portfolio_phone1").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#portfolio_phone2").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#repairs_apartment_page_phone1").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+$("#repairs_apartment_page_phone2").click(function () {
+    $(this).setCursorPosition(2);
+}).mask("8(999) 999-9999");
+
 
 
 
