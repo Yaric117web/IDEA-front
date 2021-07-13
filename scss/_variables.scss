@@ -16,6 +16,14 @@ $FFF7EF: #fff7ef;
 $h1_color: #313131;
 $h2_color: #4f4f4f;
 
+body {
+    &.modal-open {
+        & .header-nav__backcall {
+            right: 10px;
+        }
+    }
+}
+
 .color_gray {
     color: $benefit_text_content_color;
 }

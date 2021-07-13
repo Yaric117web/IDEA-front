@@ -40,6 +40,10 @@
   font-style: normal;
 }
 
+body.modal-open .header-nav__backcall {
+  right: 10px;
+}
+
 .color_gray {
   color: #808080;
 }
@@ -500,6 +504,8 @@ html {
 .header {
   background: none;
   height: 80px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header.h0 {

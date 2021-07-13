@@ -3,6 +3,7 @@
 .header {
     background: none;
     height: 80px;
+    transition: all 0.3s;
 
     &.h0 {
         height: 0;
@@ -174,5 +175,4 @@
             }
         }
     }
-
 }

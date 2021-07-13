@@ -307,4 +307,18 @@ if (oneProjectPrice1 && oneProjectPrice2) {
     oneProjectPrice2.insertAdjacentText('afterbegin', numberWithSpaces(82300))
 }
 
+let myOffcanvas = document.getElementById('offcanvasWithBackdrop');
+myOffcanvas.addEventListener('show.bs.offcanvas', function () {
+    let btnPump = document.querySelectorAll('.header-nav__backcall');
+    btnPump.forEach(el => {
+        el.style.right = "10px"
+    })
 
+});
+myOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
+    let btnPump = document.querySelectorAll('.header-nav__backcall');
+    btnPump.forEach(el => {
+        el.style.right = null
+    })
+
+});
