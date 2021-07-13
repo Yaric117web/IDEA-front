@@ -316,7 +316,6 @@ html {
 
 /* Scroll */
 .control {
-  font-family: arial;
   display: block;
   position: relative;
   padding-left: 32px;
@@ -324,6 +323,9 @@ html {
   padding-top: 0px;
   cursor: pointer;
   font-size: 18px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .control input {
@@ -340,18 +342,7 @@ html {
   background: #fefeff;
   border: 2px solid #e8c8a4;
   border-radius: 2px;
-}
-
-@media (min-width: 300px) {
-  .control_indicator {
-    right: 0px;
-  }
-}
-
-@media (min-width: 430px) {
-  .control_indicator {
-    right: 10px;
-  }
+  right: -40px;
 }
 
 .control:hover input ~ .control_indicator,

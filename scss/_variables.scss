@@ -237,7 +237,6 @@ html {
 /* Scroll */
 
 .control {
-    font-family: arial;
     display: block;
     position: relative;
     padding-left: 32px;
@@ -245,6 +244,7 @@ html {
     padding-top: 0px;
     cursor: pointer;
     font-size: 18px;
+    width: fit-content;
 }
 .control input {
     position: absolute;
@@ -259,13 +259,7 @@ html {
     background: #fefeff;
     border: 2px solid $gold_color;
     border-radius: 2px;
-
-    @media (min-width: 300px) {
-        right: 0px;
-    }
-    @media (min-width: 430px) {
-        right: 10px;
-    }
+    right: -40px;
 }
 .control:hover input ~ .control_indicator,
 .control input:focus ~ .control_indicator {
