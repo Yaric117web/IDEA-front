@@ -41,12 +41,28 @@
 }
 
 body.modal-open .header-nav__backcall {
-  right: 10px;
+  right: 0;
+}
+
+@media (min-width: 1868px) {
+  body.modal-open .header-nav__backcall {
+    right: 10px;
+  }
 }
 
 body.fancybox-active {
-  margin-right: 10px;
+  margin-right: 0px;
   overflow: hidden;
+  right: 0;
+}
+
+@media (min-width: 1868px) {
+  body.fancybox-active {
+    margin-right: 10px;
+  }
+  body.fancybox-active .header-nav__backcall {
+    right: 10px;
+  }
 }
 
 body.fancybox-active.compensate-for-scrollbar .header-nav__backcall {
