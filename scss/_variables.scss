@@ -22,6 +22,16 @@ body {
             right: 10px;
         }
     }
+    &.fancybox-active {
+        overflow: hidden;
+    }
+}
+body {
+    &.fancybox-active.compensate-for-scrollbar {
+        & .header-nav__backcall {
+            right: 10px;
+        }
+    }
 }
 
 .color_gray {
@@ -29,12 +39,11 @@ body {
 }
 
 .spacer {
-    height: 150px;
     @media (min-width: 300px) {
-        height: 90px;
+        height: 94px;
     }
-    @media (min-width: 500px) {
-        height: 120px;
+    @media (min-width: 450px) {
+        height: 140px;
     }
 }
 
@@ -116,6 +125,21 @@ button {
     color: $button_color;
     background: $gold_color;
     border: none;
+    &:hover {
+        background: $gold_color_hover;
+    }
+}
+
+.btn_gold {
+    background: $gold_color;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &:hover {
         background: $gold_color_hover;
     }

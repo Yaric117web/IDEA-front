@@ -1,21 +1,24 @@
 'use strict'
 
+// Slick plain
 $(".regular").slick({
     dots: false,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
-    centerMode: true,
+    slidesToScroll: 1,
     arrows: true,
     lazyLoad: true,
     mobileFirst: true,
     infinite: true,
+    lazyLoad: 'ondemand',
     responsive: [
         {
             breakpoint: 1020,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '50px',
             }
         },
         {
@@ -36,108 +39,7 @@ $(".regular").slick({
 });
 
 
-
-// Mask
-
-/* установка курсора в правильную позицию в маске телефона */
-$.fn.setCursorPosition = function (pos) {
-    if ($(this).get(0).setSelectionRange) {
-        $(this).get(0).setSelectionRange(pos, pos);
-    } else if ($(this).get(0).createTextRange) {
-        var range = $(this).get(0).createTextRange();
-        range.collapse(true);
-        range.moveEnd('character', pos);
-        range.moveStart('character', pos);
-        range.select();
-    }
-};
-
-
-
-$('#meter').mask("000", { placeholder: "Площядь в м²" });
-$('#modal_meter').mask("000", { placeholder: "Площядь в м²" });
-$('#modal_meter2').mask("000", { placeholder: "Площядь в м²" });
-$('#modal_meter3').mask("000", { placeholder: "Площядь в м²" });
-$('#modal_meter4').mask("000", { placeholder: "Площядь в м²" });
-
-$("#phone_about").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#phone_about2").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#phone_apartment").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#phone_apartment2").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#phone_apartment3").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#contsct_phone1").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#contsct_phone2").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#desing_phone1").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#desing_phone2").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#house_phone1").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#house_phone2").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#house_phone3").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#index_phone1").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#index_phone2").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#index_phone3").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#index_phone4").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#singl_page_project_phone").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#singl_page_project_phone2").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#projects_phone1").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#projects_phone2").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#portfolio_phone1").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#portfolio_phone2").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#repairs_apartment_page_phone1").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-$("#repairs_apartment_page_phone2").click(function () {
-    $(this).setCursorPosition(2);
-}).mask("8(999) 999-9999");
-
-
-
-
 // More link
-
 $(document).ready(function () {
     let showChar = 400;
     let ellipsestext = "...";
@@ -174,26 +76,7 @@ $(document).ready(function () {
     });
 });
 
-// Validation
-(function () {
-    'use strict'
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-
-                form.classList.add('was-validated')
-            }, false)
-        })
-})()
 
 
 // Output of numbers
@@ -203,14 +86,11 @@ function numberWithSpaces(x) {
     return parts.join(".");
 }
 
-let price = document.querySelectorAll('.price');
+// Price num in Project Page
+$('.price').append(`${numberWithSpaces(2300)} ₽`)
 
-if (price) {
-    price.forEach(el => {
-        el.insertAdjacentText('afterbegin', `${numberWithSpaces(2300)}`)
-    })
-}
 
+// Nice Select
 $(document).ready(function () {
     if ($('select')) {
         $('select').niceSelect();
@@ -219,8 +99,7 @@ $(document).ready(function () {
 
 
 
-//Conclusion Price List
-
+// Conclusion Price List Несмог перепесать на jQuery прости =( )
 const priceList = [
     {
         title: "Дома из кирпича",
@@ -268,7 +147,6 @@ const priceList = [
     },
 
 ]
-
 const priceListTitle = document.getElementById('price_title_list');
 const priceListPrice = document.getElementById('price_List_price');
 
@@ -298,27 +176,21 @@ if (priceListPrice && priceListTitle) {
 
 
 // One Project Price inner
+$('.price_project1').append(numberWithSpaces(82300))
+$('.price_project2').append(numberWithSpaces(82300))
 
-const oneProjectPrice1 = document.querySelector('.price_project1');
-const oneProjectPrice2 = document.querySelector('.price_project2');
 
-if (oneProjectPrice1 && oneProjectPrice2) {
-    oneProjectPrice1.insertAdjacentText('afterbegin', numberWithSpaces(82300))
-    oneProjectPrice2.insertAdjacentText('afterbegin', numberWithSpaces(82300))
-}
+// Btn Menu Listener
+$('#offcanvasWithBackdrop').on('show.bs.offcanvas', function () {
+    $('body').toggleClass('modal-open')
+})
+$('#offcanvasWithBackdrop').on('hidden.bs.offcanvas', function () {
+    $('body').toggleClass('modal-open')
+})
 
-let myOffcanvas = document.getElementById('offcanvasWithBackdrop');
-myOffcanvas.addEventListener('show.bs.offcanvas', function () {
-    let btnPump = document.querySelectorAll('.header-nav__backcall');
-    btnPump.forEach(el => {
-        el.style.right = "10px"
-    })
-
-});
-myOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
-    let btnPump = document.querySelectorAll('.header-nav__backcall');
-    btnPump.forEach(el => {
-        el.style.right = null
-    })
-
+// Main Slider-baner On index.html
+$('.slider').slick({
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
 });

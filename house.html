@@ -190,7 +190,7 @@
             </div>
             <!-- Back call -->
             <button data-bs-toggle="modal" data-bs-target="#backcallmodal"
-                class="fixed-top ms-auto me-3 mt-3 header-nav__backcall ms-auto">
+                class="fixed-top ms-auto me-3 mt-3 d-none d-lg-block header-nav__backcall ms-auto">
                 Обратный звонок
             </button>
         </header>
@@ -964,15 +964,31 @@
             <section class="section_pricelist container-fluid p-0"
                 style='background-image: url("./img/house/bgList.jpg");'>
                 <div class="container my-5">
-                    <div class="row px-sm-2">
+                    <div class="row ">
                         <div class="col col-lg-9 col-xl-7 bg-white list_container">
                             <div class="row">
                                 <div class="col-7 col-md-8  pe-0 p-2 py-lg-5">
                                     <ul id="price_title_list">
+                                        <!-- Test -->
+                                        <li class="mb-3 ms-2 ms-md-3 list_item_li">
+                                            <span>
+                                                Все что выше через JS выводиться
+                                            </span>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-5 col-md-4  p-2 col_gold py-lg-5">
                                     <ul id="price_List_price">
+                                        <!-- Test -->
+                                        <li class="mb-3 list_item_li">
+                                            <span>
+                                                <span>от</span>
+                                                <span class="span_price">
+                                                    100
+                                                </span>
+                                                <span>₽/м<sup>2</sup></span>
+                                            </span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

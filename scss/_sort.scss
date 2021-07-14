@@ -1,0 +1,23 @@
+.sort {
+    &_select {
+        display: flex;
+        align-items: center;
+
+        @media (min-width: 300px) {
+            width: 100%;
+            border: none;
+            height: 40px;
+            background: #f6f6f6;
+            border-radius: 2px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+
+    &_btn {
+        background: #f6f6f6;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+}
