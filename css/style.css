@@ -784,23 +784,26 @@ html {
   .carousel-caption .title {
     font-size: 40px;
     font-weight: 500;
+    line-height: 40px;
+    margin-top: 30px;
   }
 }
 
 @media (min-width: 960px) {
   .carousel-caption .title {
     font-size: 70px;
+    line-height: 70px;
   }
 }
 
 .carousel-caption > .subtitle {
   color: inherit;
   white-space: nowrap;
-  margin: 20px 0 39px 0;
 }
 
 @media (min-width: 300px) {
   .carousel-caption > .subtitle {
+    margin: 10px 0 30px 0;
     font-size: 18px;
     font-weight: 300;
   }
@@ -809,6 +812,7 @@ html {
 @media (min-width: 960px) {
   .carousel-caption > .subtitle {
     font-size: 28px;
+    margin: 20px 0 40px 0;
   }
 }
 
