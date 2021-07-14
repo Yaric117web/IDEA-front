@@ -45,6 +45,7 @@ body.modal-open .header-nav__backcall {
 }
 
 body.fancybox-active {
+  margin-right: 10px;
   overflow: hidden;
 }
 
