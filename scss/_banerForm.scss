@@ -24,6 +24,39 @@
         @media (min-width: 1400px) {
             transform: translate(0%, 10%);
         }
-    }
 
+        .label_meter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 24px;
+            border: 2px solid #dedede !important;
+            border-radius: 4px;
+            outline: none !important;
+            color: inherit !important;
+
+            & .placeholder {
+                width: 45%;
+                display: block;
+
+                @media (min-width: 300px) {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $input_color;
+                }
+                @media (min-width: 990px) {
+                    font-size: 18px;
+                }
+            }
+
+            & .area {
+                width: 50%;
+                border: none;
+                border-left: 2px solid #dedede;
+                border-radius: 0;
+            }
+        }
+    }
 }

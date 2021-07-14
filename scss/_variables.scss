@@ -55,10 +55,23 @@ form {
         width: 100%;
         height: 56px;
         padding: 0 24px;
-        border: 2px solid #dedede !important;
+        border: 2px solid #dedede;
         border-radius: 4px;
         outline: none !important;
         color: inherit !important;
+
+        &::placeholder {
+            @media (min-width: 300px) {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 23px;
+                color: $input_color;
+            }
+            @media (min-width: 990px) {
+                font-size: 18px;
+            }
+        }
+
         &:focus {
             box-shadow: none !important;
             border-color: $gold_color !important;

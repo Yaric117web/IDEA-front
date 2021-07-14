@@ -176,8 +176,8 @@ if (priceListPrice && priceListTitle) {
 
 
 // One Project Price inner
-$('.price_project1').append(numberWithSpaces(82300))
-$('.price_project2').append(numberWithSpaces(82300))
+$('.price_project1').append(`${numberWithSpaces(82300)} ₽`)
+$('.price_project2').append(`${numberWithSpaces(82300)} ₽`)
 
 
 // Btn Menu Listener

@@ -75,10 +75,76 @@ form .meter {
   width: 100%;
   height: 56px;
   padding: 0 24px;
-  border: 2px solid #dedede !important;
+  border: 2px solid #dedede;
   border-radius: 4px;
   outline: none !important;
   color: inherit !important;
+}
+
+@media (min-width: 300px) {
+  form input::-webkit-input-placeholder,
+  form textarea::-webkit-input-placeholder,
+  form .nice-select::-webkit-input-placeholder,
+  form .meter::-webkit-input-placeholder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #a5a5a5;
+  }
+  form input:-ms-input-placeholder,
+  form textarea:-ms-input-placeholder,
+  form .nice-select:-ms-input-placeholder,
+  form .meter:-ms-input-placeholder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #a5a5a5;
+  }
+  form input::-ms-input-placeholder,
+  form textarea::-ms-input-placeholder,
+  form .nice-select::-ms-input-placeholder,
+  form .meter::-ms-input-placeholder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #a5a5a5;
+  }
+  form input::placeholder,
+  form textarea::placeholder,
+  form .nice-select::placeholder,
+  form .meter::placeholder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #a5a5a5;
+  }
+}
+
+@media (min-width: 990px) {
+  form input::-webkit-input-placeholder,
+  form textarea::-webkit-input-placeholder,
+  form .nice-select::-webkit-input-placeholder,
+  form .meter::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  form input:-ms-input-placeholder,
+  form textarea:-ms-input-placeholder,
+  form .nice-select:-ms-input-placeholder,
+  form .meter:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  form input::-ms-input-placeholder,
+  form textarea::-ms-input-placeholder,
+  form .nice-select::-ms-input-placeholder,
+  form .meter::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  form input::placeholder,
+  form textarea::placeholder,
+  form .nice-select::placeholder,
+  form .meter::placeholder {
+    font-size: 18px;
+  }
 }
 
 form input:focus,
@@ -1017,6 +1083,51 @@ html {
   }
 }
 
+.section_baner_form form .label_meter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 24px;
+  border: 2px solid #dedede !important;
+  border-radius: 4px;
+  outline: none !important;
+  color: inherit !important;
+}
+
+.section_baner_form form .label_meter .placeholder {
+  width: 45%;
+  display: block;
+}
+
+@media (min-width: 300px) {
+  .section_baner_form form .label_meter .placeholder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #a5a5a5;
+  }
+}
+
+@media (min-width: 990px) {
+  .section_baner_form form .label_meter .placeholder {
+    font-size: 18px;
+  }
+}
+
+.section_baner_form form .label_meter .area {
+  width: 50%;
+  border: none;
+  border-left: 2px solid #dedede;
+  border-radius: 0;
+}
+
 @media (min-width: 300px) {
   .section_benefits .benefit img {
     width: 32px;
@@ -1694,14 +1805,6 @@ html {
 
 .fancybox-content {
   padding: 0 !important;
-}
-
-#confirmation {
-  z-index: 99999999999;
-}
-
-#confirmation .modal-dialog {
-  max-width: 700px;
 }
 
 .breadcrumbs > a {
