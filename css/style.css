@@ -1882,6 +1882,11 @@ html {
   padding: 0 !important;
 }
 
+#confirmation button {
+  width: 100%;
+  height: 56px;
+}
+
 .breadcrumbs > a {
   display: -webkit-box;
   display: -ms-flexbox;
