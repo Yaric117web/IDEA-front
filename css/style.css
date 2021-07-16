@@ -272,19 +272,8 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 23px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 a > img {
@@ -1358,25 +1347,19 @@ html {
 
 .section_pricelist .pricelist__ul {
   margin: 0;
-}
-
-.section_pricelist .pricelist__ul .pricelist__li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #4f4f4f;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.section_pricelist .pricelist__ul .pricelist__title {
+.section_pricelist .pricelist__ul li {
+  color: #4f4f4f;
+  padding: 20px 30px;
+}
+
+.section_pricelist .pricelist__ul li:nth-child(2n + 1) {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1384,36 +1367,41 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 30px;
   padding-right: 0;
 }
 
-.section_pricelist .pricelist__ul .pricelist__title:after {
+.section_pricelist .pricelist__ul li:nth-child(2n + 1) span {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  max-width: 70%;
+}
+
+.section_pricelist .pricelist__ul li:nth-child(2n + 1):after {
   content: "";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   border-bottom: dotted 2px #ccc;
-  margin-top: auto;
+  margin-top: 20px;
 }
 
 @media (min-width: 300px) {
-  .section_pricelist .pricelist__ul .pricelist__title {
+  .section_pricelist .pricelist__ul li:nth-child(2n + 1) {
     font-size: 16px;
     line-height: 1;
   }
 }
 
 @media (min-width: 530px) {
-  .section_pricelist .pricelist__ul .pricelist__title {
+  .section_pricelist .pricelist__ul li:nth-child(2n + 1) {
     font-size: 24px;
   }
 }
 
-.section_pricelist .pricelist__ul .pricelist__price {
+.section_pricelist .pricelist__ul li:nth-child(2n) {
   background: #fff7ef;
-  padding: 20px 30px;
   width: 40%;
   height: inherit !important;
   display: -webkit-box;
@@ -1428,24 +1416,24 @@ html {
   text-align: right;
 }
 
-.section_pricelist .pricelist__ul .pricelist__price span {
+.section_pricelist .pricelist__ul li:nth-child(2n) span {
   margin-left: 5px;
 }
 
 @media (min-width: 300px) {
-  .section_pricelist .pricelist__ul .pricelist__price {
+  .section_pricelist .pricelist__ul li:nth-child(2n) {
     font-size: 16px;
   }
-  .section_pricelist .pricelist__ul .pricelist__price .span_price {
+  .section_pricelist .pricelist__ul li:nth-child(2n) .span_price {
     font-size: 20px;
   }
 }
 
 @media (min-width: 530px) {
-  .section_pricelist .pricelist__ul .pricelist__price {
+  .section_pricelist .pricelist__ul li:nth-child(2n) {
     font-size: 24px;
   }
-  .section_pricelist .pricelist__ul .pricelist__price .span_price {
+  .section_pricelist .pricelist__ul li:nth-child(2n) .span_price {
     font-size: 30px;
   }
 }
