@@ -90,10 +90,12 @@
     padding: 0 !important;
 }
 
-
 #confirmation {
-    button {
-        width: 100%;
-        height: 56px;
+    .modal-body {
+        button {
+            min-width: 100%;
+            height: 56px;
+            margin-top: 30px;
+        }
     }
 }
