@@ -142,9 +142,9 @@ form {
 }
 
 button {
-    font-weight: bold;
     font-size: 18px;
     line-height: 23px;
+    font-weight: bold;
     text-align: center;
     color: $button_color;
     background: $gold_color;
@@ -177,14 +177,19 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+    font-size: 18px;
+    line-height: 23px;
     transition: all 0.3s;
-    & > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > img {
         transition: all 0.3s;
     }
     &:hover {
         color: $price_color !important;
         text-decoration: none !important;
-        & > img {
+        > img {
             transform: scale(1.1) !important;
         }
     }

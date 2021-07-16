@@ -5,63 +5,83 @@
         background-repeat: no-repeat;
     }
 
-    .col_gold {
-        background: $FFF7EF;
-    }
-
     .list_container {
+        background: #ffffff;
         border-bottom: 3px solid $gold_color;
+
+        @media (min-width: 300px) {
+            width: 100%;
+        }
+        @media (min-width: 990px) {
+            width: 60vw;
+        }
+
         @media (min-width: 530px) {
             box-shadow: 0px -4px 50px rgba(99, 131, 153, 0.15);
             border-radius: 2px;
         }
+        @media (min-width: 1190px) {
+            width: 50vw;
+        }
     }
 
-    & li {
-        height: 40px;
-        display: flex;
-        align-items: center;
-    }
+    .pricelist__ul {
+        margin: 0;
+        .pricelist__li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $h2_color;
+            height: fit-content;
+        }
 
-    #price_title_list {
-        & li {
-            color: #4f4f4f;
-            position: relative;
-            z-index: 2;
+        .pricelist__title {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            padding: 0px 30px;
+            padding-right: 0;
+
+            &:after {
+                content: "";
+                display: flex;
+                width: 100%;
+                border-bottom: dotted 2px #ccc;
+                margin-top: auto;
+            }
+
             @media (min-width: 300px) {
                 font-size: 16px;
                 line-height: 1;
-                border-bottom: dotted 2px #ccc;
             }
             @media (min-width: 530px) {
                 font-size: 24px;
             }
         }
-    }
 
-    #price_List_price {
-        & .list_item_li {
-            letter-spacing: -0.03em;
-            color: #4f4f4f;
+        .pricelist__price {
+            background: $FFF7EF;
+            padding: 20px 30px;
+            width: 40%;
+            height: inherit !important;
+            display: flex;
+            align-items: center;
             justify-content: flex-end;
+            text-align: right;
+
+            span {
+                margin-left: 5px;
+            }
 
             @media (min-width: 300px) {
-                padding-right: 20px;
-                & span {
-                    font-size: 16px;
-                }
-
-                & .span_price {
+                font-size: 16px;
+                .span_price {
                     font-size: 20px;
                 }
             }
             @media (min-width: 530px) {
-                padding-right: 30px;
-                & span {
-                    font-size: 24px;
-                }
-
-                & .span_price {
+                font-size: 24px;
+                .span_price {
                     font-size: 30px;
                 }
             }
