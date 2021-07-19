@@ -1,0 +1,76 @@
+.build-price-wrapper {
+    background: linear-gradient($color2 0%, $color2 20%, rgba($color4, 0.1) 20%, rgba($color4, 0.1), 50%);
+    position: relative;
+
+    @media (min-width: 630px) {
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        content: "";
+        width: 50%;
+        height: 4px;
+        background-color: $gold_color;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: none;
+
+        @media (min-width: 992px) {
+            display: block;
+        }
+    }
+
+    .form-one-container {
+        padding: 30px 0px;
+    }
+}
+
+.build-price-container {
+    background-color: $color2;
+    box-shadow: 1px 1px 10px 0px rgba($color1, 0.2);
+    border-bottom: 4px solid $gold_color;
+    padding: 20px;
+    zoom: 75%;
+
+    @media screen and (min-width: 562px) {
+        zoom: 85%;
+    }
+
+    @media screen and (min-width: 992px) {
+        zoom: 100%;
+        width: 70%;
+    }
+
+    .price-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 1px dashed rgba($color1, 0.5);
+
+        @media screen and (min-width: 992px) {
+            font-size: 1.3rem;
+        }
+    }
+
+    .price-value {
+        font-size: 1.1rem;
+        font-weight: 600;
+        background-color: $gold_color;
+
+        @media screen and (min-width: 576px) {
+            text-align: right;
+        }
+       
+
+        b {
+            font-size: 1.2rem;
+
+            @media screen and (min-width: 992px) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
